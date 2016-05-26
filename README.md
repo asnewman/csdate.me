@@ -1,5 +1,5 @@
 # csdate.me
-# Authors
+## Authors
 * Ashley Newman
 * Sigal Shaul
 * Jason Mar
