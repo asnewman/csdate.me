@@ -1,0 +1,4 @@
+-- BUILD EVERYTIHNG IN CSDATE.ME
+
+-- Users
+source user-setup.sql

@@ -1,0 +1,23 @@
+$def with (name)
+
+$if name:
+   I just wanted to say <em>hello</em> to $name.
+$else:
+   <!DOCTYPE hmtl>
+   <html>
+   <head>
+      <title>CSdate.me</title>
+      <link rel="stylesheet" type="text/css" href="static/main.css">
+   </head>
+   <body>
+      <form method="GET">
+         <div class="buttons">
+            <button formaction='signup'>Sign up</button><br>
+            <button formaction='login'>Login</button>
+         </div>
+      </form>
+   <!--     <form method="post" action="add">
+         <p><input type="text" name="title" /> <input type="submit" value="Add" /></p>
+      </form>   -->
+   </body>
+   </html>

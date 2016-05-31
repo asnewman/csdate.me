@@ -1,0 +1,158 @@
+$def with (results)
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="static/main.css">
+      <title> Questions </title>
+   </head>
+      <div class="container">
+      <body>
+         <div class = "row">
+            <form method="GET">
+               <div class="col-xs-3 names"> 
+                  First Name
+               </div>
+               <div class = "col-xs-9 names">
+                  <div class = "col-xs-3 names">
+                     <input type = "text" name = "firstName" required><br>
+                  </div>
+               </div>
+
+               <div class = "col-xs-3 names">
+                  Middle Name (optional)
+               </div>
+               <div class = "col-xs-9 names">
+                  <div class = "col-xs-3 names"> 
+                     <input type = "text" name = "middleName"><br>
+                  </div>
+               </div>
+               <div class = "col-xs-3 names">
+                  Last Name
+               </div>
+               <div class = "col-xs-9 names">
+                  <div class = "col-xs-3 names">                
+                     <input type = "text" name = "lastName" required> <br>
+                  </div>
+               </div>
+         </div>
+         
+         <div class = "col-xs-3 Gender">
+               Gender <br>
+         </div>
+               <div class = "col-xs-9 Gender">
+                  <div class = "col-xs-3">
+                     <input type="radio" name="gender" value="male" checked> Male<br>
+                     <input type="radio" name="gender" value="female"> Female<br>
+                     <input type="radio" name="gender" value="other"> Other <br>
+                     <input type="radio" name="gender" value="declined"> Declined to state <br>
+                     <input type="radio" name="gender" value="transgender"> Transgender <br><br>
+                  </div>
+               </div>
+         </div>
+
+         <div class = "col-xs-12 states">
+               <td> State: </td>
+               <td> <select name="state" required>
+                  <option value = "Alabama">AL</option>
+                  <option value = "Alaska">AK</option>
+                  <option value = "Arizona">AZ</option>
+                  <option value = "Arkansas">AR</option>
+                  <option value = "California">CA</option>
+                  <option value = "Colorado">CO</option>
+                  <option value = "Connecticut">CT</option>
+                  <option value = "DC">DC</option>
+                  <option value = "Delaware">DE</option>   
+                  <option value = "Florida">FL</option>
+                  <option value = "Georgia">GA</option>
+                  <option value = "Hawaii">HI</option>
+                  <option value = "Idaho">ID</option>
+                  <option value = "Illinois">IL</option>
+                  <option value = "Indiana">IN</option>
+                  <option value = "Iowa">IA</option>
+                  <option value = "Kansas">KS</option>
+                  <option value = "Kentucky">KY</option>
+                  <option value = "Louisiana">LA</option>
+                  <option value = "Maine">ME</option>
+                  <option value = "Maryland">MD</option>   
+                  <option value = "Massachusetts">MA</option>
+                  <option value = "Michigan">MI</option>
+                  <option value = "Minnesota">MN</option>
+                  <option value = "Mississippi">MS</option>
+                  <option value = "Missouri">MO</option>
+                  <option value = "Montana">MT</option>
+                  <option value = "Nebraska">NE</option>
+                  <option value = "Nevada">CA</option>
+                  <option value = "New Hampshire">NH</option>
+                  <option value = "New Jersey">NJ</option>
+                  <option value = "New Mexico">NM</option>
+                  <option value = "New York">NY</option>   
+                  <option value = "North Carolina">NC</option>
+                  <option value = "North Dakota">ND</option>
+                  <option value = "Ohio">OH</option>
+                  <option value = "Oklahoma">OK</option>
+                  <option value = "Oregon">OR</option>
+                  <option value = "Pennsylvania">PA</option>
+                  <option value = "Rhode Island">RI</option>
+                  <option value = "South Carolina">SC</option>
+                  <option value = "South Dakota">SD</option>
+                  <option value = "Tennessee">TN</option>
+                  <option value = "Texas">TX</option>
+                  <option value = "Utah">UT</option>   
+                  <option value = "Vermont">VT</option>
+                  <option value = "Virginia">VA</option>
+                  <option value = "Washington">WA</option>
+                  <option value = "West Virginia">WV</option>   
+                  <option value = "Wisconsin">WI</option>
+                  <option value = "Wyoming">WY</option>
+                  <option value = "N/A">N/A</option>                                    
+               </select>
+         </div>
+         <div>
+            City <input type = "text" name = "city" required> <br><br>
+         </div>
+         <br>
+
+         <div class = "col-xs-12 birthday">
+               Birthday <input type = "date" name = "birthday" required> <br>
+         </div>
+
+         <div>
+            <td> Favorite OS: </td>
+            <select name ="favoriteOS" required>
+               <option value ="windows"> Windows </option>
+               <option value ="linux"> Linux </option>
+               <option value ="OS X"> OS X </option>
+            </select>
+         </div>
+
+         <div>
+            <td> Smartphone OS: </td>
+            <select name = "phoneOS" required>
+               <option value = "android"> Android </option>
+               <option value = "ios"> iOS </option>
+               <option value = "windows"> Windows </option>
+               <option value = "n/a"> No smartphone </option>
+            </select>
+         </div> 
+
+         <div>
+            <td> Relationship Status: </td>
+               <select name = "relationship" required>
+                  <option value = "single"> Single </option>
+                  <option value = "taken"> In a relationship / Married </option>
+                  <option value = "single"> What's a Relationship? </option>
+               </select>
+         </div>
+
+         <div>
+            <td> <td>
+         <div>
+            <br> <input type="submit" name = "submit">
+         </div> 
+         </form>
+      </div>
+   </body>
+</html>

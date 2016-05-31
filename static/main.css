@@ -1,0 +1,53 @@
+html, body {
+   height: 100%;
+}
+.content {
+   background-color: yellow;
+}
+
+.button {
+   background-color: #4CBF43;
+   text-align: center;
+   display: inline-block;
+   font-size: 32px;
+   padding: 14px 40px;
+   border-radius: 8px;
+}
+
+.block {
+	height:7%;
+	background-color: #7CAED6;
+	position: relative;
+}
+
+.space {
+	height:2%;
+}
+
+.block img {
+	max-height: 100%
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.whitelogo img {
+	height:100%;
+}
+
+.loginContainer {
+   position: relative;
+   height: 100%;
+}
+.loginPanel {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
