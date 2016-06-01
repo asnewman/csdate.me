@@ -16,11 +16,6 @@ urls = (
 # Initializing database connector
 DB = Database()
 
-#class index:
-#    def GET(self):
-#        i = web.input(name=None)
-#        return render.index(i.name)
-
 class index:
     def GET(SELF):
         return render.index()
@@ -49,6 +44,7 @@ class login:
          # Direct to failed login page
          return render.loginFailed()
 
+# Main page accessed after login with results of our algorithm.
 class main:
    def GET(self):
       return render.main()
@@ -67,6 +63,12 @@ class questions:
 class search:
   def GET(self):
     return render.search()
+
+def tokenSet(self, userId):
+    r = random.randint(0, 2147483647)
+    token = bcrypt.hashpw(r, bcrypt.gensalt())
+    validToken = db.addToken(userId, token)
+    web.setcookie('token', validToken, domain="csdate.me", secure=False)
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

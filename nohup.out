@@ -531,3 +531,34 @@ AttributeError: No template named signup
 207.62.170.216:35749 - - [01/Jun/2016 05:14:47] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
 207.62.170.216:53988 - - [01/Jun/2016 05:16:04] "HTTP/1.1 GET /" - 200 OK
 207.62.170.216:53988 - - [01/Jun/2016 05:16:04] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:39368 - - [01/Jun/2016 05:19:00] "HTTP/1.1 GET /signup" - 404 Not Found
+207.62.170.221:39368 - - [01/Jun/2016 05:19:02] "HTTP/1.1 GET /signup" - 404 Not Found
+207.62.170.221:39368 - - [01/Jun/2016 05:19:04] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:39368 - - [01/Jun/2016 05:19:04] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.216:61069 - - [01/Jun/2016 05:19:41] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:61069 - - [01/Jun/2016 05:19:41] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:61069 - - [01/Jun/2016 05:19:45] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:61069 - - [01/Jun/2016 05:19:49] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:38681 - - [01/Jun/2016 05:20:13] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.221:62922 - - [01/Jun/2016 05:30:20] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:42604 - - [01/Jun/2016 05:30:20] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:62922 - - [01/Jun/2016 05:30:20] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:44669 - - [01/Jun/2016 06:12:23] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:44669 - - [01/Jun/2016 06:12:23] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:42724 - - [01/Jun/2016 06:12:23] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:42724 - - [01/Jun/2016 06:12:26] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:42724 - - [01/Jun/2016 06:12:26] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:37880 - - [01/Jun/2016 06:58:18] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:37880 - - [01/Jun/2016 06:58:18] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:49914 - - [01/Jun/2016 06:58:18] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:53561 - - [01/Jun/2016 06:58:27] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:53561 - - [01/Jun/2016 06:58:27] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:53561 - - [01/Jun/2016 06:58:27] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:50452 - - [01/Jun/2016 06:59:20] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:50452 - - [01/Jun/2016 06:59:27] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:42694 - - [01/Jun/2016 07:01:40] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:42694 - - [01/Jun/2016 07:01:40] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:42694 - - [01/Jun/2016 07:01:40] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:48523 - - [01/Jun/2016 07:02:06] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:48523 - - [01/Jun/2016 07:02:06] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:49389 - - [01/Jun/2016 07:02:06] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
