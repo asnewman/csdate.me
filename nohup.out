@@ -1,0 +1,533 @@
+207.62.170.223:47729 - - [31/May/2016 22:42:47] "HTTP/1.1 GET /" - 200 OK
+207.62.170.223:47729 - - [31/May/2016 22:42:48] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.223:47729 - - [31/May/2016 22:42:50] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.223:47729 - - [31/May/2016 22:42:58] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.223:47729 - - [31/May/2016 22:42:58] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.221:36934 - - [31/May/2016 22:44:10] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:36934 - - [31/May/2016 22:44:10] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:36934 - - [31/May/2016 22:44:10] "HTTP/1.1 GET /static/images/logo.png" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 61, in GET
+    return render.questions(None)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 881, in __call__
+    return BaseTemplate.__call__(self, *a, **kw)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 808, in __call__
+    return self.t(*a, **kw)
+TypeError: __template__() takes no arguments (1 given)
+
+207.62.170.216:55970 - - [31/May/2016 22:44:44] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.216:55970 - - [31/May/2016 22:44:45] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.216:50919 - - [31/May/2016 22:44:45] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:50919 - - [31/May/2016 22:44:46] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:53261 - - [31/May/2016 22:44:46] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.216:55970 - - [31/May/2016 22:44:52] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:55970 - - [31/May/2016 22:44:52] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:38928 - - [31/May/2016 22:44:55] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:38928 - - [31/May/2016 22:44:55] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:38928 - - [31/May/2016 22:44:55] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:48960 - - [31/May/2016 22:44:58] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:48960 - - [31/May/2016 22:44:59] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:48960 - - [31/May/2016 22:44:59] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:50892 - - [31/May/2016 22:45:05] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.216:33449 - - [31/May/2016 22:45:18] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:33449 - - [31/May/2016 22:45:18] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:33449 - - [31/May/2016 22:45:19] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:45557 - - [31/May/2016 22:46:59] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:45557 - - [31/May/2016 22:46:59] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:59559 - - [31/May/2016 22:48:16] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:59559 - - [31/May/2016 22:48:16] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:45682 - - [31/May/2016 22:48:16] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:34001 - - [31/May/2016 22:48:51] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:34001 - - [31/May/2016 22:48:51] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:34001 - - [31/May/2016 22:48:51] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:54590 - - [31/May/2016 22:49:07] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:54590 - - [31/May/2016 22:49:08] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:56563 - - [31/May/2016 22:49:08] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:62944 - - [31/May/2016 22:49:12] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:62944 - - [31/May/2016 22:49:12] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:34387 - - [31/May/2016 22:49:12] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:32482 - - [31/May/2016 22:49:25] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:32482 - - [31/May/2016 22:49:25] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:58208 - - [31/May/2016 22:49:25] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:52192 - - [31/May/2016 22:49:40] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:52192 - - [31/May/2016 22:49:40] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:52192 - - [31/May/2016 22:49:40] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:34255 - - [31/May/2016 22:49:54] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:34255 - - [31/May/2016 22:49:54] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:45870 - - [31/May/2016 22:49:54] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:47543 - - [31/May/2016 22:50:34] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:47543 - - [31/May/2016 22:50:34] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:47543 - - [31/May/2016 22:50:34] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:39130 - - [31/May/2016 22:51:00] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:39130 - - [31/May/2016 22:51:00] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:44450 - - [31/May/2016 22:51:00] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:53204 - - [31/May/2016 22:53:00] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:53204 - - [31/May/2016 22:53:00] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:53204 - - [31/May/2016 22:53:00] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:39205 - - [31/May/2016 22:54:30] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:39205 - - [31/May/2016 22:54:30] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:32265 - - [31/May/2016 22:54:30] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:59056 - - [31/May/2016 22:54:42] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:59056 - - [31/May/2016 22:54:42] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:44497 - - [31/May/2016 22:54:42] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:39936 - - [31/May/2016 22:55:04] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:39936 - - [31/May/2016 22:55:04] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:42504 - - [31/May/2016 22:55:04] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:38397 - - [31/May/2016 22:55:25] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:38397 - - [31/May/2016 22:55:25] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:38397 - - [31/May/2016 22:55:25] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:45145 - - [31/May/2016 22:55:28] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:45145 - - [31/May/2016 22:55:28] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:35884 - - [31/May/2016 22:55:30] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:35884 - - [31/May/2016 22:55:30] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:57557 - - [31/May/2016 22:55:30] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:62269 - - [31/May/2016 22:56:01] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:62269 - - [31/May/2016 22:56:01] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:62269 - - [31/May/2016 22:56:01] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:62269 - - [31/May/2016 22:56:04] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:62269 - - [31/May/2016 22:56:04] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:46655 - - [31/May/2016 22:56:04] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:62153 - - [31/May/2016 22:56:14] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:57433 - - [31/May/2016 22:56:14] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:62153 - - [31/May/2016 22:56:14] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:57433 - - [31/May/2016 22:56:14] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:43905 - - [31/May/2016 22:56:14] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:35977 - - [31/May/2016 22:57:37] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:35977 - - [31/May/2016 22:57:37] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:63310 - - [31/May/2016 22:57:37] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:46167 - - [31/May/2016 22:57:52] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:46167 - - [31/May/2016 22:57:52] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:46167 - - [31/May/2016 22:57:52] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:37809 - - [31/May/2016 22:58:02] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:37809 - - [31/May/2016 22:58:02] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:37809 - - [31/May/2016 22:58:02] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:34846 - - [31/May/2016 22:58:04] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:34846 - - [31/May/2016 22:58:05] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:34846 - - [31/May/2016 22:58:05] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:62836 - - [31/May/2016 22:58:21] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:62836 - - [31/May/2016 22:58:21] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:62836 - - [31/May/2016 22:58:21] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:62836 - - [31/May/2016 22:58:22] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:62836 - - [31/May/2016 22:58:22] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:42638 - - [31/May/2016 22:58:22] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:32794 - - [31/May/2016 22:59:09] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:32794 - - [31/May/2016 22:59:09] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:32794 - - [31/May/2016 22:59:09] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:46291 - - [31/May/2016 23:00:49] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:46291 - - [31/May/2016 23:00:49] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:46291 - - [31/May/2016 23:00:49] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:58074 - - [31/May/2016 23:01:36] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:58074 - - [31/May/2016 23:01:36] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:43872 - - [31/May/2016 23:01:36] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:43872 - - [31/May/2016 23:01:45] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:43872 - - [31/May/2016 23:01:45] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:58074 - - [31/May/2016 23:01:45] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:43186 - - [31/May/2016 23:03:05] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:43186 - - [31/May/2016 23:03:05] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:46331 - - [31/May/2016 23:03:11] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:46331 - - [31/May/2016 23:03:11] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:46331 - - [31/May/2016 23:03:11] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:55600 - - [31/May/2016 23:03:19] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:55600 - - [31/May/2016 23:03:19] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:59434 - - [31/May/2016 23:03:19] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:62435 - - [31/May/2016 23:03:56] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:62435 - - [31/May/2016 23:03:56] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:35544 - - [31/May/2016 23:04:04] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:35544 - - [31/May/2016 23:04:05] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:35544 - - [31/May/2016 23:04:05] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:35544 - - [31/May/2016 23:04:06] "HTTP/1.1 GET /search" - 404 Not Found
+207.62.170.216:35544 - - [31/May/2016 23:04:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:35544 - - [31/May/2016 23:04:15] "HTTP/1.1 GET /search" - 404 Not Found
+207.62.170.216:35544 - - [31/May/2016 23:04:16] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:55623 - - [31/May/2016 23:04:59] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:55623 - - [31/May/2016 23:04:59] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:55623 - - [31/May/2016 23:04:59] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:61014 - - [31/May/2016 23:05:12] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:61014 - - [31/May/2016 23:05:13] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:50730 - - [31/May/2016 23:05:13] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 229, in handle
+    fn, args = self._match(self.mapping, web.ctx.path)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 427, in _match
+    for pat, what in mapping:
+ValueError: need more than 1 value to unpack
+
+207.62.170.216:50730 - - [31/May/2016 23:05:15] "HTTP/1.1 GET /search" - 500 Internal Server Error
+207.62.170.216:32396 - - [31/May/2016 23:05:18] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:32396 - - [31/May/2016 23:05:19] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:61084 - - [31/May/2016 23:05:29] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:61084 - - [31/May/2016 23:05:29] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:61084 - - [31/May/2016 23:05:29] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:61084 - - [31/May/2016 23:05:33] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:34975 - - [31/May/2016 23:05:33] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:61084 - - [31/May/2016 23:05:33] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:56319 - - [31/May/2016 23:05:44] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.216:56319 - - [31/May/2016 23:05:44] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:56319 - - [31/May/2016 23:05:50] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:56319 - - [31/May/2016 23:05:50] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:43571 - - [31/May/2016 23:05:53] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:43571 - - [31/May/2016 23:05:53] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:43571 - - [31/May/2016 23:05:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:43571 - - [31/May/2016 23:05:56] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:43571 - - [31/May/2016 23:05:56] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:42360 - - [31/May/2016 23:05:56] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:57432 - - [31/May/2016 23:06:01] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:57432 - - [31/May/2016 23:06:02] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:57432 - - [31/May/2016 23:06:04] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:57432 - - [31/May/2016 23:06:04] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:57432 - - [31/May/2016 23:06:08] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:57432 - - [31/May/2016 23:06:09] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:57432 - - [31/May/2016 23:06:10] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:57432 - - [31/May/2016 23:06:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:32449 - - [31/May/2016 23:07:12] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:32449 - - [31/May/2016 23:07:12] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:32449 - - [31/May/2016 23:07:12] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:55199 - - [31/May/2016 23:08:05] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:55199 - - [31/May/2016 23:08:05] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:55199 - - [31/May/2016 23:08:07] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.216:55199 - - [31/May/2016 23:08:07] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:55199 - - [31/May/2016 23:08:08] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:55199 - - [31/May/2016 23:08:12] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.216:55199 - - [31/May/2016 23:08:12] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:55199 - - [31/May/2016 23:08:14] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:55625 - - [31/May/2016 23:10:18] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:55625 - - [31/May/2016 23:10:18] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:55625 - - [31/May/2016 23:10:18] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:56067 - - [31/May/2016 23:10:36] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:56067 - - [31/May/2016 23:10:36] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:56067 - - [31/May/2016 23:10:36] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:34383 - - [31/May/2016 23:10:50] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:34383 - - [31/May/2016 23:10:50] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:33521 - - [31/May/2016 23:11:02] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:33521 - - [31/May/2016 23:11:02] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:33521 - - [31/May/2016 23:11:02] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:42998 - - [31/May/2016 23:11:15] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:42998 - - [31/May/2016 23:11:15] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:42998 - - [31/May/2016 23:11:15] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:33841 - - [31/May/2016 23:11:44] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:33841 - - [31/May/2016 23:11:44] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:33841 - - [31/May/2016 23:11:44] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:33841 - - [31/May/2016 23:11:46] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:35627 - - [31/May/2016 23:11:47] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:33841 - - [31/May/2016 23:11:47] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:52204 - - [31/May/2016 23:12:09] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:45861 - - [31/May/2016 23:12:09] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.216:52204 - - [31/May/2016 23:12:09] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:45861 - - [31/May/2016 23:12:10] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:34448 - - [31/May/2016 23:12:10] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:47627 - - [31/May/2016 23:12:21] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:47627 - - [31/May/2016 23:12:21] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:47627 - - [31/May/2016 23:12:21] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:54672 - - [31/May/2016 23:12:59] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:54672 - - [31/May/2016 23:12:59] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:54672 - - [31/May/2016 23:12:59] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:52048 - - [31/May/2016 23:13:02] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.221:52048 - - [31/May/2016 23:13:02] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:52048 - - [31/May/2016 23:13:02] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:39503 - - [31/May/2016 23:32:57] "HTTP/1.1 GET /" - 200 OK
+207.62.170.211:39503 - - [31/May/2016 23:32:57] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:39503 - - [31/May/2016 23:32:57] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:39503 - - [31/May/2016 23:32:57] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:39503 - - [31/May/2016 23:32:59] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:39503 - - [31/May/2016 23:33:03] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:39503 - - [31/May/2016 23:33:03] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.211:45632 - - [31/May/2016 23:34:44] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:45632 - - [31/May/2016 23:34:44] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:45632 - - [31/May/2016 23:34:48] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:45632 - - [31/May/2016 23:34:53] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:59342 - - [31/May/2016 23:36:40] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:59342 - - [31/May/2016 23:36:40] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:59342 - - [31/May/2016 23:36:40] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:59342 - - [31/May/2016 23:36:42] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:59342 - - [31/May/2016 23:36:42] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:53708 - - [31/May/2016 23:36:42] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:44462 - - [31/May/2016 23:37:30] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:44462 - - [31/May/2016 23:37:30] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:44462 - - [31/May/2016 23:37:30] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:44462 - - [31/May/2016 23:37:30] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:44462 - - [31/May/2016 23:37:30] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:48620 - - [31/May/2016 23:37:31] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:44462 - - [31/May/2016 23:37:31] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:44462 - - [31/May/2016 23:37:31] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:56069 - - [31/May/2016 23:37:31] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:44462 - - [31/May/2016 23:37:31] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:44462 - - [31/May/2016 23:37:31] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:48620 - - [31/May/2016 23:37:31] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:44462 - - [31/May/2016 23:37:32] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:44462 - - [31/May/2016 23:37:32] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:56069 - - [31/May/2016 23:37:32] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:39640 - - [31/May/2016 23:38:57] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:39640 - - [31/May/2016 23:38:57] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:39640 - - [31/May/2016 23:38:57] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:39640 - - [31/May/2016 23:38:58] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:39640 - - [31/May/2016 23:38:58] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:38535 - - [31/May/2016 23:38:58] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:55943 - - [31/May/2016 23:39:20] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:55943 - - [31/May/2016 23:39:20] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:55943 - - [31/May/2016 23:39:20] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:56205 - - [31/May/2016 23:39:45] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:56205 - - [31/May/2016 23:39:45] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:56205 - - [31/May/2016 23:39:45] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43118 - - [31/May/2016 23:40:53] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:43118 - - [31/May/2016 23:40:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:43118 - - [31/May/2016 23:40:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43118 - - [31/May/2016 23:40:54] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:43118 - - [31/May/2016 23:40:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:36312 - - [31/May/2016 23:40:54] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43118 - - [31/May/2016 23:40:55] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:43118 - - [31/May/2016 23:40:55] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:36312 - - [31/May/2016 23:40:55] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43118 - - [31/May/2016 23:40:55] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:43118 - - [31/May/2016 23:40:55] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:36312 - - [31/May/2016 23:40:55] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43156 - - [31/May/2016 23:41:27] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:43156 - - [31/May/2016 23:41:27] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:43156 - - [31/May/2016 23:41:27] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:53653 - - [31/May/2016 23:42:13] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:53653 - - [31/May/2016 23:42:13] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:53653 - - [31/May/2016 23:42:13] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:32507 - - [31/May/2016 23:43:18] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:32507 - - [31/May/2016 23:43:18] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:32507 - - [31/May/2016 23:43:18] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:32507 - - [31/May/2016 23:43:20] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:34935 - - [31/May/2016 23:44:13] "HTTP/1.1 GET /" - 200 OK
+207.62.170.222:34935 - - [31/May/2016 23:44:13] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:34935 - - [31/May/2016 23:44:18] "HTTP/1.1 GET /" - 200 OK
+207.62.170.222:34935 - - [31/May/2016 23:44:27] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:34935 - - [31/May/2016 23:44:27] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.211:46817 - - [31/May/2016 23:44:55] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:46817 - - [31/May/2016 23:44:55] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:33308 - - [31/May/2016 23:44:56] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.222:47751 - - [31/May/2016 23:45:07] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:47751 - - [31/May/2016 23:45:07] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:44019 - - [31/May/2016 23:45:07] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:49697 - - [31/May/2016 23:46:02] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:49697 - - [31/May/2016 23:46:02] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:49697 - - [31/May/2016 23:46:02] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.222:49047 - - [31/May/2016 23:46:04] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:49047 - - [31/May/2016 23:46:04] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:50142 - - [31/May/2016 23:46:04] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:63446 - - [31/May/2016 23:48:20] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:63446 - - [31/May/2016 23:48:20] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:63446 - - [31/May/2016 23:48:20] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:63446 - - [31/May/2016 23:48:25] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:63446 - - [31/May/2016 23:48:25] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:43089 - - [31/May/2016 23:48:25] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.222:48822 - - [31/May/2016 23:48:27] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:48822 - - [31/May/2016 23:48:27] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:35791 - - [31/May/2016 23:48:27] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.222:43400 - - [31/May/2016 23:50:35] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:43400 - - [31/May/2016 23:50:35] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:50179 - - [31/May/2016 23:50:35] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:37544 - - [31/May/2016 23:50:40] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:37544 - - [31/May/2016 23:50:40] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:37544 - - [31/May/2016 23:50:40] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:37544 - - [31/May/2016 23:50:40] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:37544 - - [31/May/2016 23:50:41] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:54696 - - [31/May/2016 23:50:41] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:37544 - - [31/May/2016 23:50:43] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:37544 - - [31/May/2016 23:50:43] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:54696 - - [31/May/2016 23:50:43] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:37544 - - [31/May/2016 23:50:46] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:37544 - - [31/May/2016 23:50:46] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:54696 - - [31/May/2016 23:50:46] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:55202 - - [31/May/2016 23:54:39] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:55202 - - [31/May/2016 23:54:39] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:42645 - - [31/May/2016 23:55:09] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:42645 - - [31/May/2016 23:55:09] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:42645 - - [31/May/2016 23:55:09] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:42645 - - [31/May/2016 23:55:10] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:42645 - - [31/May/2016 23:55:10] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:53140 - - [31/May/2016 23:55:10] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:42645 - - [31/May/2016 23:55:10] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:42645 - - [31/May/2016 23:55:10] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:53140 - - [31/May/2016 23:55:10] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:33463 - - [31/May/2016 23:55:32] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:33463 - - [31/May/2016 23:55:32] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:33463 - - [31/May/2016 23:55:33] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:33463 - - [31/May/2016 23:55:33] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:33463 - - [31/May/2016 23:55:33] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:34613 - - [31/May/2016 23:55:33] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:33463 - - [31/May/2016 23:55:42] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:33463 - - [31/May/2016 23:55:42] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:34613 - - [31/May/2016 23:55:42] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:40641 - - [31/May/2016 23:56:11] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:40641 - - [31/May/2016 23:56:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:40641 - - [31/May/2016 23:56:11] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43128 - - [31/May/2016 23:57:02] "HTTP/1.1 GET /www.csdate.me/login" - 404 Not Found
+207.62.170.211:44609 - - [31/May/2016 23:57:28] "HTTP/1.1 GET /www.csdate.me/login" - 404 Not Found
+207.62.170.211:44609 - - [31/May/2016 23:57:34] "HTTP/1.1 GET /" - 200 OK
+207.62.170.211:44609 - - [31/May/2016 23:57:34] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:44609 - - [31/May/2016 23:57:36] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:61724 - - [31/May/2016 23:57:37] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.211:61724 - - [31/May/2016 23:57:37] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:61724 - - [31/May/2016 23:57:37] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:61724 - - [31/May/2016 23:57:37] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.222:57777 - - [31/May/2016 23:57:56] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:57777 - - [31/May/2016 23:57:56] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:47379 - - [31/May/2016 23:57:56] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:56469 - - [31/May/2016 23:58:37] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:56469 - - [31/May/2016 23:58:37] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:56469 - - [31/May/2016 23:58:37] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:43370 - - [31/May/2016 23:59:57] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:43370 - - [31/May/2016 23:59:57] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:43370 - - [31/May/2016 23:59:57] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:53411 - - [01/Jun/2016 00:03:05] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:53411 - - [01/Jun/2016 00:03:05] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:53411 - - [01/Jun/2016 00:03:06] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:53411 - - [01/Jun/2016 00:03:11] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:53411 - - [01/Jun/2016 00:03:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:40713 - - [01/Jun/2016 00:04:26] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:40713 - - [01/Jun/2016 00:04:26] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:40713 - - [01/Jun/2016 00:04:27] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:40713 - - [01/Jun/2016 00:04:27] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.211:40713 - - [01/Jun/2016 00:04:28] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:36346 - - [01/Jun/2016 00:04:28] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:40713 - - [01/Jun/2016 00:04:30] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:40713 - - [01/Jun/2016 00:04:31] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:41373 - - [01/Jun/2016 00:05:29] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:41373 - - [01/Jun/2016 00:05:29] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:47304 - - [01/Jun/2016 00:05:29] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:41373 - - [01/Jun/2016 00:05:32] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:41373 - - [01/Jun/2016 00:05:32] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:47304 - - [01/Jun/2016 00:05:32] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:49272 - - [01/Jun/2016 00:06:11] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:49272 - - [01/Jun/2016 00:06:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:58884 - - [01/Jun/2016 00:06:11] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:49272 - - [01/Jun/2016 00:06:12] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:49272 - - [01/Jun/2016 00:06:12] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:58884 - - [01/Jun/2016 00:06:12] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:49272 - - [01/Jun/2016 00:06:13] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:49272 - - [01/Jun/2016 00:06:13] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:58884 - - [01/Jun/2016 00:06:13] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:33199 - - [01/Jun/2016 00:07:09] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:33199 - - [01/Jun/2016 00:07:09] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.211:33199 - - [01/Jun/2016 00:07:09] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:35141 - - [01/Jun/2016 00:07:31] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.211:35141 - - [01/Jun/2016 00:07:31] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:35141 - - [01/Jun/2016 00:07:31] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:34962 - - [01/Jun/2016 00:39:40] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:34962 - - [01/Jun/2016 00:39:41] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:34962 - - [01/Jun/2016 00:39:41] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:34962 - - [01/Jun/2016 00:39:41] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:34962 - - [01/Jun/2016 00:39:45] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.221:34962 - - [01/Jun/2016 00:39:45] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.222:60934 - - [01/Jun/2016 00:48:07] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:60934 - - [01/Jun/2016 00:48:07] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.222:33392 - - [01/Jun/2016 00:48:07] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+66.249.66.131:41251 - - [01/Jun/2016 02:06:17] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+66.249.66.189:43065 - - [01/Jun/2016 02:06:26] "HTTP/1.1 GET /static/main.css" - 200 
+129.65.206.249:55918 - - [01/Jun/2016 02:19:35] "HTTP/1.1 POST /signup" - 200 OK
+129.65.206.249:55918 - - [01/Jun/2016 02:19:35] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+129.65.206.249:55919 - - [01/Jun/2016 02:19:36] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+129.65.206.249:55918 - - [01/Jun/2016 02:19:42] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.216:45827 - - [01/Jun/2016 02:29:45] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:45827 - - [01/Jun/2016 02:29:45] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:45827 - - [01/Jun/2016 02:29:48] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.216:45827 - - [01/Jun/2016 02:29:48] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.216:38312 - - [01/Jun/2016 02:29:52] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:38312 - - [01/Jun/2016 02:29:52] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:38312 - - [01/Jun/2016 02:29:52] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.216:49432 - - [01/Jun/2016 02:30:04] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:49432 - - [01/Jun/2016 02:30:10] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:49432 - - [01/Jun/2016 02:30:10] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.216:49432 - - [01/Jun/2016 02:30:14] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.222:44138 - - [01/Jun/2016 03:55:10] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:38295 - - [01/Jun/2016 03:55:10] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.222:38295 - - [01/Jun/2016 03:55:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.222:48500 - - [01/Jun/2016 03:55:11] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.222:53337 - - [01/Jun/2016 03:55:20] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.222:53337 - - [01/Jun/2016 03:55:20] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:39506 - - [01/Jun/2016 04:56:24] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:39506 - - [01/Jun/2016 04:56:24] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:47457 - - [01/Jun/2016 04:56:35] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.216:47457 - - [01/Jun/2016 04:56:35] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:32416 - - [01/Jun/2016 04:56:58] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:32416 - - [01/Jun/2016 04:56:58] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:32416 - - [01/Jun/2016 04:56:58] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:32416 - - [01/Jun/2016 04:57:00] "HTTP/1.1 GET /signup" - 200 OK
+207.62.170.221:32416 - - [01/Jun/2016 04:57:00] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:62328 - - [01/Jun/2016 04:57:19] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.216:60210 - - [01/Jun/2016 04:57:30] "HTTP/1.1 POST /signup" - 200 OK
+207.62.170.216:41343 - - [01/Jun/2016 04:57:50] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:41343 - - [01/Jun/2016 04:57:52] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:41343 - - [01/Jun/2016 04:57:59] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:41343 - - [01/Jun/2016 04:57:59] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:35605 - - [01/Jun/2016 04:58:09] "HTTP/1.1 GET /search" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 23, in GET
+    return render.index(i.name)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 881, in __call__
+    return BaseTemplate.__call__(self, *a, **kw)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 808, in __call__
+    return self.t(*a, **kw)
+TypeError: __template__() takes no arguments (1 given)
+
+207.62.170.216:46265 - - [01/Jun/2016 05:12:56] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 27, in GET
+    return render.signup()
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 1017, in __getattr__
+    t = self._template(name)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 1014, in _template
+    return self._load_template(name)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 1001, in _load_template
+    raise AttributeError, "No template named " + name
+AttributeError: No template named signup
+
+207.62.170.216:46996 - - [01/Jun/2016 05:14:02] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 26, in GET
+    return render.signup()
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 1017, in __getattr__
+    t = self._template(name)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 1014, in _template
+    return self._load_template(name)
+  File "/usr/local/lib/python2.7/site-packages/web/template.py", line 1001, in _load_template
+    raise AttributeError, "No template named " + name
+AttributeError: No template named signup
+
+207.62.170.216:49013 - - [01/Jun/2016 05:14:14] "HTTP/1.1 GET /" - 500 Internal Server Error
+207.62.170.216:52270 - - [01/Jun/2016 05:14:32] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:52270 - - [01/Jun/2016 05:14:32] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:49310 - - [01/Jun/2016 05:14:32] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:52344 - - [01/Jun/2016 05:14:35] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:52344 - - [01/Jun/2016 05:14:35] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:35749 - - [01/Jun/2016 05:14:47] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:35749 - - [01/Jun/2016 05:14:47] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:53988 - - [01/Jun/2016 05:16:04] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:53988 - - [01/Jun/2016 05:16:04] "HTTP/1.1 GET /static/main.css" - 304 Not Modified

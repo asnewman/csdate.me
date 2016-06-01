@@ -6,24 +6,24 @@ render = web.template.render('templates/')
 # All urls
 urls = (
     '/', 'index',
-    '/signup', 'signup',
     '/login', 'login',
     '/loginFailed', 'login',
     '/questions', 'questions',
-    '/main', 'main'
+    '/main', 'main',
+    '/search', 'search'
 )
 
 # Initializing database connector
 DB = Database()
 
-class index:
-    def GET(self):
-        i = web.input(name=None)
-        return render.index(i.name)
+#class index:
+#    def GET(self):
+#        i = web.input(name=None)
+#        return render.index(i.name)
 
-class signup:
+class index:
     def GET(SELF):
-        return render.signup()
+        return render.index()
     def POST(self):
         i = web.input()
         check = DB.addUserCheck(i.username, i.email)
@@ -58,10 +58,15 @@ class questions:
    def GET(self):
       i = web.input(firstName=None)
       if(i.firstName==None):
-        return render.questions(None)
+        return render.questions()
       else:
         results = DB.add_user_questions(i.firstName, i.middleName, i.lastName, i.email, i.gender, i.state, i.city, i.birthday, i.favoriteOS)
-        return render.questions(results) 
+        return render.questions() 
+
+# Searching other users page.
+class search:
+  def GET(self):
+    return render.search()
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

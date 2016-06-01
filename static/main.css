@@ -25,7 +25,7 @@ html, body {
 }
 
 .block img {
-	max-height: 100%
+	max-height: 100%;
 	max-width: 100%;
 	width: auto;
 	height: auto;
@@ -37,6 +37,18 @@ html, body {
 	margin:auto;
 }
 
+.searchButton {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.searchButton button {
+	width:80px;
+	position:relative;
+	left:50%;
+	transform: translate(-40px,0px);
+}
+
 .whitelogo img {
 	height:100%;
 }
@@ -46,8 +58,20 @@ html, body {
    height: 100%;
 }
 .loginPanel {
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 400px;
+}
+
+@media only screen  
+and (max-device-width : 800px) {
+   .loginPanel {
+      width: 50%;
+   }
+}
+
+.logo img {
+   width: 100%;
 }
