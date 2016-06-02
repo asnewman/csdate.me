@@ -1,16 +1,40 @@
 <!DOCTYPE html>
+<!-- Author: Ashley -->
 <html>
 <head>
-   <title>CSDate.me</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="static/main.css">
+   <title>Sign Up</title>
 </head>
 <body>
-   <form method="POST">
-      Username: 
-         <input type="text" name="username"><br>
-      Password:
-         <input type="password" name="password"><br>
-         <button type="submit">Sign in</button><br>
-   </form>
+	<div class="col-xs-12">
+      <a class="btn btn-success pull-right" href="http://www.csdate.me/" role="button">Register</a>
+   </div>
+   <div class="container loginContainer col-xs-12 input">
+      <div class="loginPanel">
+         <div class="logo col-xs-12">
+            <img src="static/images/logo-black.png" alt="logo">
+         </div>
+         <form method="POST" class="form-horizontal">
+            <div class="row">
+               <div class="col-xs-12">
+                  <input type="text" name="username" class="form-control" placeholder="Username" required>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xs-12">
+                  <input type="password" class="form-control" name="password" placeholder="Password" required>
+               </div>
+            </div>
+            <div class="form-group">
+               <div class="col-xs-12">
+                  <button type="submit" value="Submit" class="btn btn-default pull-right">Log in</button>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

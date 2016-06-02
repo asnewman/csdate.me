@@ -1,4 +1,6 @@
 from queries import *
+import random
+import bcrypt
 
 # html templates
 render = web.template.render('templates/')
@@ -10,7 +12,9 @@ urls = (
     '/loginFailed', 'login',
     '/questions', 'questions',
     '/main', 'main',
-    '/search', 'search'
+    '/search', 'search',
+    '/test', 'test',
+    '/logout', 'logout'
 )
 
 # Initializing database connector
@@ -39,6 +43,7 @@ class login:
       i = web.input()
       auth = DB.authCheck(i.username, i.password)
       if auth == True:
+         tokenSet(i.username)
          return render.main()
       else:
          # Direct to failed login page
@@ -64,10 +69,23 @@ class search:
   def GET(self):
     return render.search()
 
-def tokenSet(self, userId):
+# Testing Hashing here
+class test:
+    def GET(self):
+        return render.test()
+
+class logout:
+   def GET(self):
+      token = web.cookies().token
+      DB.removeToken(token)
+      return render.logout()
+
+def tokenSet(username):
     r = random.randint(0, 2147483647)
-    token = bcrypt.hashpw(r, bcrypt.gensalt())
-    validToken = db.addToken(userId, token)
+    rString = str(r)
+    token = bcrypt.hashpw(rString, bcrypt.gensalt())
+    validToken = DB.addToken(username, token)
+    validToken.replace("'","")
     web.setcookie('token', validToken, domain="csdate.me", secure=False)
 
 if __name__ == "__main__":

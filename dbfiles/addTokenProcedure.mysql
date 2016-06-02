@@ -1,0 +1,39 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS addToken$$
+
+CREATE PROCEDURE addToken(IN user VARCHAR(16), IN tok VARCHAR(128))
+
+BEGIN
+
+IF EXISTS
+   (
+   SELECT token
+   FROM Users
+   WHERE username = user AND
+      (TIMESTAMP(NOW()) BETWEEN tokenTime AND TIMESTAMPADD(HOUR, 2, tokenTime))
+   ) THEN
+   SELECT token FROM Users WHERE username = user;
+
+ELSE
+
+START TRANSACTION;
+
+   UPDATE Users
+   SET
+      token = tok,
+      tokenTime = CURRENT_TIMESTAMP()
+   WHERE
+      username = user;
+
+   SELECT token
+      FROM Users
+      WHERE
+         username = user;
+COMMIT;
+
+END IF;
+
+END$$
+
+DELIMITER ;
