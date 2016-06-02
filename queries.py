@@ -34,7 +34,7 @@ class Database:
    # Query to add a user to the database. Returns a list of users.
    def addUser(self, name, email, password):
       self.cur.execute("START TRANSACTION;")
-      cmd = "INSERT INTO Users VALUES (NULL, '" + name + "', '" + email + "', '" + password + "', NULL, CURRENT_TIMESTAMP());"
+      cmd = "INSERT INTO Users VALUES (NULL, '" + name + "', '" + password + "', '" + email + "', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);"
       self.cur.execute(cmd)
       self.cur.execute("COMMIT;")
       self.cur.execute("SELECT * FROM Users;")
@@ -75,5 +75,7 @@ class Database:
 
    # Remove token on logout
    def removeToken(self, token):
+      self.cur.execute("START TRANSACTION;")
       self.cur.execute("UPDATE Users SET tokenTime = NULL WHERE token = '" + token + "';")
+      self.cur.execute("COMMIT;")
       return

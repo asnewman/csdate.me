@@ -1,16 +1,17 @@
 <!DOCTYPE html>
    <head>
       <title> HASH PASSWORD </title>
-      <script src = "sha3.js"></script>
+      <script src = "static/sha3.js"></script>
       <body>
          <input type = "text" id ="pw"/>
          <button id = "hashPW" onclick="hashPW()"> Hash Password </button>
-         <div id="hashedPW"> blah </div>
+<input type="password" class="form-control" id = "paw" name="password" placeholder="Password" required>
          <script>
             function hashPW() {
                var password = document.getElementById("pw").value;
-               var hash = CryptoJS.SHA3(password);
-               document.getElementById("hashedPW").innerHTML = "fafkasdkas";
+               var text = "zzzzzzzzzzzz" + password;
+               var hash = CryptoJS.SHA3(text);
+               document.getElementById("paw").value = hash;
             }
          </script>
 
@@ -18,10 +19,10 @@
 
 <button onclick="myFunction()">Try it</button>
 
-<script src = "sha3.js">>
+<script>
 function myFunction() {
     var password = "dsadsa";
-    var test = CryptoJS.sha3("asdsdsa");
+    var test = CryptoJS.SHA3("asdsdsa");
 alert(test.toString());
     document.getElementById("hashedPW").innerHTML = test.toString();
 }

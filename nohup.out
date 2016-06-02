@@ -3737,3 +3737,584 @@ AttributeError: 'NoneType' object has no attribute 'replace'
 207.62.170.222:39824 - - [02/Jun/2016 05:27:12] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
 207.62.170.222:58460 - - [02/Jun/2016 05:27:23] "HTTP/1.1 POST /" - 200 OK
 207.62.170.222:58460 - - [02/Jun/2016 05:27:23] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+66.249.69.201:49659 - - [02/Jun/2016 05:28:20] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+66.249.69.196:49963 - - [02/Jun/2016 05:28:20] "HTTP/1.1 GET /login" - 200 OK
+66.249.69.201:49659 - - [02/Jun/2016 05:28:25] "HTTP/1.1 GET /static/main.css" - 200 
+66.249.69.196:34919 - - [02/Jun/2016 05:30:48] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:47649 - - [02/Jun/2016 05:34:17] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:45051 - - [02/Jun/2016 05:34:19] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:45051 - - [02/Jun/2016 05:34:19] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:45051 - - [02/Jun/2016 05:34:25] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:59543 - - [02/Jun/2016 05:35:50] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:59543 - - [02/Jun/2016 05:35:53] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:59543 - - [02/Jun/2016 05:35:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:47797 - - [02/Jun/2016 05:35:53] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:50026 - - [02/Jun/2016 05:37:19] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:50026 - - [02/Jun/2016 05:37:19] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:50026 - - [02/Jun/2016 05:37:19] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:57101 - - [02/Jun/2016 05:37:19] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:52743 - - [02/Jun/2016 05:37:44] "HTTP/1.1 GET /test" - 200 OK
+207.62.170.216:52743 - - [02/Jun/2016 05:37:44] "HTTP/1.1 GET /sha3.js" - 404 Not Found
+207.62.170.221:42903 - - [02/Jun/2016 05:38:08] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:42903 - - [02/Jun/2016 05:38:08] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:49981 - - [02/Jun/2016 05:38:08] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:42903 - - [02/Jun/2016 05:38:09] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.221:54194 - - [02/Jun/2016 05:38:09] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:42903 - - [02/Jun/2016 05:38:12] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:42903 - - [02/Jun/2016 05:38:15] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:63007 - - [02/Jun/2016 05:38:55] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:63007 - - [02/Jun/2016 05:38:56] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:63007 - - [02/Jun/2016 05:38:56] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:48681 - - [02/Jun/2016 05:38:56] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:48681 - - [02/Jun/2016 05:39:02] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:54252 - - [02/Jun/2016 05:39:59] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:54252 - - [02/Jun/2016 05:39:59] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:54252 - - [02/Jun/2016 05:39:59] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:54252 - - [02/Jun/2016 05:40:02] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:54252 - - [02/Jun/2016 05:40:03] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:54252 - - [02/Jun/2016 05:40:10] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:37146 - - [02/Jun/2016 05:40:53] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:37146 - - [02/Jun/2016 05:40:53] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:32304 - - [02/Jun/2016 05:43:00] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:32304 - - [02/Jun/2016 05:43:00] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:37614 - - [02/Jun/2016 05:43:00] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:47830 - - [02/Jun/2016 05:43:00] "HTTP/1.1 GET /common.js" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.221:41579 - - [02/Jun/2016 05:43:07] "HTTP/1.1 POST /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.221:41579 - - [02/Jun/2016 05:43:17] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:58313 - - [02/Jun/2016 05:45:49] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:58313 - - [02/Jun/2016 05:45:54] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:58313 - - [02/Jun/2016 05:45:58] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:34880 - - [02/Jun/2016 05:46:31] "HTTP/1.1 GET /test" - 200 OK
+207.62.170.216:34880 - - [02/Jun/2016 05:46:31] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:34880 - - [02/Jun/2016 05:46:32] "HTTP/1.1 GET /test" - 200 OK
+207.62.170.216:34880 - - [02/Jun/2016 05:46:32] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.216:47506 - - [02/Jun/2016 05:46:51] "HTTP/1.1 GET /test" - 200 OK
+207.62.170.216:47506 - - [02/Jun/2016 05:46:51] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+52.71.155.178:1740 - - [02/Jun/2016 05:47:18] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+52.71.155.178:45166 - - [02/Jun/2016 05:47:19] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:56025 - - [02/Jun/2016 05:47:46] "HTTP/1.1 GET /test" - 200 OK
+207.62.170.216:56025 - - [02/Jun/2016 05:47:46] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.216:38434 - - [02/Jun/2016 05:55:22] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:38434 - - [02/Jun/2016 05:55:22] "HTTP/1.1 GET /static/" - 200 
+207.62.170.216:57455 - - [02/Jun/2016 05:55:22] "HTTP/1.1 GET /common.js" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 28, in POST
+    check = DB.addUserCheck(i.username, i.email)
+  File "/home/shared/csdate.me/queries.py", line 47, in addUserCheck
+    self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+207.62.170.216:46949 - - [02/Jun/2016 05:56:00] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:46949 - - [02/Jun/2016 05:56:06] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:46949 - - [02/Jun/2016 05:56:06] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:38549 - - [02/Jun/2016 05:56:06] "HTTP/1.1 GET /common.js" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 28, in POST
+    check = DB.addUserCheck(i.username, i.email)
+  File "/home/shared/csdate.me/queries.py", line 47, in addUserCheck
+    self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+207.62.170.216:38549 - - [02/Jun/2016 05:56:13] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:58112 - - [02/Jun/2016 05:57:30] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:58112 - - [02/Jun/2016 05:57:31] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:44521 - - [02/Jun/2016 05:57:31] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:37268 - - [02/Jun/2016 06:01:15] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:37268 - - [02/Jun/2016 06:01:15] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:41986 - - [02/Jun/2016 06:01:15] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:37268 - - [02/Jun/2016 06:01:15] "HTTP/1.1 GET /common.js" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:37268 - - [02/Jun/2016 06:01:24] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:48161 - - [02/Jun/2016 06:06:12] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:48161 - - [02/Jun/2016 06:06:13] "HTTP/1.1 GET /static/" - 200 
+207.62.170.216:38119 - - [02/Jun/2016 06:06:13] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:38119 - - [02/Jun/2016 06:06:13] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:48161 - - [02/Jun/2016 06:06:13] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:61380 - - [02/Jun/2016 06:06:43] "HTTP/1.1 POST /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:50381 - - [02/Jun/2016 06:07:20] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:50381 - - [02/Jun/2016 06:07:25] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:50381 - - [02/Jun/2016 06:07:25] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:50381 - - [02/Jun/2016 06:07:25] "HTTP/1.1 GET /common.js" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:50381 - - [02/Jun/2016 06:07:33] "HTTP/1.1 POST /" - 500 Internal Server Error
+Exception KeyboardInterrupt in <module 'threading' from '/usr/lib64/python2.7/threading.pyc'> ignored
+207.62.170.221:43518 - - [02/Jun/2016 06:08:04] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:43518 - - [02/Jun/2016 06:08:04] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:35786 - - [02/Jun/2016 06:08:11] "HTTP/1.1 GET /test" - 200 OK
+207.62.170.221:57136 - - [02/Jun/2016 06:09:12] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:57136 - - [02/Jun/2016 06:09:12] "HTTP/1.1 GET /static/" - 200 
+207.62.170.221:36856 - - [02/Jun/2016 06:09:12] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:59901 - - [02/Jun/2016 06:09:12] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:37124 - - [02/Jun/2016 06:09:26] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:46998 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:46998 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:34467 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.221:55660 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:39427 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:39427 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.221:54368 - - [02/Jun/2016 06:09:43] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:34439 - - [02/Jun/2016 06:09:56] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:34439 - - [02/Jun/2016 06:09:56] "HTTP/1.1 GET /static/" - 200 
+207.62.170.216:34439 - - [02/Jun/2016 06:09:56] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:52043 - - [02/Jun/2016 06:09:56] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:45164 - - [02/Jun/2016 06:11:21] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:45164 - - [02/Jun/2016 06:11:21] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.221:53043 - - [02/Jun/2016 06:11:21] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:40072 - - [02/Jun/2016 06:11:21] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:45164 - - [02/Jun/2016 06:11:21] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:45164 - - [02/Jun/2016 06:11:23] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:45164 - - [02/Jun/2016 06:11:28] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:35509 - - [02/Jun/2016 06:11:39] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:35509 - - [02/Jun/2016 06:11:39] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:44697 - - [02/Jun/2016 06:11:39] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:46131 - - [02/Jun/2016 06:11:39] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:35509 - - [02/Jun/2016 06:11:39] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:42573 - - [02/Jun/2016 06:11:57] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:42573 - - [02/Jun/2016 06:11:57] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:37411 - - [02/Jun/2016 06:11:57] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:38306 - - [02/Jun/2016 06:12:14] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:32797 - - [02/Jun/2016 06:12:17] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:32797 - - [02/Jun/2016 06:12:17] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:32797 - - [02/Jun/2016 06:12:17] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.221:50303 - - [02/Jun/2016 06:12:59] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:45666 - - [02/Jun/2016 06:14:09] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:45666 - - [02/Jun/2016 06:14:17] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.221:43810 - - [02/Jun/2016 06:14:39] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:43810 - - [02/Jun/2016 06:14:40] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:35959 - - [02/Jun/2016 06:14:40] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:43810 - - [02/Jun/2016 06:14:41] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:35959 - - [02/Jun/2016 06:14:41] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.221:43810 - - [02/Jun/2016 06:14:41] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.221:43810 - - [02/Jun/2016 06:14:48] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:43810 - - [02/Jun/2016 06:14:51] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:43810 - - [02/Jun/2016 06:14:51] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.221:55011 - - [02/Jun/2016 06:14:51] "HTTP/1.1 GET /common.js" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:42370 - - [02/Jun/2016 06:16:22] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:39814 - - [02/Jun/2016 06:16:32] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:39814 - - [02/Jun/2016 06:16:32] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:39814 - - [02/Jun/2016 06:16:32] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:60153 - - [02/Jun/2016 06:16:43] "HTTP/1.1 POST /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:43628 - - [02/Jun/2016 06:17:03] "HTTP/1.1 POST /login" - 500 Internal Server Error
+201.172.101.126:51530 - - [02/Jun/2016 06:17:35] "HTTP/1.1 GET /hndUnblock.cgi" - 404 Not Found
+201.172.101.126:51531 - - [02/Jun/2016 06:17:36] "HTTP/1.1 GET /tmUnblock.cgi" - 404 Not Found
+207.62.170.216:54027 - - [02/Jun/2016 06:17:38] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:54027 - - [02/Jun/2016 06:17:38] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:35386 - - [02/Jun/2016 06:17:38] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:44995 - - [02/Jun/2016 06:17:41] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:35386 - - [02/Jun/2016 06:17:47] "HTTP/1.1 POST /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:45517 - - [02/Jun/2016 06:18:21] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:34852 - - [02/Jun/2016 06:18:39] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:34852 - - [02/Jun/2016 06:18:39] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:48576 - - [02/Jun/2016 06:18:39] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:54894 - - [02/Jun/2016 06:19:15] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:59019 - - [02/Jun/2016 06:19:56] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:59019 - - [02/Jun/2016 06:19:56] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:59019 - - [02/Jun/2016 06:19:56] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:41192 - - [02/Jun/2016 06:20:09] "HTTP/1.1 POST /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:33147 - - [02/Jun/2016 06:21:03] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:57968 - - [02/Jun/2016 06:21:08] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:57968 - - [02/Jun/2016 06:21:08] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:57968 - - [02/Jun/2016 06:21:08] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:33147 - - [02/Jun/2016 06:21:10] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:33147 - - [02/Jun/2016 06:21:16] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:47076 - - [02/Jun/2016 06:21:26] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:47076 - - [02/Jun/2016 06:21:26] "HTTP/1.1 GET /static/" - 304 Not Modified
+207.62.170.216:44756 - - [02/Jun/2016 06:21:26] "HTTP/1.1 GET /common.js" - 404 Not Found
+207.62.170.216:46479 - - [02/Jun/2016 06:21:52] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:46479 - - [02/Jun/2016 06:21:58] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:54862 - - [02/Jun/2016 06:22:15] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:54862 - - [02/Jun/2016 06:22:18] "HTTP/1.1 GET /login" - 200 OK
+http://0.0.0.0:80/
+207.62.170.216:53254 - - [02/Jun/2016 06:23:38] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:53254 - - [02/Jun/2016 06:23:39] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:45540 - - [02/Jun/2016 06:23:39] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 46, in POST
+    tokenSet(i.username)
+  File "/home/shared/csdate.me/code.py", line 88, in tokenSet
+    validToken.replace("'","")
+AttributeError: 'NoneType' object has no attribute 'replace'
+
+207.62.170.216:45540 - - [02/Jun/2016 06:23:43] "HTTP/1.1 POST /login" - 500 Internal Server Error
+http://0.0.0.0:80/
+207.62.170.221:60986 - - [02/Jun/2016 07:03:06] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:60986 - - [02/Jun/2016 07:03:06] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+/home/shared/csdate.me/queries.py:38: Warning: Data truncated for column 'username' at row 1
+  self.cur.execute(cmd)
+207.62.170.221:33810 - - [02/Jun/2016 07:03:08] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:33810 - - [02/Jun/2016 07:03:08] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:34157 - - [02/Jun/2016 07:03:08] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:48855 - - [02/Jun/2016 07:03:22] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:48855 - - [02/Jun/2016 07:03:22] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57506 - - [02/Jun/2016 07:03:55] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:57506 - - [02/Jun/2016 07:03:55] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57506 - - [02/Jun/2016 07:03:57] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:57506 - - [02/Jun/2016 07:03:57] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:60806 - - [02/Jun/2016 07:04:21] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:54637 - - [02/Jun/2016 07:07:12] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:59570 - - [02/Jun/2016 07:07:42] "HTTP/1.1 POST /" - 200 OK
+http://0.0.0.0:80/
+207.62.170.221:55786 - - [02/Jun/2016 07:08:10] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:51313 - - [02/Jun/2016 07:08:30] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:51313 - - [02/Jun/2016 07:08:31] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:47090 - - [02/Jun/2016 07:08:45] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.221:47090 - - [02/Jun/2016 07:08:45] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.221:52750 - - [02/Jun/2016 07:08:59] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:51065 - - [02/Jun/2016 07:09:57] "HTTP/1.1 GET /login" - 200 OK
+http://0.0.0.0:80/
+129.65.54.113:52033 - - [02/Jun/2016 20:33:47] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+129.65.54.113:52033 - - [02/Jun/2016 20:33:52] "HTTP/1.1 GET /" - 200 OK
+129.65.54.113:52033 - - [02/Jun/2016 20:33:53] "HTTP/1.1 GET /static/sha3.js" - 200 
+129.65.54.113:52046 - - [02/Jun/2016 20:33:53] "HTTP/1.1 GET /static/common.js" - 200 
+129.65.54.113:52033 - - [02/Jun/2016 20:33:53] "HTTP/1.1 GET /static/main.css" - 200 
+129.65.54.113:52033 - - [02/Jun/2016 20:33:53] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+129.65.54.113:52051 - - [02/Jun/2016 20:34:11] "HTTP/1.1 POST /" - 200 OK
+129.65.54.113:52051 - - [02/Jun/2016 20:34:17] "HTTP/1.1 GET /" - 200 OK
+129.65.54.113:52051 - - [02/Jun/2016 20:34:25] "HTTP/1.1 POST /" - 200 OK
+129.65.54.113:52051 - - [02/Jun/2016 20:34:30] "HTTP/1.1 GET /" - 200 OK
+129.65.54.113:52051 - - [02/Jun/2016 20:34:39] "HTTP/1.1 POST /" - 200 OK
+129.65.54.113:52074 - - [02/Jun/2016 20:35:11] "HTTP/1.1 GET /" - 200 OK
+129.65.54.113:52077 - - [02/Jun/2016 20:35:14] "HTTP/1.1 GET /login" - 200 OK
+129.65.54.113:52077 - - [02/Jun/2016 20:35:14] "HTTP/1.1 GET /static/main.css" - 200 
+129.65.54.113:52077 - - [02/Jun/2016 20:35:14] "HTTP/1.1 GET /static/sha3.js" - 200 
+129.65.54.113:52078 - - [02/Jun/2016 20:35:14] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+129.65.54.113:52078 - - [02/Jun/2016 20:35:14] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+129.65.54.113:52078 - - [02/Jun/2016 20:35:14] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+129.65.54.113:52078 - - [02/Jun/2016 20:35:19] "HTTP/1.1 POST /login" - 200 OK
+129.65.54.113:52078 - - [02/Jun/2016 20:35:19] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+129.65.54.113:52078 - - [02/Jun/2016 20:35:24] "HTTP/1.1 GET /search" - 200 OK
+129.65.54.113:52154 - - [02/Jun/2016 20:38:30] "HTTP/1.1 POST /login" - 301
+129.65.54.113:52154 - - [02/Jun/2016 20:38:30] "HTTP/1.1 GET /main" - 200 OK
+129.65.54.113:52154 - - [02/Jun/2016 20:38:30] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+129.65.54.113:52154 - - [02/Jun/2016 20:38:30] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+129.65.54.113:52154 - - [02/Jun/2016 20:38:34] "HTTP/1.1 GET /" - 200 OK
+129.65.54.113:52154 - - [02/Jun/2016 20:38:34] "HTTP/1.1 GET /static/common.js" - 200 
+129.65.54.113:52154 - - [02/Jun/2016 20:38:37] "HTTP/1.1 GET /login" - 200 OK
+129.65.54.113:52161 - - [02/Jun/2016 20:38:58] "HTTP/1.1 POST /login" - 301
+129.65.54.113:52161 - - [02/Jun/2016 20:38:58] "HTTP/1.1 GET /main" - 200 OK
+129.65.54.113:52161 - - [02/Jun/2016 20:39:01] "HTTP/1.1 GET /logout" - 200 OK
+129.65.54.113:52161 - - [02/Jun/2016 20:39:04] "HTTP/1.1 GET /login" - 200 OK
+129.65.54.113:52161 - - [02/Jun/2016 20:39:11] "HTTP/1.1 POST /login" - 301
+129.65.54.113:52161 - - [02/Jun/2016 20:39:11] "HTTP/1.1 GET /main" - 200 OK
+129.65.54.113:52178 - - [02/Jun/2016 20:40:11] "HTTP/1.1 GET /logout" - 200 OK
+129.65.54.113:52198 - - [02/Jun/2016 20:52:41] "HTTP/1.1 GET /login" - 200 OK
+129.65.54.113:52201 - - [02/Jun/2016 20:52:56] "HTTP/1.1 GET /main" - 200 OK
+129.65.155.71:56912 - - [02/Jun/2016 21:09:55] "HTTP/1.1 GET /" - 200 OK
+129.65.155.71:56912 - - [02/Jun/2016 21:09:55] "HTTP/1.1 GET /static/sha3.js" - 200 
+129.65.155.71:56912 - - [02/Jun/2016 21:09:55] "HTTP/1.1 GET /static/main.css" - 200 
+129.65.155.71:56913 - - [02/Jun/2016 21:09:55] "HTTP/1.1 GET /static/common.js" - 200 
+129.65.155.71:56912 - - [02/Jun/2016 21:09:55] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+129.65.155.71:56912 - - [02/Jun/2016 21:09:56] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+129.65.155.71:56913 - - [02/Jun/2016 21:09:56] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+129.65.155.71:56924 - - [02/Jun/2016 21:13:23] "HTTP/1.1 POST /" - 200 OK
+129.65.155.71:56924 - - [02/Jun/2016 21:13:25] "HTTP/1.1 GET /login" - 200 OK
+129.65.155.71:56931 - - [02/Jun/2016 21:14:23] "HTTP/1.1 POST /login" - 301
+129.65.155.71:56931 - - [02/Jun/2016 21:14:24] "HTTP/1.1 GET /main" - 200 OK
+129.65.155.71:56931 - - [02/Jun/2016 21:14:24] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+129.65.155.71:56931 - - [02/Jun/2016 21:14:30] "HTTP/1.1 GET /logout" - 200 OK
+129.65.155.71:56942 - - [02/Jun/2016 21:16:13] "HTTP/1.1 GET /main" - 200 OK
+129.65.155.71:56942 - - [02/Jun/2016 21:16:14] "HTTP/1.1 GET /logout" - 200 OK
+129.65.155.71:56948 - - [02/Jun/2016 21:18:10] "HTTP/1.1 GET /main" - 200 OK
+129.65.155.71:56949 - - [02/Jun/2016 21:18:36] "HTTP/1.1 GET /logout" - 200 OK
+129.65.155.71:56950 - - [02/Jun/2016 21:18:55] "HTTP/1.1 GET /login" - 200 OK
+129.65.155.71:56953 - - [02/Jun/2016 21:19:19] "HTTP/1.1 POST /login" - 301
+129.65.155.71:56953 - - [02/Jun/2016 21:19:19] "HTTP/1.1 GET /main" - 200 OK
+129.65.155.71:56953 - - [02/Jun/2016 21:19:27] "HTTP/1.1 GET /logout" - 200 OK
+207.62.155.127:50895 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /" - 200 OK
+207.62.155.127:50895 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.155.127:50897 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.155.127:50896 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified

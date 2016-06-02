@@ -11,6 +11,7 @@ IF EXISTS
    SELECT token
    FROM Users
    WHERE username = user AND
+      token IS NOT NULL AND 
       (TIMESTAMP(NOW()) BETWEEN tokenTime AND TIMESTAMPADD(HOUR, 2, tokenTime))
    ) THEN
    SELECT token FROM Users WHERE username = user;
@@ -25,12 +26,12 @@ START TRANSACTION;
       tokenTime = CURRENT_TIMESTAMP()
    WHERE
       username = user;
-
-   SELECT token
-      FROM Users
-      WHERE
-         username = user;
 COMMIT;
+
+SELECT token
+   FROM Users
+   WHERE
+      username = user;
 
 END IF;
 

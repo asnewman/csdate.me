@@ -44,7 +44,7 @@ class login:
       auth = DB.authCheck(i.username, i.password)
       if auth == True:
          tokenSet(i.username)
-         return render.main()
+         return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
       else:
          # Direct to failed login page
          return render.loginFailed()
@@ -53,6 +53,10 @@ class login:
 class main:
    def GET(self):
       return render.main()
+   def POST(self):
+      token = web.cookies().token
+      DB.removeToken(token)
+      return render.logout()
 
 # Page for getting questions from users
 class questions:

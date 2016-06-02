@@ -2,3 +2,4 @@
 
 -- Users
 source user-setup.sql
+source addTokenProcedure.sql 

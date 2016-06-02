@@ -9,52 +9,57 @@
       <div class="container">
       <body>
          <div class = "row">
+            <div class = "col-xs-12 logo">
+               <img src = "static/images/logo.png" alt = "logo.png">
+            </div>
             <form method="GET">
-               <div class="col-xs-3 names"> 
+
+               <div class="col-xs-4 names"> 
                   First Name
                </div>
-               <div class = "col-xs-9 names">
-                  <div class = "col-xs-3 names">
-                     <input type = "text" name = "firstName" required><br>
+
+               <div class = "col-xs-8 names">
+                  <div class = "col-xs-4 names">
+                     <input type = "text" name = "firstName" required><br><br>
                   </div>
                </div>
 
-               <div class = "col-xs-3 names">
-                  Middle Name (optional)
+               <div class = "col-xs-4 names">
+                  Middle Name
                </div>
-               <div class = "col-xs-9 names">
-                  <div class = "col-xs-3 names"> 
-                     <input type = "text" name = "middleName"><br>
+
+               <div class = "col-xs-8 names">
+                  <div class = "col-xs-4 names"> 
+                     <input type = "text" name = "middleName" placeholder = "Optional"><br><br>
                   </div>
                </div>
-               <div class = "col-xs-3 names">
+
+               <div class = "col-xs-4 names">
                   Last Name
                </div>
-               <div class = "col-xs-9 names">
-                  <div class = "col-xs-3 names">                
-                     <input type = "text" name = "lastName" required> <br>
+               <div class = "col-xs-8 names">
+                  <div class = "col-xs-4 names">                
+                     <input type = "text" name = "lastName" required> <br><br>
                   </div>
                </div>
          </div>
          
-         <div class = "col-xs-3 Gender">
+         <div class = "col-xs-4 Gender">
                Gender <br>
          </div>
-               <div class = "col-xs-9 Gender">
-                  <div class = "col-xs-3">
-                     <input type="radio" name="gender" value="male" checked> Male<br>
-                     <input type="radio" name="gender" value="female"> Female<br>
+               <div class = "col-xs-8 Gender">
+                     <input type="radio" name="gender" value="male" checked> Male <br>
+                     <input type="radio" name="gender" value="female"> Female <br>
                      <input type="radio" name="gender" value="other"> Other <br>
                      <input type="radio" name="gender" value="declined"> Declined to state <br>
                      <input type="radio" name="gender" value="transgender"> Transgender <br><br>
-                  </div>
                </div>
 
-         <div class = "col-xs-3 states">
+         <div class = "col-xs-4 states">
                <td> State: </td>
          </div>
-            <div class = "col-xs-9 states">
-               <div class = "col-xs-3 states">
+            <div class = "col-xs-8 states">
+               <div class = "col-xs-4 states">
                <td> <select name="state" required>
                   <option value = "Alabama">AL</option>
                   <option value = "Alaska">AK</option>
@@ -111,37 +116,38 @@
                </select>
             </div>
          </div>
+   
 
-
-         <div class = "col-xs-3 city">
-            City
+         <div class = "col-xs-4 city">
+           <br> City
          </div>
 
-         <div class = "col-xs-9 city">
-            <div class = "col-xs-3 city">
-               <input type = "text" name = "city" required> <br>
+         <div class = "col-xs-8 city">
+            <div class = "col-xs-4 city">
+               <br><input type = "text" name = "city" required> <br>
             </div>
          </div>
          <br>
 
-         <div class = "col-xs-3 birthday">
-            Birthday
+         <div class = "col-xs-4 birthday">
+            <br> Birthday
          </div>
 
-         <div class = "col-xs-9 birthday">
-               <div class = "col-xs-3 birthday">
-                   <input type = "date" name = "birthday" required> <br>
+         <div class = "col-xs-8 birthday">
+               <div class = "col-xs-4 birthday">
+                  <br> <input type = "date" name = "birthday" required> <br>
                </div>
          </div>
 
+         <br>
 
-         <div class = "col-xs-3 favoriteOs">
-            <td> Favorite OS: </td>
+         <div class = "col-xs-4 favoriteOs">
+            <td> <br> Favorite OS: </td>
          </div>
 
-         <div class = "col-xs-9 favoriteOs">
-            <div class = "col-xs-3 favoriteOs">            
-               <select name ="favoriteOS" required>
+         <div class = "col-xs-8 favoriteOs">
+            <div class = "col-xs-4 favoriteOs">            
+               <br> <select name ="favoriteOS" required>
                   <option value ="windows"> Windows </option>
                   <option value ="linux"> Linux </option>
                   <option value ="OS X"> OS X </option>
