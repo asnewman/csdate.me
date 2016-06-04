@@ -3,12 +3,15 @@
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="static/main.css">
+      <link rel="stylesheet" type="text/css" href="static/question.css">
       <title> Questions </title>
    </head>
       <div class="container">
       <body>
          <div class = "row">
+            <div>
+               <a class="btn btn-success pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
+            </div>
             <div class = "col-xs-12 logo">
                <img src = "static/images/logo.png" alt = "logo.png">
             </div>
@@ -19,7 +22,7 @@
                </div>
 
                <div class = "col-xs-8 names">
-                  <div class = "col-xs-4 names">
+                  <div class = "col-xs-4 blah">
                      <input type = "text" name = "firstName" required><br><br>
                   </div>
                </div>
@@ -29,7 +32,7 @@
                </div>
 
                <div class = "col-xs-8 names">
-                  <div class = "col-xs-4 names"> 
+                  <div class = "col-xs-4 blah"> 
                      <input type = "text" name = "middleName" placeholder = "Optional"><br><br>
                   </div>
                </div>
@@ -37,15 +40,15 @@
                <div class = "col-xs-4 names">
                   Last Name
                </div>
-               <div class = "col-xs-8 names">
-                  <div class = "col-xs-4 names">                
+               <div class = "col-xs-8 blah">
+                  <div class = "col-xs-4 blah">                
                      <input type = "text" name = "lastName" required> <br><br>
                   </div>
                </div>
          </div>
          
          <div class = "col-xs-4 Gender">
-               Gender <br>
+            Gender <br>
          </div>
                <div class = "col-xs-8 Gender">
                      <input type="radio" name="gender" value="male" checked> Male <br>
@@ -56,7 +59,7 @@
                </div>
 
          <div class = "col-xs-4 states">
-               <td> State: </td>
+               State
          </div>
             <div class = "col-xs-8 states">
                <div class = "col-xs-4 states">
@@ -117,6 +120,7 @@
             </div>
          </div>
    
+         <div class = "col-xs-12 filler"> </div>
 
          <div class = "col-xs-4 city">
            <br> City
@@ -127,7 +131,8 @@
                <br><input type = "text" name = "city" required> <br>
             </div>
          </div>
-         <br>
+         
+         <div class = "col-xs-12 filler"></div>
 
          <div class = "col-xs-4 birthday">
             <br> Birthday
@@ -139,10 +144,10 @@
                </div>
          </div>
 
-         <br>
+         <div class = "col-xs-12 filler"> </div>
 
          <div class = "col-xs-4 favoriteOs">
-            <td> <br> Favorite OS: </td>
+            <br> Favorite OS
          </div>
 
          <div class = "col-xs-8 favoriteOs">
@@ -151,34 +156,53 @@
                   <option value ="windows"> Windows </option>
                   <option value ="linux"> Linux </option>
                   <option value ="OS X"> OS X </option>
-               </select>
+               </select> <br>
             </div>
          </div>
 
-    <!--     <div>
-            <td> Smartphone OS: </td>
-            <select name = "phoneOS" required>
-               <option value = "android"> Android </option>
-               <option value = "ios"> iOS </option>
-               <option value = "windows"> Windows </option>
-               <option value = "n/a"> No smartphone </option>
-            </select>
+         <div class = "col-xs-12 filler"> </div>
+
+         <div class = "col-xs-4 smartphoneOs">
+            <br> Smartphone OS <br>
          </div> 
 
+         <div class = "col-xs-8 smartphoneOs">
+            <div class = "col-xs-4 smartphoneOs">
+               <br><select name = "phoneOS" required>
+                  <option value = "android"> Android </option>
+                  <option value = "ios"> iOS </option>
+                  <option value = "windows"> Windows </option>
+                  <option value = "n/a"> No smartphone </option>
+               </select>
+            </div>
+         </div> 
 
-         <div>
-            <td> Relationship Status: </td>
-               <select name = "relationship" required>
+         <div class = "col-xs-12 filler"> </div>
+
+         <div class = "col-xs-4 relationshipStatus">
+            <br> Relationship status <br>
+         </div>
+
+         <div class = "col-xs-8 relationshipStatus">
+            <div class = "col-xs-4 relationshipStatus">
+               <br> <select name = "relationship" required>
                   <option value = "single"> Single </option>
                   <option value = "taken"> In a relationship / Married </option>
                   <option value = "single"> What's a Relationship? </option>
                   <option value = "declined"> Declined to state </option>
                </select>
+            </div>
          </div>
 
-         <div>
-            <td> Favorite gaming system </td>
-               <select name = "gaming" required>
+         <div class = "col-xs-12 filler"> </div>
+
+         <div class = "col-xs-4 favoriteGamingSystem">
+            <br> Gaming preference <br>
+         </div>
+
+         <div class = "col-xs-8 favoriteGamingSystem">
+            <div class = "col-xs-4 relationshipStatus">
+             <br>  <select name = "gaming" required>
                   <option value = "pc"> PC </option>
                   <option value = "xbox"> Xbox </option>
                   <option value = "xbox 360"> Xbox 360 </option>
@@ -194,24 +218,100 @@
                   <option value = "oldschool"> Old school </option> 
                   <option value = "none"> I don't game </option>
                </select>
+            </div>
          </div>         
 
-         <div>
-            #1 Favorite Language <input type = "text" name = "favlanguage1" required><br>
-            #2 Favorite Language (optional) <input type = "text" name = "favlanguage2"><br>
-            #3 Favorite Language (optional) <input type = "text" name = "favlanguage3"><br>
+         <div class = "col-xs-12 filler"> </div>
+
+         <div class = "col-xs-4 favoritelanguage">
+           <br>  #1 Favorite Language 
          </div>
 
-         <div>
-            Favorite Hobbies (optional) <input type = "text" name = "favhobby1" > <br>
-            Favorite Hobbies (optional) <input type = "text" name = "favhobby2" > <br>
-            Favorite Hobbies (optional) <input type = "text" name = "favhobby3" > <br>
+         <div class = "col-xs-8 favoritelanguage">
+            <div class = "col-xs-4 favoritelanguage">
+               <br> <input type = "text" name = "favLang1" required><br>
+            </div>
          </div>
 
+         <div class = "col-xs-12 filler"></div>
 
-         <div>
+         <div class = "col-xs-4 favoritelanguage">
+           <br>  #2 Favorite Language 
+         </div>
+
+         <div class = "col-xs-8 favoritelanguage">
+            <div class = " col-xs-4 favoritelanguage">
+               <br> <input type = "text" name = "favLang2" placeholder = "Optional"><br>
+            </div>
+         </div>
+
+         <div class = "col-xs-12 filler"></div>
+
+         <div class = "col-xs-4 favoritelanguage">
+           <br>  #3 Favorite Language 
+         </div>
+
+         <div class = "col-xs-8 favoritelanguage">
+            <div class = " col-xs-4 favoritelanguage">
+               <br> <input type = "text" name = "favLang3" placeholder = "Optional"><br>
+            </div>
+         </div>
+
+         <div class = "col-xs-12 filler"></div>
+
+         <div class = "col-xs-4 favoritehobby">
+           <br> #1 Favorite Hobby (use one word verb)
+         </div>
+
+         <div class = "col-xs-8 favoritehobby">
+            <div class = " col-xs-4 favoritehobby">
+               <br> <input type = "text" name = "favHobby1" required><br>
+            </div>
+         </div>
+
+         <div class = "col-xs-12 filler"></div>
+
+         <div class = "col-xs-4 favoritehobby">
+           <br> #2 Favorite Hobby (use one word verb)
+         </div>
+
+         <div class = "col-xs-8 favoritehobby">
+            <div class = " col-xs-4 favoritehobby">
+               <br> <input type = "text" name = "favHobby2" placeholder = "Optional"><br>
+            </div>
+         </div>
+
+         <div class = "col-xs-12 filler"></div>
+
+         <div class = "col-xs-4 favoritehobby">
+           <br> #3 Favorite Hobby (use one word verb) 
+         </div>
+
+         <div class = "col-xs-8 favoritehobby">
+            <div class = "col-xs-4 favoritehobby">
+               <br> <input type = "text" name = "favHobby3" placeholder = "Optional"><br>
+            </div>
+         </div>
+
+         <div class = "col-xs-12 filler"></div>
+         
+         <div class = "col-xs-4 wpm">
+            <a href= "http://www.typingtest.com/test.html?minutes=1&textfile=aesop.txt"> <br>WPM (click for link) </a>
+         </div>
+
+         <div class = "col-xs-8 wpm">
+            <div class = "col-xs-4 wpm">
+               <br><input type = "number" name = "wpm" placeholder = "Be honest :)">
+            </div>
+         </div> 
+
+
+<!-- temp fix for submit location? -->      
+         <div class = "col-xs-5" > </div>
+
+         <div class = "col-xs-7 submit">
             <br> <input type="submit" name = "submit">
-         </div> -->
+         </div> 
          </form>
       </div>
    </body>

@@ -1,5 +1,5 @@
 -- BUILD EVERYTIHNG IN CSDATE.ME
 
 -- Users
-source user-setup.sql
+source csdateme-setup.sql
 source addTokenProcedure.sql 

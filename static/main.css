@@ -58,6 +58,8 @@ html, body {
    height: 90%;
 }
 .loginPanel {
+	padding: 10px;
+	background-color: white;
    position: absolute;
    top: 45%;
    left: 50%;

@@ -4318,3 +4318,2303 @@ http://0.0.0.0:80/
 207.62.155.127:50895 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
 207.62.155.127:50897 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
 207.62.155.127:50896 - - [02/Jun/2016 21:19:54] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+177.74.153.22:56723 - - [02/Jun/2016 21:54:46] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:38064 - - [02/Jun/2016 22:28:25] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:62996 - - [02/Jun/2016 22:28:37] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:61270 - - [02/Jun/2016 22:29:15] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:61270 - - [02/Jun/2016 22:29:23] "HTTP/1.1 POST /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 38, in addUser
+    self.cur.execute(cmd)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:48051 - - [02/Jun/2016 22:29:36] "HTTP/1.1 POST /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'csdateme.Questions' doesn't exist")
+
+207.62.170.216:50540 - - [02/Jun/2016 22:30:38] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:33121 - - [02/Jun/2016 22:35:21] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:33121 - - [02/Jun/2016 22:35:21] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:37594 - - [02/Jun/2016 22:35:21] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:37594 - - [02/Jun/2016 22:35:21] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.216:37594 - - [02/Jun/2016 22:35:21] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.216:37594 - - [02/Jun/2016 22:35:21] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/usr/local/lib/python2.7/site-packages/web/utils.py", line 76, in __getattr__
+    raise AttributeError, k
+AttributeError: 'password'
+
+207.62.170.216:38785 - - [02/Jun/2016 22:35:33] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:37617 - - [02/Jun/2016 22:37:33] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'csdateme.Questions' doesn't exist")
+
+207.62.170.216:58826 - - [02/Jun/2016 22:37:47] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.221:62013 - - [02/Jun/2016 22:42:25] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 28, in POST
+    check = DB.addUserCheck(i.username, i.email)
+  File "/home/shared/csdate.me/queries.py", line 49, in addUserCheck
+    self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+207.62.170.221:44417 - - [02/Jun/2016 22:42:39] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.221:47139 - - [02/Jun/2016 22:56:37] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:47139 - - [02/Jun/2016 22:56:37] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:47139 - - [02/Jun/2016 22:56:37] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:56375 - - [02/Jun/2016 22:57:29] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:56375 - - [02/Jun/2016 22:57:35] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:56375 - - [02/Jun/2016 22:57:35] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:37954 - - [02/Jun/2016 22:57:49] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:57263 - - [02/Jun/2016 22:58:04] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:57263 - - [02/Jun/2016 22:58:05] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:17] "HTTP/1.1 POST /login" - 301
+207.62.170.221:37004 - - [02/Jun/2016 22:58:17] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:23] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:25] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:31] "HTTP/1.1 POST /login" - 301
+207.62.170.221:37004 - - [02/Jun/2016 22:58:31] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:33] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:34] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:43] "HTTP/1.1 POST /login" - 301
+207.62.170.221:37004 - - [02/Jun/2016 22:58:43] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:46] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:37004 - - [02/Jun/2016 22:58:49] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:60686 - - [02/Jun/2016 22:59:14] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:60686 - - [02/Jun/2016 22:59:14] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.221:54983 - - [02/Jun/2016 22:59:15] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:40136 - - [02/Jun/2016 22:59:15] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:40136 - - [02/Jun/2016 22:59:15] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:40136 - - [02/Jun/2016 22:59:19] "HTTP/1.1 POST /login" - 301
+207.62.170.221:34751 - - [02/Jun/2016 22:59:19] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:34751 - - [02/Jun/2016 22:59:19] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:32794 - - [02/Jun/2016 22:59:19] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:32794 - - [02/Jun/2016 22:59:20] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:44014 - - [02/Jun/2016 22:59:31] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:44176 - - [02/Jun/2016 22:59:35] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:59139 - - [02/Jun/2016 22:59:36] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:59139 - - [02/Jun/2016 22:59:36] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.221:61188 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:51697 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /apple-touch-icon-precomposed.png" - 404 Not Found
+207.62.170.221:61751 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:51697 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /apple-touch-icon.png" - 404 Not Found
+207.62.170.221:61188 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:51697 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /apple-touch-icon-precomposed.png" - 404 Not Found
+207.62.170.221:51697 - - [02/Jun/2016 22:59:38] "HTTP/1.1 GET /apple-touch-icon.png" - 404 Not Found
+207.62.170.221:59139 - - [02/Jun/2016 22:59:43] "HTTP/1.1 POST /login" - 301
+207.62.170.221:59139 - - [02/Jun/2016 22:59:43] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:59139 - - [02/Jun/2016 22:59:43] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:54310 - - [02/Jun/2016 22:59:43] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:60411 - - [02/Jun/2016 23:00:47] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:60411 - - [02/Jun/2016 23:00:47] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:48826 - - [02/Jun/2016 23:00:47] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.221:60411 - - [02/Jun/2016 23:00:47] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.221:60411 - - [02/Jun/2016 23:00:47] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:60411 - - [02/Jun/2016 23:00:51] "HTTP/1.1 POST /login" - 301
+207.62.170.221:43494 - - [02/Jun/2016 23:00:51] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:43494 - - [02/Jun/2016 23:00:51] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:38957 - - [02/Jun/2016 23:00:51] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.221:38957 - - [02/Jun/2016 23:00:52] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:54388 - - [02/Jun/2016 23:01:52] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:54388 - - [02/Jun/2016 23:02:00] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:51657 - - [02/Jun/2016 23:04:10] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:35262 - - [02/Jun/2016 23:04:20] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:35262 - - [02/Jun/2016 23:04:20] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:39764 - - [02/Jun/2016 23:04:20] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.216:39764 - - [02/Jun/2016 23:04:20] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:57979 - - [02/Jun/2016 23:05:01] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:50948 - - [02/Jun/2016 23:08:56] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:50948 - - [02/Jun/2016 23:08:56] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.221:50527 - - [02/Jun/2016 23:12:56] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:34395 - - [02/Jun/2016 23:14:54] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:34395 - - [02/Jun/2016 23:14:54] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:33310 - - [02/Jun/2016 23:14:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:62537 - - [02/Jun/2016 23:14:54] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:34395 - - [02/Jun/2016 23:14:55] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 28, in POST
+    check = DB.addUserCheck(i.username, i.email)
+  File "/home/shared/csdate.me/queries.py", line 49, in addUserCheck
+    self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+207.62.170.221:34395 - - [02/Jun/2016 23:15:03] "HTTP/1.1 POST /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "code.py", line 21, in <module>
+    DB = Database()
+  File "/home/shared/csdate.me/queries.py", line 12, in __init__
+    db = "csdateme")
+  File "build/bdist.linux-x86_64/egg/MySQLdb/__init__.py", line 81, in Connect
+    
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 187, in __init__
+_mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+207.62.170.221:45909 - - [02/Jun/2016 23:17:44] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.221:49658 - - [02/Jun/2016 23:18:01] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.170.216:48908 - - [02/Jun/2016 23:18:52] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:48908 - - [02/Jun/2016 23:18:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:57094 - - [02/Jun/2016 23:18:53] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:34138 - - [02/Jun/2016 23:18:55] "HTTP/1.1 GET /" - 200 OK
+129.65.240.35:51871 - - [03/Jun/2016 00:49:09] "HTTP/1.1 GET /" - 200 OK
+129.65.240.35:51871 - - [03/Jun/2016 00:49:10] "HTTP/1.1 GET /static/sha3.js" - 200 
+129.65.240.35:51879 - - [03/Jun/2016 00:49:10] "HTTP/1.1 GET /static/main.css" - 200 
+129.65.240.35:51878 - - [03/Jun/2016 00:49:10] "HTTP/1.1 GET /static/common.js" - 200 
+129.65.240.35:51882 - - [03/Jun/2016 00:49:10] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+129.65.240.35:51892 - - [03/Jun/2016 00:49:59] "HTTP/1.1 POST /" - 500 Internal Server Error
+207.62.162.37:56635 - - [03/Jun/2016 01:05:37] "HTTP/1.1 GET /questions" - 200 OK
+207.62.162.37:56635 - - [03/Jun/2016 01:05:37] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.162.37:56635 - - [03/Jun/2016 01:05:37] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.162.37:56726 - - [03/Jun/2016 01:14:00] "HTTP/1.1 GET /questions" - 200 OK
+207.62.162.37:56726 - - [03/Jun/2016 01:14:00] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.162.37:56727 - - [03/Jun/2016 01:14:00] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+66.249.65.26:54501 - - [03/Jun/2016 02:10:07] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+66.249.65.18:63549 - - [03/Jun/2016 02:10:08] "HTTP/1.1 GET /login" - 200 OK
+66.249.65.16:38702 - - [03/Jun/2016 02:29:29] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+66.249.65.16:38702 - - [03/Jun/2016 02:29:29] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+66.249.65.22:37394 - - [03/Jun/2016 02:47:54] "HTTP/1.1 GET /static/sha3.js" - 200 
+66.249.65.18:40800 - - [03/Jun/2016 04:59:28] "HTTP/1.1 GET /" - 200 OK
+207.62.170.222:62970 - - [03/Jun/2016 05:02:39] "HTTP/1.1 GET /" - 200 OK
+207.62.170.222:62970 - - [03/Jun/2016 05:02:40] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.222:32337 - - [03/Jun/2016 05:02:40] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.222:49364 - - [03/Jun/2016 05:02:40] "HTTP/1.1 GET /static/common.js" - 200 
+66.249.65.22:50796 - - [03/Jun/2016 05:04:15] "HTTP/1.1 GET /static/common.js" - 200 
+120.132.50.135:59674 - - [03/Jun/2016 08:01:06] "HTTP/1.1 GET " - 404 Not Found
+62.82.9.210:51198 - - [03/Jun/2016 08:13:40] "HTTP/1.1 GET /" - 200 OK
+92.222.246.137:64016 - - [03/Jun/2016 08:15:23] "HTTP/1.1 GET /xmlrpc.php" - 404 Not Found
+207.62.170.216:35964 - - [03/Jun/2016 08:40:59] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:35964 - - [03/Jun/2016 08:40:59] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:44342 - - [03/Jun/2016 08:40:59] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:44342 - - [03/Jun/2016 08:40:59] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.216:44342 - - [03/Jun/2016 08:40:59] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.216:44342 - - [03/Jun/2016 08:41:05] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:44342 - - [03/Jun/2016 08:41:05] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.216:42476 - - [03/Jun/2016 09:30:43] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:42476 - - [03/Jun/2016 09:30:44] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:57447 - - [03/Jun/2016 09:30:44] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:46461 - - [03/Jun/2016 09:31:35] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:46461 - - [03/Jun/2016 09:31:35] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:35250 - - [03/Jun/2016 09:31:35] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:43020 - - [03/Jun/2016 09:31:51] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:43020 - - [03/Jun/2016 09:31:51] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:59301 - - [03/Jun/2016 09:31:51] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:58338 - - [03/Jun/2016 09:32:06] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:58338 - - [03/Jun/2016 09:32:07] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:55317 - - [03/Jun/2016 09:32:07] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:55317 - - [03/Jun/2016 09:32:15] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:58338 - - [03/Jun/2016 09:32:16] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:55317 - - [03/Jun/2016 09:32:16] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:55545 - - [03/Jun/2016 09:32:39] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:55545 - - [03/Jun/2016 09:32:39] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:54273 - - [03/Jun/2016 09:32:39] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:60427 - - [03/Jun/2016 09:32:58] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:60427 - - [03/Jun/2016 09:32:58] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:51125 - - [03/Jun/2016 09:32:58] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:33198 - - [03/Jun/2016 09:34:22] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:33198 - - [03/Jun/2016 09:34:22] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:37223 - - [03/Jun/2016 09:34:22] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+66.249.65.18:37390 - - [03/Jun/2016 09:42:36] "HTTP/1.1 GET /static/main.css" - 200 
+66.249.65.18:37390 - - [03/Jun/2016 09:42:37] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:43546 - - [03/Jun/2016 09:42:54] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:43546 - - [03/Jun/2016 09:42:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:52738 - - [03/Jun/2016 09:42:54] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:54435 - - [03/Jun/2016 09:45:23] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:54435 - - [03/Jun/2016 09:45:24] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:45337 - - [03/Jun/2016 09:45:24] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:54270 - - [03/Jun/2016 09:46:19] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:54270 - - [03/Jun/2016 09:46:20] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:52198 - - [03/Jun/2016 09:46:20] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:40561 - - [03/Jun/2016 09:46:30] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:40561 - - [03/Jun/2016 09:46:30] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:56356 - - [03/Jun/2016 09:46:30] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:56356 - - [03/Jun/2016 09:46:40] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:56356 - - [03/Jun/2016 09:46:40] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:56356 - - [03/Jun/2016 09:46:40] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:58448 - - [03/Jun/2016 09:46:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:58448 - - [03/Jun/2016 09:46:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:35211 - - [03/Jun/2016 09:46:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:48648 - - [03/Jun/2016 09:47:12] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:48648 - - [03/Jun/2016 09:47:12] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:48648 - - [03/Jun/2016 09:47:12] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.221:48648 - - [03/Jun/2016 09:47:12] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:45182 - - [03/Jun/2016 09:47:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:45182 - - [03/Jun/2016 09:47:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:45182 - - [03/Jun/2016 09:47:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:45182 - - [03/Jun/2016 09:48:00] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:34911 - - [03/Jun/2016 09:48:00] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:45182 - - [03/Jun/2016 09:48:00] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:45182 - - [03/Jun/2016 09:48:06] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:45182 - - [03/Jun/2016 09:48:06] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:34911 - - [03/Jun/2016 09:48:06] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:34911 - - [03/Jun/2016 09:48:15] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:45182 - - [03/Jun/2016 09:48:15] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:34911 - - [03/Jun/2016 09:48:15] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:58266 - - [03/Jun/2016 09:48:44] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:58266 - - [03/Jun/2016 09:48:44] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:58266 - - [03/Jun/2016 09:48:44] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:38217 - - [03/Jun/2016 09:49:08] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:38217 - - [03/Jun/2016 09:49:08] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:44630 - - [03/Jun/2016 09:49:08] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:34157 - - [03/Jun/2016 09:49:16] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:34157 - - [03/Jun/2016 09:49:16] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:50113 - - [03/Jun/2016 09:49:16] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:57125 - - [03/Jun/2016 09:49:51] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:57125 - - [03/Jun/2016 09:49:51] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57125 - - [03/Jun/2016 09:49:51] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:57125 - - [03/Jun/2016 09:49:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:63191 - - [03/Jun/2016 09:49:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:57125 - - [03/Jun/2016 09:49:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57125 - - [03/Jun/2016 09:49:58] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:57125 - - [03/Jun/2016 09:49:58] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:63191 - - [03/Jun/2016 09:49:58] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:63191 - - [03/Jun/2016 09:50:01] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:40178 - - [03/Jun/2016 09:50:21] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:40178 - - [03/Jun/2016 09:50:21] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:34157 - - [03/Jun/2016 09:50:21] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:34841 - - [03/Jun/2016 09:50:40] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:34841 - - [03/Jun/2016 09:50:40] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:34841 - - [03/Jun/2016 09:50:40] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:41596 - - [03/Jun/2016 09:51:21] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:41596 - - [03/Jun/2016 09:51:21] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:41596 - - [03/Jun/2016 09:51:21] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:46572 - - [03/Jun/2016 09:51:56] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:46572 - - [03/Jun/2016 09:51:56] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:38561 - - [03/Jun/2016 09:51:56] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:50250 - - [03/Jun/2016 09:52:20] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:50250 - - [03/Jun/2016 09:52:20] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:50250 - - [03/Jun/2016 09:52:20] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:37384 - - [03/Jun/2016 09:53:22] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:37384 - - [03/Jun/2016 09:53:22] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:37384 - - [03/Jun/2016 09:53:22] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:41881 - - [03/Jun/2016 09:54:07] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:41881 - - [03/Jun/2016 09:54:07] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:41881 - - [03/Jun/2016 09:54:07] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:51520 - - [03/Jun/2016 09:54:43] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:51520 - - [03/Jun/2016 09:54:44] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:51520 - - [03/Jun/2016 09:54:44] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:51520 - - [03/Jun/2016 09:54:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:48236 - - [03/Jun/2016 09:54:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:51520 - - [03/Jun/2016 09:54:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:51520 - - [03/Jun/2016 09:55:01] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:48236 - - [03/Jun/2016 09:55:01] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:51520 - - [03/Jun/2016 09:55:01] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:59120 - - [03/Jun/2016 09:56:20] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:59120 - - [03/Jun/2016 09:56:20] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:59120 - - [03/Jun/2016 09:56:20] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:58480 - - [03/Jun/2016 09:56:32] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:58480 - - [03/Jun/2016 09:56:32] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:58480 - - [03/Jun/2016 09:56:33] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:32529 - - [03/Jun/2016 09:56:52] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:32529 - - [03/Jun/2016 09:56:52] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:32529 - - [03/Jun/2016 09:56:52] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:58143 - - [03/Jun/2016 09:57:32] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:58143 - - [03/Jun/2016 09:57:32] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:58143 - - [03/Jun/2016 09:57:32] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:47858 - - [03/Jun/2016 09:58:26] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:47858 - - [03/Jun/2016 09:58:26] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:47858 - - [03/Jun/2016 09:58:26] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+66.249.65.16:56544 - - [03/Jun/2016 09:59:29] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:36813 - - [03/Jun/2016 10:01:11] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:36813 - - [03/Jun/2016 10:01:11] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:36813 - - [03/Jun/2016 10:01:11] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:45734 - - [03/Jun/2016 10:01:30] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:45734 - - [03/Jun/2016 10:01:30] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:45734 - - [03/Jun/2016 10:01:31] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:45734 - - [03/Jun/2016 10:01:39] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:49541 - - [03/Jun/2016 10:01:39] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:45734 - - [03/Jun/2016 10:01:39] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:40011 - - [03/Jun/2016 10:02:34] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:40011 - - [03/Jun/2016 10:02:34] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:40011 - - [03/Jun/2016 10:02:35] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:60367 - - [03/Jun/2016 10:03:03] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:60367 - - [03/Jun/2016 10:03:03] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:60367 - - [03/Jun/2016 10:03:03] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:36949 - - [03/Jun/2016 10:03:34] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:36949 - - [03/Jun/2016 10:03:34] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:36949 - - [03/Jun/2016 10:03:34] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:36949 - - [03/Jun/2016 10:03:36] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:36949 - - [03/Jun/2016 10:03:36] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:46665 - - [03/Jun/2016 10:03:36] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:46860 - - [03/Jun/2016 10:03:58] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:46860 - - [03/Jun/2016 10:03:58] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:46860 - - [03/Jun/2016 10:03:58] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:50238 - - [03/Jun/2016 10:04:28] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:50238 - - [03/Jun/2016 10:04:29] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:50238 - - [03/Jun/2016 10:04:29] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:40366 - - [03/Jun/2016 10:08:23] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:40366 - - [03/Jun/2016 10:08:23] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:40366 - - [03/Jun/2016 10:08:23] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:56116 - - [03/Jun/2016 10:08:55] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:56116 - - [03/Jun/2016 10:08:55] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:56116 - - [03/Jun/2016 10:08:55] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:33196 - - [03/Jun/2016 10:09:38] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:33196 - - [03/Jun/2016 10:09:38] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:33196 - - [03/Jun/2016 10:09:38] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:33961 - - [03/Jun/2016 10:10:00] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:33961 - - [03/Jun/2016 10:10:01] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:54055 - - [03/Jun/2016 10:10:01] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+66.249.65.16:64547 - - [03/Jun/2016 10:21:11] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.216:40642 - - [03/Jun/2016 10:42:16] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:40642 - - [03/Jun/2016 10:42:17] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:58273 - - [03/Jun/2016 10:42:17] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:34436 - - [03/Jun/2016 10:44:04] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:34436 - - [03/Jun/2016 10:44:04] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:52478 - - [03/Jun/2016 10:44:04] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:42082 - - [03/Jun/2016 10:45:11] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:42082 - - [03/Jun/2016 10:45:12] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:50569 - - [03/Jun/2016 10:45:12] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:60796 - - [03/Jun/2016 10:45:49] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:60796 - - [03/Jun/2016 10:45:49] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:39260 - - [03/Jun/2016 10:45:49] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:49042 - - [03/Jun/2016 10:47:33] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:49042 - - [03/Jun/2016 10:47:33] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:63357 - - [03/Jun/2016 10:47:33] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:63357 - - [03/Jun/2016 10:47:34] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:63357 - - [03/Jun/2016 10:47:35] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:49042 - - [03/Jun/2016 10:47:35] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:49042 - - [03/Jun/2016 10:47:44] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:63357 - - [03/Jun/2016 10:47:44] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:49042 - - [03/Jun/2016 10:47:44] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:37638 - - [03/Jun/2016 10:48:10] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:37638 - - [03/Jun/2016 10:48:10] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:61968 - - [03/Jun/2016 10:48:10] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:33176 - - [03/Jun/2016 10:50:40] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:33176 - - [03/Jun/2016 10:50:40] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:50497 - - [03/Jun/2016 10:50:40] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:53683 - - [03/Jun/2016 10:51:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:53683 - - [03/Jun/2016 10:51:53] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:38966 - - [03/Jun/2016 10:51:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:43518 - - [03/Jun/2016 10:52:28] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:43518 - - [03/Jun/2016 10:52:28] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.221:43518 - - [03/Jun/2016 10:52:28] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:47750 - - [03/Jun/2016 10:59:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:47750 - - [03/Jun/2016 10:59:53] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:47916 - - [03/Jun/2016 10:59:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:48784 - - [03/Jun/2016 11:00:38] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:48784 - - [03/Jun/2016 11:00:38] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:52699 - - [03/Jun/2016 11:00:38] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:35628 - - [03/Jun/2016 11:07:09] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:35628 - - [03/Jun/2016 11:07:09] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:35628 - - [03/Jun/2016 11:07:09] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:37696 - - [03/Jun/2016 11:07:21] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:37696 - - [03/Jun/2016 11:07:21] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:37696 - - [03/Jun/2016 11:07:21] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:56122 - - [03/Jun/2016 11:07:37] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:56122 - - [03/Jun/2016 11:07:37] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:37984 - - [03/Jun/2016 11:07:37] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:44801 - - [03/Jun/2016 11:08:23] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:44801 - - [03/Jun/2016 11:08:24] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:44801 - - [03/Jun/2016 11:08:24] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:47696 - - [03/Jun/2016 11:08:50] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:47696 - - [03/Jun/2016 11:08:50] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:39352 - - [03/Jun/2016 11:08:50] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:37127 - - [03/Jun/2016 11:09:18] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:37127 - - [03/Jun/2016 11:09:18] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:36776 - - [03/Jun/2016 11:09:19] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:36863 - - [03/Jun/2016 11:09:42] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:36863 - - [03/Jun/2016 11:09:42] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:36863 - - [03/Jun/2016 11:09:42] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:38178 - - [03/Jun/2016 11:10:02] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:38178 - - [03/Jun/2016 11:10:02] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:52052 - - [03/Jun/2016 11:10:02] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:38476 - - [03/Jun/2016 11:11:13] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:38476 - - [03/Jun/2016 11:11:13] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.221:38476 - - [03/Jun/2016 11:11:13] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.221:36037 - - [03/Jun/2016 11:11:49] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:36037 - - [03/Jun/2016 11:11:49] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.221:53662 - - [03/Jun/2016 11:11:49] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:47711 - - [03/Jun/2016 11:13:51] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:47711 - - [03/Jun/2016 11:13:51] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:39982 - - [03/Jun/2016 11:13:51] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:39982 - - [03/Jun/2016 11:13:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:47711 - - [03/Jun/2016 11:13:53] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:39982 - - [03/Jun/2016 11:13:53] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:43505 - - [03/Jun/2016 11:14:06] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:43505 - - [03/Jun/2016 11:14:06] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:43449 - - [03/Jun/2016 11:14:06] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:50940 - - [03/Jun/2016 11:14:29] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:50940 - - [03/Jun/2016 11:14:29] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:50940 - - [03/Jun/2016 11:14:30] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:50916 - - [03/Jun/2016 11:14:40] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:50916 - - [03/Jun/2016 11:14:40] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:55989 - - [03/Jun/2016 11:14:40] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:59203 - - [03/Jun/2016 11:14:51] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:59203 - - [03/Jun/2016 11:14:51] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:47639 - - [03/Jun/2016 11:14:51] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:53950 - - [03/Jun/2016 11:15:45] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:53950 - - [03/Jun/2016 11:15:46] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:59836 - - [03/Jun/2016 11:15:46] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:59836 - - [03/Jun/2016 11:15:55] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:59836 - - [03/Jun/2016 11:15:55] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:53950 - - [03/Jun/2016 11:15:55] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 68, in GET
+    results = DB.add_user_questions(i.firstName, i.middleName, i.lastName, i.email, i.gender, i.state, i.city, i.birthday, i.favoriteOS)
+AttributeError: Database instance has no attribute 'add_user_questions'
+
+207.62.170.216:32773 - - [03/Jun/2016 11:25:36] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.216:43005 - - [03/Jun/2016 11:26:09] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:43005 - - [03/Jun/2016 11:26:10] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:44598 - - [03/Jun/2016 11:26:10] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.216:63040 - - [03/Jun/2016 11:52:38] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:63040 - - [03/Jun/2016 11:52:38] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:57410 - - [03/Jun/2016 11:52:39] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:57410 - - [03/Jun/2016 11:52:39] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.216:57410 - - [03/Jun/2016 11:52:39] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+207.62.170.216:57410 - - [03/Jun/2016 11:52:47] "HTTP/1.1 POST /" - 500 Internal Server Error
+66.249.65.22:43625 - - [03/Jun/2016 12:36:57] "HTTP/1.1 GET /m/" - 404 Not Found
+66.249.64.223:59665 - - [03/Jun/2016 12:41:03] "HTTP/1.1 GET /" - 200 OK
+91.196.50.33:47251 - - [03/Jun/2016 14:43:33] "HTTP/1.1 GET testproxy.php" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+129.65.155.71:58030 - - [03/Jun/2016 15:42:24] "HTTP/1.1 POST /" - 500 Internal Server Error
+129.65.155.71:58058 - - [03/Jun/2016 15:48:17] "HTTP/1.1 GET /" - 200 OK
+129.65.155.71:58058 - - [03/Jun/2016 15:48:17] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+129.65.155.71:58059 - - [03/Jun/2016 15:48:17] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+129.65.155.71:58058 - - [03/Jun/2016 15:48:17] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+129.65.155.71:58064 - - [03/Jun/2016 15:48:32] "HTTP/1.1 POST /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 31, in POST
+    DB.addUser(i.username, i.email, i.password)
+  File "/home/shared/csdate.me/queries.py", line 40, in addUser
+    self.cur.execute(cmd2)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+129.65.155.71:58070 - - [03/Jun/2016 15:48:44] "HTTP/1.1 POST /" - 500 Internal Server Error
+129.65.155.71:58121 - - [03/Jun/2016 16:21:32] "HTTP/1.1 GET /" - 200 OK
+129.65.155.71:58123 - - [03/Jun/2016 16:21:51] "HTTP/1.1 POST /" - 200 OK
+129.65.155.71:58123 - - [03/Jun/2016 16:21:53] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 39
+    cmd2 = "INSERT INTO Questions VALUES ('" + name"', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);"
+                                                                                                                                                                         ^
+SyntaxError: invalid syntax
+
+129.65.155.71:58136 - - [03/Jun/2016 16:26:28] "HTTP/1.1 GET /" - 500 Internal Server Error
+129.65.155.71:58137 - - [03/Jun/2016 16:26:57] "HTTP/1.1 GET /" - 200 OK
+129.65.155.71:58137 - - [03/Jun/2016 16:26:57] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+129.65.155.71:58137 - - [03/Jun/2016 16:26:57] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+129.65.155.71:58142 - - [03/Jun/2016 16:26:57] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+129.65.155.71:58137 - - [03/Jun/2016 16:26:57] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 28, in POST
+    check = DB.addUserCheck(i.username, i.email)
+  File "/home/shared/csdate.me/queries.py", line 49, in addUserCheck
+    self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+
+129.65.155.71:58143 - - [03/Jun/2016 16:27:08] "HTTP/1.1 POST /" - 500 Internal Server Error
+Exception KeyboardInterrupt in <module 'threading' from '/usr/lib64/python2.7/threading.pyc'> ignored
+http://0.0.0.0:80/
+Traceback (most recent call last):
+  File "code.py", line 21, in <module>
+    DB = Database()
+  File "/home/shared/csdate.me/queries.py", line 12, in __init__
+    db = "csdateme")
+  File "build/bdist.linux-x86_64/egg/MySQLdb/__init__.py", line 81, in Connect
+    
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 187, in __init__
+_mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)")
+129.65.155.71:58194 - - [03/Jun/2016 16:41:53] "HTTP/1.1 GET /" - 200 OK
+129.65.155.71:58194 - - [03/Jun/2016 16:41:53] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+129.65.155.71:58194 - - [03/Jun/2016 16:41:53] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+129.65.155.71:58196 - - [03/Jun/2016 16:41:53] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+129.65.155.71:58194 - - [03/Jun/2016 16:41:53] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+129.65.155.71:58203 - - [03/Jun/2016 16:45:10] "HTTP/1.1 POST /" - 200 OK
+129.65.155.71:58203 - - [03/Jun/2016 16:45:11] "HTTP/1.1 GET /login" - 200 OK
+129.65.155.71:58203 - - [03/Jun/2016 16:45:16] "HTTP/1.1 POST /login" - 301
+129.65.155.71:58203 - - [03/Jun/2016 16:45:17] "HTTP/1.1 GET /main" - 200 OK
+129.65.155.71:58203 - - [03/Jun/2016 16:45:17] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+185.49.14.190:38590 - - [03/Jun/2016 17:24:43] "HTTP/1.1 GET testproxy.php" - 404 Not Found
+66.249.64.111:33141 - - [03/Jun/2016 18:19:44] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+66.249.64.223:63987 - - [03/Jun/2016 18:19:44] "HTTP/1.1 GET /m/" - 404 Not Found
+207.62.170.211:58923 - - [03/Jun/2016 19:36:24] "HTTP/1.1 GET /" - 200 OK
+207.62.170.211:58923 - - [03/Jun/2016 19:36:24] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.211:46794 - - [03/Jun/2016 19:36:24] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:36659 - - [03/Jun/2016 19:36:24] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.211:35206 - - [03/Jun/2016 19:36:24] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.211:35206 - - [03/Jun/2016 19:36:24] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:34887 - - [03/Jun/2016 19:36:41] "HTTP/1.1 POST /" - 200 OK
+207.62.170.211:56698 - - [03/Jun/2016 19:36:49] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.211:56698 - - [03/Jun/2016 19:36:50] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:53585 - - [03/Jun/2016 19:36:50] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.211:37561 - - [03/Jun/2016 19:36:50] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.211:37561 - - [03/Jun/2016 19:36:50] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:37561 - - [03/Jun/2016 19:36:59] "HTTP/1.1 POST /login" - 301
+207.62.170.211:37561 - - [03/Jun/2016 19:36:59] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.211:37561 - - [03/Jun/2016 19:36:59] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.211:37561 - - [03/Jun/2016 19:37:04] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.211:37561 - - [03/Jun/2016 19:37:06] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:60521 - - [03/Jun/2016 20:43:17] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:60521 - - [03/Jun/2016 20:43:17] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:42046 - - [03/Jun/2016 20:43:17] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:42046 - - [03/Jun/2016 20:43:18] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:51254 - - [03/Jun/2016 20:44:15] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:51254 - - [03/Jun/2016 20:44:15] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.221:55145 - - [03/Jun/2016 20:44:15] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.221:41528 - - [03/Jun/2016 20:44:15] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.221:46159 - - [03/Jun/2016 21:07:06] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:46159 - - [03/Jun/2016 21:07:06] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.221:62520 - - [03/Jun/2016 21:07:06] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.221:62520 - - [03/Jun/2016 21:07:06] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:60915 - - [03/Jun/2016 21:07:53] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:61489 - - [03/Jun/2016 21:08:20] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:61489 - - [03/Jun/2016 21:08:21] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:39612 - - [03/Jun/2016 21:08:21] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.216:34131 - - [03/Jun/2016 21:08:21] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:37656 - - [03/Jun/2016 21:08:23] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:37656 - - [03/Jun/2016 21:08:24] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:59652 - - [03/Jun/2016 21:08:24] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:59652 - - [03/Jun/2016 21:08:27] "HTTP/1.1 POST /login" - 200 OK
+207.62.170.216:59652 - - [03/Jun/2016 21:08:31] "HTTP/1.1 POST /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.216:59652 - - [03/Jun/2016 21:08:34] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.216:59652 - - [03/Jun/2016 21:08:39] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:59652 - - [03/Jun/2016 21:08:39] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 84
+    def
+       ^
+SyntaxError: invalid syntax
+
+207.62.170.221:52642 - - [03/Jun/2016 21:29:20] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 84
+    def
+       ^
+SyntaxError: invalid syntax
+
+207.62.170.221:48730 - - [03/Jun/2016 21:29:48] "HTTP/1.1 GET /" - 500 Internal Server Error
+207.62.170.221:44376 - - [03/Jun/2016 21:37:29] "HTTP/1.1 GET /" - 200 OK
+/home/shared/csdate.me/queries.py:40: Warning: Incorrect integer value: 'test' for column 'id' at row 1
+  self.cur.execute(cmd2)
+207.62.170.221:47507 - - [03/Jun/2016 21:39:08] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:47507 - - [03/Jun/2016 21:39:11] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.221:55217 - - [03/Jun/2016 21:43:10] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.221:54556 - - [03/Jun/2016 21:45:05] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.221:54556 - - [03/Jun/2016 21:45:06] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.221:54556 - - [03/Jun/2016 21:45:10] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.221:61048 - - [03/Jun/2016 21:45:31] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.221:61048 - - [03/Jun/2016 21:45:32] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.221:61048 - - [03/Jun/2016 21:45:34] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+AttributeError: Database instance has no attribute 'questionsDone'
+
+207.62.170.221:61048 - - [03/Jun/2016 21:45:37] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Exception KeyboardInterrupt in <module 'threading' from '/usr/lib64/python2.7/threading.pyc'> ignored
+http://0.0.0.0:80/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone()
+TypeError: questionsDone() takes exactly 2 arguments (1 given)
+
+207.62.170.221:55502 - - [03/Jun/2016 21:45:56] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 8
+    def __init__(self):
+      ^
+IndentationError: expected an indented block
+
+207.62.170.221:61408 - - [03/Jun/2016 21:52:47] "HTTP/1.1 GET /login" - 500 Internal Server Error
+207.62.170.221:55814 - - [03/Jun/2016 21:53:19] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:55814 - - [03/Jun/2016 21:53:19] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:55814 - - [03/Jun/2016 21:53:19] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:50588 - - [03/Jun/2016 21:53:19] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 90
+    query = ("SELECT userId FROM username = '" + username "';")
+                                                             ^
+SyntaxError: invalid syntax
+
+207.62.170.221:48355 - - [03/Jun/2016 21:58:55] "HTTP/1.1 GET /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 90
+    query = ("SELECT userId FROM username = '" + username "';")
+                                                             ^
+SyntaxError: invalid syntax
+
+207.62.170.221:48355 - - [03/Jun/2016 21:58:56] "HTTP/1.1 GET /login" - 500 Internal Server Error
+207.62.170.221:49936 - - [03/Jun/2016 22:00:23] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:49936 - - [03/Jun/2016 22:00:23] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:49936 - - [03/Jun/2016 22:00:23] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:54422 - - [03/Jun/2016 22:00:23] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+AttributeError: Database instance has no attribute 'usernameToId'
+
+207.62.170.221:54422 - - [03/Jun/2016 22:00:28] "HTTP/1.1 POST /login" - 500 Internal Server Error
+http://0.0.0.0:80/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''test'' at line 1")
+
+207.62.170.221:32989 - - [03/Jun/2016 22:01:29] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''test'' at line 1")
+
+207.62.170.221:51273 - - [03/Jun/2016 22:03:59] "HTTP/1.1 POST /login" - 500 Internal Server Error
+http://0.0.0.0:80/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:46857 - - [03/Jun/2016 22:07:30] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:32269 - - [03/Jun/2016 22:07:57] "HTTP/1.1 POST /login" - 500 Internal Server Error
+http://0.0.0.0:80/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:33200 - - [03/Jun/2016 22:08:19] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.221:37242 - - [03/Jun/2016 22:09:28] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:37242 - - [03/Jun/2016 22:09:34] "HTTP/1.1 POST /login" - 500 Internal Server Error
+http://0.0.0.0:80/
+207.62.170.221:36937 - - [03/Jun/2016 22:09:57] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:36937 - - [03/Jun/2016 22:10:01] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:36208 - - [03/Jun/2016 22:10:33] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 91, in usernameToId
+    userId = self.cur.execute(query)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "build/bdist.linux-x86_64/egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'userId' in 'field list'")
+
+207.62.170.221:36208 - - [03/Jun/2016 22:10:39] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.221:36208 - - [03/Jun/2016 22:10:39] "HTTP/1.1 GET /login" - 200 OK
+http://0.0.0.0:80/
+207.62.170.221:41497 - - [03/Jun/2016 22:11:05] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:41497 - - [03/Jun/2016 22:11:05] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:41497 - - [03/Jun/2016 22:11:05] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:39987 - - [03/Jun/2016 22:11:05] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 84, in questionsDone
+    query = ("SELECT completed FROM Questions WHERE id = '" + userId + "';")
+TypeError: cannot concatenate 'str' and 'long' objects
+
+207.62.170.221:39987 - - [03/Jun/2016 22:11:09] "HTTP/1.1 POST /login" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 84, in questionsDone
+    query = ("SELECT completed FROM Questions WHERE id = '" + str(userId) + "';")
+TypeError: cannot concatenate 'str' and 'long' objects
+
+207.62.170.221:59680 - - [03/Jun/2016 22:11:32] "HTTP/1.1 POST /login" - 500 Internal Server Error
+207.62.170.221:59680 - - [03/Jun/2016 22:11:34] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 47, in POST
+    qCheck = DB.questionsDone(DB.usernameToId(i.username))
+  File "/home/shared/csdate.me/queries.py", line 84, in questionsDone
+    query = ("SELECT completed FROM Questions WHERE id = '" + str(userId) + "';")
+TypeError: cannot concatenate 'str' and 'long' objects
+
+207.62.170.221:59680 - - [03/Jun/2016 22:11:42] "HTTP/1.1 POST /login" - 500 Internal Server Error
+http://0.0.0.0:80/
+207.62.170.221:35938 - - [03/Jun/2016 22:11:55] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:35938 - - [03/Jun/2016 22:11:58] "HTTP/1.1 POST /login" - 301
+207.62.170.221:35938 - - [03/Jun/2016 22:11:58] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:48068 - - [03/Jun/2016 22:13:06] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:46632 - - [03/Jun/2016 22:14:23] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:46632 - - [03/Jun/2016 22:14:26] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:46632 - - [03/Jun/2016 22:14:33] "HTTP/1.1 POST /login" - 301
+207.62.170.221:46632 - - [03/Jun/2016 22:14:33] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:51674 - - [03/Jun/2016 22:18:58] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:62224 - - [03/Jun/2016 22:19:12] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.221:47384 - - [03/Jun/2016 22:45:23] "HTTP/1.1 GET /" - 500 Internal Server Error
+207.62.170.221:33666 - - [03/Jun/2016 22:46:56] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:33666 - - [03/Jun/2016 22:47:04] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:33666 - - [03/Jun/2016 22:47:05] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:33666 - - [03/Jun/2016 22:47:10] "HTTP/1.1 POST /login" - 301
+207.62.170.221:33666 - - [03/Jun/2016 22:47:10] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:40370 - - [03/Jun/2016 22:47:23] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:58362 - - [03/Jun/2016 22:48:55] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:58362 - - [03/Jun/2016 22:48:57] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:58362 - - [03/Jun/2016 22:49:04] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:58362 - - [03/Jun/2016 22:49:05] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:62068 - - [03/Jun/2016 22:52:02] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:62068 - - [03/Jun/2016 22:52:02] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:62068 - - [03/Jun/2016 22:52:02] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:57415 - - [03/Jun/2016 22:52:02] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:57415 - - [03/Jun/2016 22:52:05] "HTTP/1.1 POST /login" - 301
+207.62.170.221:57415 - - [03/Jun/2016 22:52:05] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:51] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:52] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:53] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:54] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:55] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:55] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:51299 - - [03/Jun/2016 23:10:56] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:61298 - - [03/Jun/2016 23:12:53] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:61298 - - [03/Jun/2016 23:12:55] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:61298 - - [03/Jun/2016 23:12:57] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:61298 - - [03/Jun/2016 23:12:57] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:61298 - - [03/Jun/2016 23:12:58] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:54141 - - [03/Jun/2016 23:12:58] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:61676 - - [03/Jun/2016 23:12:58] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.221:33267 - - [03/Jun/2016 23:17:54] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:33267 - - [03/Jun/2016 23:17:54] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:33267 - - [03/Jun/2016 23:17:54] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:38016 - - [03/Jun/2016 23:17:54] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:59445 - - [03/Jun/2016 23:17:54] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:44983 - - [03/Jun/2016 23:18:17] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:44983 - - [03/Jun/2016 23:18:17] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:44983 - - [03/Jun/2016 23:18:17] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:60299 - - [03/Jun/2016 23:18:17] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:46566 - - [03/Jun/2016 23:18:17] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.221:38361 - - [03/Jun/2016 23:20:18] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:51616 - - [03/Jun/2016 23:23:15] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:51616 - - [03/Jun/2016 23:23:15] "HTTP/1.1 GET /favicon.ico" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:46832 - - [03/Jun/2016 23:23:30] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:46832 - - [03/Jun/2016 23:23:30] "HTTP/1.1 GET /favicon.ico" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:46466 - - [03/Jun/2016 23:24:24] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:46466 - - [03/Jun/2016 23:24:24] "HTTP/1.1 GET /favicon.ico" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:46466 - - [03/Jun/2016 23:24:25] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:46466 - - [03/Jun/2016 23:24:25] "HTTP/1.1 GET /favicon.ico" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:49808 - - [03/Jun/2016 23:25:53] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.216:49808 - - [03/Jun/2016 23:25:54] "HTTP/1.1 GET /favicon.ico" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.221:54485 - - [03/Jun/2016 23:26:14] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.221:54485 - - [03/Jun/2016 23:26:17] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.221:54485 - - [03/Jun/2016 23:26:18] "HTTP/1.1 GET /" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 58
+    cmd = "UPDATE Questions
+                           ^
+SyntaxError: EOL while scanning string literal
+
+207.62.170.221:54485 - - [03/Jun/2016 23:26:19] "HTTP/1.1 GET /" - 500 Internal Server Error
+207.62.170.216:62670 - - [03/Jun/2016 23:27:43] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:62670 - - [03/Jun/2016 23:27:43] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:56681 - - [03/Jun/2016 23:27:43] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:56681 - - [03/Jun/2016 23:27:43] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.216:56681 - - [03/Jun/2016 23:27:43] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.216:56681 - - [03/Jun/2016 23:27:44] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.216:56681 - - [03/Jun/2016 23:27:48] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:62670 - - [03/Jun/2016 23:27:48] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.216:56681 - - [03/Jun/2016 23:27:48] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.221:48234 - - [03/Jun/2016 23:27:55] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:48234 - - [03/Jun/2016 23:27:55] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:48234 - - [03/Jun/2016 23:27:55] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:59870 - - [03/Jun/2016 23:28:18] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:59870 - - [03/Jun/2016 23:28:18] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:55486 - - [03/Jun/2016 23:28:18] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:53328 - - [03/Jun/2016 23:28:18] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:49932 - - [03/Jun/2016 23:28:18] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:49932 - - [03/Jun/2016 23:28:20] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:53328 - - [03/Jun/2016 23:28:20] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:55486 - - [03/Jun/2016 23:28:20] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:59870 - - [03/Jun/2016 23:28:20] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:49932 - - [03/Jun/2016 23:28:20] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:49834 - - [03/Jun/2016 23:28:39] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:49834 - - [03/Jun/2016 23:28:39] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:49834 - - [03/Jun/2016 23:28:39] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:34982 - - [03/Jun/2016 23:28:39] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:39071 - - [03/Jun/2016 23:28:39] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+66.249.64.228:51543 - - [03/Jun/2016 23:30:09] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/queries.py", line 96
+    query = ("SELECT id from Users WHERE token = '" + token "';")
+                                                               ^
+SyntaxError: invalid syntax
+
+207.62.170.221:55668 - - [03/Jun/2016 23:36:19] "HTTP/1.1 GET /" - 500 Internal Server Error
+207.62.170.221:52895 - - [03/Jun/2016 23:36:54] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:52895 - - [03/Jun/2016 23:36:54] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:52895 - - [03/Jun/2016 23:36:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57481 - - [03/Jun/2016 23:36:54] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.221:59510 - - [03/Jun/2016 23:36:54] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:59510 - - [03/Jun/2016 23:36:58] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:59510 - - [03/Jun/2016 23:37:04] "HTTP/1.1 POST /login" - 301
+207.62.170.221:59510 - - [03/Jun/2016 23:37:04] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:34026 - - [03/Jun/2016 23:37:08] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:34026 - - [03/Jun/2016 23:37:08] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:38038 - - [03/Jun/2016 23:37:08] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.216:57462 - - [03/Jun/2016 23:37:25] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:55402 - - [03/Jun/2016 23:37:26] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:55402 - - [03/Jun/2016 23:37:27] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.216:53087 - - [03/Jun/2016 23:37:27] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.216:55402 - - [03/Jun/2016 23:37:27] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.216:55402 - - [03/Jun/2016 23:37:27] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.216:55402 - - [03/Jun/2016 23:37:35] "HTTP/1.1 POST /login" - 301
+207.62.170.216:55402 - - [03/Jun/2016 23:37:35] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:55402 - - [03/Jun/2016 23:37:35] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.216:55402 - - [03/Jun/2016 23:37:38] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.216:55402 - - [03/Jun/2016 23:37:44] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:55402 - - [03/Jun/2016 23:37:45] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:34761 - - [03/Jun/2016 23:37:45] "HTTP/1.1 GET /static/images/logo.png" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 73, in GET
+    userId = DB.tokenToId(token);
+AttributeError: Database instance has no attribute 'tokenToId'
+
+207.62.170.216:35909 - - [03/Jun/2016 23:38:35] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 74, in GET
+    results = DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName,
+AttributeError: Database instance has no attribute 'updateQuestions'
+
+207.62.170.216:33252 - - [03/Jun/2016 23:40:12] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.221:41210 - - [03/Jun/2016 23:40:51] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:41210 - - [03/Jun/2016 23:40:51] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:41210 - - [03/Jun/2016 23:40:51] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 74, in GET
+    results = DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName,
+AttributeError: Database instance has no attribute 'updateQuestions'
+
+207.62.170.216:52532 - - [03/Jun/2016 23:40:51] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 74, in GET
+    results = DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName,
+AttributeError: Database instance has no attribute 'updateQuestions'
+
+207.62.170.216:52532 - - [03/Jun/2016 23:40:52] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 74, in GET
+    results = DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName,
+AttributeError: Database instance has no attribute 'updateQuestions'
+
+207.62.170.216:52532 - - [03/Jun/2016 23:40:54] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 74, in GET
+    results = DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName,
+AttributeError: Database instance has no attribute 'updateQuestions'
+
+207.62.170.216:52532 - - [03/Jun/2016 23:40:58] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.221:47690 - - [03/Jun/2016 23:41:07] "HTTP/1.1 POST /" - 200 OK
+207.62.170.221:47690 - - [03/Jun/2016 23:41:09] "HTTP/1.1 GET /login" - 200 OK
+http://0.0.0.0:80/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 75, in GET
+    i.email, i.gender, i.state, i.city, i.birthday,
+  File "/usr/local/lib/python2.7/site-packages/web/utils.py", line 76, in __getattr__
+    raise AttributeError, k
+AttributeError: 'email'
+
+207.62.170.216:51284 - - [03/Jun/2016 23:42:11] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.221:48309 - - [03/Jun/2016 23:42:32] "HTTP/1.1 POST /login" - 301
+207.62.170.221:48309 - - [03/Jun/2016 23:42:32] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:48309 - - [03/Jun/2016 23:42:32] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 237, in process
+    return p(lambda: process(processors))
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 565, in processor
+    h()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 661, in __call__
+    self.check(mod)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 680, in check
+    reload(mod)
+  File "/home/shared/csdate.me/code.py", line 75
+    , i.gender, i.state, i.city, i.birthday,
+    ^
+SyntaxError: invalid syntax
+
+207.62.170.216:32479 - - [03/Jun/2016 23:44:14] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby3, i.wpm)
+  File "/usr/local/lib/python2.7/site-packages/web/utils.py", line 76, in __getattr__
+    raise AttributeError, k
+AttributeError: 'favLang1'
+
+207.62.170.216:52224 - - [03/Jun/2016 23:44:30] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby3, i.wpm)
+  File "/usr/local/lib/python2.7/site-packages/web/utils.py", line 76, in __getattr__
+    raise AttributeError, k
+AttributeError: 'favLang1'
+
+207.62.170.216:39274 - - [03/Jun/2016 23:46:40] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby3, i.wpm)
+  File "/usr/local/lib/python2.7/site-packages/web/utils.py", line 76, in __getattr__
+    raise AttributeError, k
+AttributeError: 'favLang1'
+
+207.62.170.216:39274 - - [03/Jun/2016 23:46:41] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.216:33420 - - [03/Jun/2016 23:46:51] "HTTP/1.1 GET /questionsandroid&relationship=single&gaming=pc&favlanguage1=fuckboi&favlanguage2=&favlanguage3=&favhobby1=gamer&favhobby2=&favhobby3=&wpm=9000&submit=Submit" - 404 Not Found
+207.62.170.216:53979 - - [03/Jun/2016 23:47:01] "HTTP/1.1 GET /questions" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby3, i.wpm)
+TypeError: updateQuestions() takes exactly 21 arguments (19 given)
+
+207.62.170.216:45976 - - [03/Jun/2016 23:47:28] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fname + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + wpm + " WHERE id = " + userid  + ";"
+NameError: global name 'fname' is not defined
+
+207.62.170.216:58867 - - [03/Jun/2016 23:49:28] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + wpm + " WHERE id = " + userid  + ";"
+NameError: global name 'fname' is not defined
+
+207.62.170.216:50511 - - [03/Jun/2016 23:49:55] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + wpm + " WHERE id = " + userid  + ";"
+NameError: global name 'fname' is not defined
+
+207.62.170.216:50511 - - [03/Jun/2016 23:49:57] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.216:32834 - - [03/Jun/2016 23:50:16] "HTTP/1.1 GET /questions" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + wpm + " WHERE id = " + userid  + ";"
+NameError: global name 'fname' is not defined
+
+207.62.170.216:49551 - - [03/Jun/2016 23:50:55] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.221:59441 - - [03/Jun/2016 23:52:01] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.221:59441 - - [03/Jun/2016 23:52:01] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.221:58422 - - [03/Jun/2016 23:52:01] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.221:58422 - - [03/Jun/2016 23:52:07] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.221:58422 - - [03/Jun/2016 23:52:07] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:59441 - - [03/Jun/2016 23:52:07] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.221:60067 - - [03/Jun/2016 23:52:21] "HTTP/1.1 GET /login" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 74, in GET
+    results = DB.updateQuestions(userId, i.fName, i.mName, i.lName,
+  File "/usr/local/lib/python2.7/site-packages/web/utils.py", line 76, in __getattr__
+    raise AttributeError, k
+AttributeError: 'fName'
+
+207.62.170.216:52903 - - [03/Jun/2016 23:53:13] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.221:58779 - - [03/Jun/2016 23:53:38] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:58779 - - [03/Jun/2016 23:53:38] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57854 - - [03/Jun/2016 23:53:38] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:58779 - - [03/Jun/2016 23:53:38] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + wpm + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:42334 - - [03/Jun/2016 23:54:21] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5" + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:42988 - - [03/Jun/2016 23:57:26] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5" + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:42988 - - [03/Jun/2016 23:57:29] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 77, in GET
+    i.favLang1, i.favLang2, i.favLang3, i.favHobby1, i.favHobby2, i.favHobby3, i.wpm)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:48019 - - [03/Jun/2016 23:58:42] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+TypeError: updateQuestions() takes exactly 20 arguments (19 given)
+
+207.62.170.216:43715 - - [04/Jun/2016 00:00:19] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:47458 - - [04/Jun/2016 00:05:11] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET  firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:47458 - - [04/Jun/2016 00:05:14] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:62914 - - [04/Jun/2016 00:06:57] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:62914 - - [04/Jun/2016 00:06:58] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+66.249.64.6:63699 - - [04/Jun/2016 00:10:58] "HTTP/1.1 GET /robots.txt" - 404 Not Found
+66.249.64.206:51088 - - [04/Jun/2016 00:10:59] "HTTP/1.1 GET /login" - 200 OK
+66.249.64.116:39078 - - [04/Jun/2016 00:13:00] "HTTP/1.1 GET /mobile/" - 404 Not Found
+207.62.170.216:63400 - - [04/Jun/2016 00:20:16] "HTTP/1.1 GET /questions" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:45803 - - [04/Jun/2016 00:20:49] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+http://0.0.0.0:80/
+http://0.0.0.0:88/
+207.62.170.216:34403 - - [04/Jun/2016 00:26:36] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:34403 - - [04/Jun/2016 00:26:36] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:56888 - - [04/Jun/2016 00:26:36] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName ='" + fName + "', middleName ='" + mName + "', lastName='" + lName + "', gender ='" + gender + "', state='" + state + "', city = '" + city + "', birthday = '" + birthday + "', favoriteOS='" + favoriteOS + "', phoneOS='" + phoneOS + "', relationship = '" + relationship + "', gaming ='" + gaming + "', favLang1 = '" + favLang1 + "', favLang2 = '" + favLang2 + "', favLang3 = '" + favLang3 + "', favHobby1 = '" + favHobby1 + "', favHobby2 = '" + favHobby3 + "', favHobby1 = '" + favHobby3 + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:35947 - - [04/Jun/2016 00:27:27] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.212:38744 - - [04/Jun/2016 00:27:50] "HTTP/1.1 GET /" - 200 OK
+207.62.170.212:38744 - - [04/Jun/2016 00:27:50] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.212:61163 - - [04/Jun/2016 00:27:50] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.212:60677 - - [04/Jun/2016 00:27:50] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.212:38744 - - [04/Jun/2016 00:27:50] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.212:38744 - - [04/Jun/2016 00:27:50] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName ='" + "jason"  + "', middleName ='" + "mar" + "', lastName='" + "jar" + "', gender ='" + "m" + "', state='" + "Hawaii" + "', city = '" + "honolulu"  + "', birthday = '" + "1996/12/06" + "', favoriteOS='" + "windows" + "', phoneOS='" + "phoneOS" + "', relationship = '" + "relationship" + "', gaming ='" + "gaming" + "', favLang1 = '" + "favLang1" + "', favLang2 = '" + "favLang2" + "', favLang3 = '" + "favLang3" + "', favHobby1 = '" + "favHobby1" + "', favHobby2 = '" + "favHobby3" + "', favHobby3 = '" + "favHobby3" + "', wpm = " + "5," + " WHERE id = " + userid  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:43198 - - [04/Jun/2016 00:36:40] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName ='" + "jason"  + "', middleName ='" + "mar" + "', lastName='" + "jar" + "', gender ='" + "m" + "', state='" + "Hawaii" + "', city = '" + "honolulu"  + "', birthday = '" + "1996/12/06" + "', favoriteOS='" + "windows" + "', phoneOS='" + "phoneOS" + "', relationship = '" + "relationship" + "', gaming ='" + "gaming" + "', favLang1 = '" + "favLang1" + "', favLang2 = '" + "favLang2" + "', favLang3 = '" + "favLang3" + "', favHobby1 = '" + "favHobby1" + "', favHobby2 = '" + "favHobby3" + "', favHobby3 = '" + "favHobby3" + "', wpm = " + "5," + " WHERE id = " + "1"  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:61322 - - [04/Jun/2016 00:42:48] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    #   cmd = "UPDATE Questions SET firstName ='" + "jason"  + "', middleName ='" + "mar" + "', lastName='" + "jar" + "', gender ='" + "m" + "', state='" + "Hawaii" + "', city = '" + "honolulu"  + "', birthday = '" + "1996/12/06" + "', favoriteOS='" + "windows" + "', phoneOS='" + "phoneOS" + "', relationship = '" + "relationship" + "', gaming ='" + "gaming" + "', favLang1 = '" + "favLang1" + "', favLang2 = '" + "favLang2" + "', favLang3 = '" + "favLang3" + "', favHobby1 = '" + "favHobby1" + "', favHobby2 = '" + "favHobby3" + "', favHobby3 = '" + "favHobby3" + "', wpm = " + "5," + " WHERE id = " + "1"  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:37250 - - [04/Jun/2016 00:43:46] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    #   cmd = "UPDATE Questions SET firstName ='" + "jason"  + "', middleName ='" + "mar" + "', lastName='" + "jar" + "', gender ='" + "m" + "', state='" + "Hawaii" + "', city = '" + "honolulu"  + "', birthday = '" + "1996/12/06" + "', favoriteOS='" + "windows" + "', phoneOS='" + "phoneOS" + "', relationship = '" + "relationship" + "', gaming ='" + "gaming" + "', favLang1 = '" + "favLang1" + "', favLang2 = '" + "favLang2" + "', favLang3 = '" + "favLang3" + "', favHobby1 = '" + "favHobby1" + "', favHobby2 = '" + "favHobby3" + "', favHobby3 = '" + "favHobby3" + "', wpm = " + "5," + " WHERE id = " + "1"  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:37250 - - [04/Jun/2016 00:43:49] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.216:37250 - - [04/Jun/2016 00:43:58] "HTTP/1.1 GET /questions" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    #   cmd = "UPDATE Questions SET firstName ='" + "jason"  + "', middleName ='" + "mar" + "', lastName='" + "jar" + "', gender ='" + "m" + "', state='" + "Hawaii" + "', city = '" + "honolulu"  + "', birthday = '" + "1996/12/06" + "', favoriteOS='" + "windows" + "', phoneOS='" + "phoneOS" + "', relationship = '" + "relationship" + "', gaming ='" + "gaming" + "', favLang1 = '" + "favLang1" + "', favLang2 = '" + "favLang2" + "', favLang3 = '" + "favLang3" + "', favHobby1 = '" + "favHobby1" + "', favHobby2 = '" + "favHobby3" + "', favHobby3 = '" + "favHobby3" + "', wpm = " + "5," + " WHERE id = " + "1"  + ";"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:59544 - - [04/Jun/2016 00:44:11] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE QUESTIONS SET firstName = 'Jason' WHERE id = 2"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:56033 - - [04/Jun/2016 00:44:39] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE QUESTIONS SET firstName = 'Jason' WHERE id = 2"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:56033 - - [04/Jun/2016 00:44:41] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+178.23.9.195:53682 - - [04/Jun/2016 00:47:11] "HTTP/1.1 GET /" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName = 'Jason' WHERE id = 2"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:48320 - - [04/Jun/2016 00:48:39] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.219:36960 - - [04/Jun/2016 00:52:19] "HTTP/1.1 GET /" - 200 OK
+207.62.170.219:36960 - - [04/Jun/2016 00:52:20] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.219:51209 - - [04/Jun/2016 00:52:20] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.219:36960 - - [04/Jun/2016 00:52:20] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.219:36960 - - [04/Jun/2016 00:52:20] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.219:36960 - - [04/Jun/2016 00:52:21] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName = 'Jason' WHERE id = 2;"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:45048 - - [04/Jun/2016 00:52:59] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3)
+  File "/home/shared/csdate.me/queries.py", line 58, in updateQuestions
+    cmd = "UPDATE Questions SET firstName = 'Jason' WHERE id = 2;"
+TypeError: coercing to Unicode: need string or buffer, long found
+
+207.62.170.216:45048 - - [04/Jun/2016 00:53:01] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.219:47971 - - [04/Jun/2016 00:53:11] "HTTP/1.1 POST /" - 200 OK
+207.62.170.219:53392 - - [04/Jun/2016 00:53:18] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.219:53392 - - [04/Jun/2016 00:53:19] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.219:53392 - - [04/Jun/2016 00:53:19] "HTTP/1.1 GET /static/sha3.js" - 200 
+207.62.170.219:50179 - - [04/Jun/2016 00:53:19] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.219:50179 - - [04/Jun/2016 00:53:20] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.219:47521 - - [04/Jun/2016 00:53:36] "HTTP/1.1 POST /login" - 301
+207.62.170.219:47521 - - [04/Jun/2016 00:53:36] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.219:47521 - - [04/Jun/2016 00:53:37] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.219:34836 - - [04/Jun/2016 00:54:30] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.219:52517 - - [04/Jun/2016 00:54:46] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.216:62871 - - [04/Jun/2016 00:55:22] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:62871 - - [04/Jun/2016 00:55:22] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.216:62871 - - [04/Jun/2016 00:55:22] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:37510 - - [04/Jun/2016 00:55:42] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:32728 - - [04/Jun/2016 00:57:24] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:56219 - - [04/Jun/2016 01:23:34] "HTTP/1.1 GET /questions" - 200 OK
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 420, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/site-packages/web/application.py", line 396, in handle_class
+    return tocall(*args)
+  File "/home/shared/csdate.me/code.py", line 78, in GET
+    i.favHobby2, i.favHobby3, i.wpm)
+TypeError: updateQuestions() takes exactly 19 arguments (20 given)
+
+207.62.170.216:43050 - - [04/Jun/2016 01:25:52] "HTTP/1.1 GET /questions" - 500 Internal Server Error
+207.62.170.216:34267 - - [04/Jun/2016 01:34:19] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:34267 - - [04/Jun/2016 01:34:19] "HTTP/1.1 GET /static/question.css" - 200 
+207.62.170.216:34267 - - [04/Jun/2016 01:34:19] "HTTP/1.1 GET /static/images/logo.png" - 200 
+/home/shared/csdate.me/queries.py:60: Warning: Data truncated for column 'gender' at row 1
+  self.cur.execute(cmd)
+207.62.170.216:58089 - - [04/Jun/2016 01:34:32] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.211:39203 - - [04/Jun/2016 02:42:22] "HTTP/1.1 GET /" - 200 OK
+207.62.170.211:39203 - - [04/Jun/2016 02:42:22] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:51504 - - [04/Jun/2016 02:42:22] "HTTP/1.1 GET /static/common.js" - 304 Not Modified
+207.62.170.211:59185 - - [04/Jun/2016 02:42:22] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.211:59185 - - [04/Jun/2016 02:42:22] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:56870 - - [04/Jun/2016 02:42:38] "HTTP/1.1 POST /" - 200 OK
+207.62.170.211:47077 - - [04/Jun/2016 02:42:39] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.211:47077 - - [04/Jun/2016 02:42:39] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.211:39983 - - [04/Jun/2016 02:42:39] "HTTP/1.1 GET /static/images/logo-black.png" - 200 
+207.62.170.211:39983 - - [04/Jun/2016 02:42:39] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.211:53425 - - [04/Jun/2016 02:47:41] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.211:53425 - - [04/Jun/2016 02:47:41] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.211:53425 - - [04/Jun/2016 02:47:42] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.211:42600 - - [04/Jun/2016 02:47:42] "HTTP/1.1 GET /static/images/logo-black.png" - 304 Not Modified
+207.62.170.211:42600 - - [04/Jun/2016 02:47:50] "HTTP/1.1 POST /login" - 301
+207.62.170.211:42600 - - [04/Jun/2016 02:47:50] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.211:42600 - - [04/Jun/2016 02:47:53] "HTTP/1.1 GET /search" - 200 OK
+207.62.170.211:42600 - - [04/Jun/2016 02:47:59] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.211:47989 - - [04/Jun/2016 02:50:12] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.211:47989 - - [04/Jun/2016 02:50:19] "HTTP/1.1 POST /login" - 301
+207.62.170.211:47989 - - [04/Jun/2016 02:50:19] "HTTP/1.1 GET /main" - 200 OK
+http://0.0.0.0:80/
+207.62.170.216:50995 - - [04/Jun/2016 03:32:28] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:50995 - - [04/Jun/2016 03:32:31] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:50995 - - [04/Jun/2016 03:32:34] "HTTP/1.1 POST /login" - 301
+207.62.170.216:50995 - - [04/Jun/2016 03:32:34] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:41891 - - [04/Jun/2016 03:40:52] "HTTP/1.1 GET /questions" - 200 OK
+http://0.0.0.0:80/

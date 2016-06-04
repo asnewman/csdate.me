@@ -1,0 +1,11 @@
+
+/* added body so text boxes are more visible */
+body {
+   background-color: rgb(213, 237, 247);
+   font-weight: bold;
+}
+
+.logo img {
+   width: 100%;
+   height: 75%;
+}

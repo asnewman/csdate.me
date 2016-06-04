@@ -25,14 +25,14 @@
             </div>
             <div class="row">
                <div class="col-xs-12">
-                  <input type="password" id="pw" class="form-control" name="password" placeholder="Password" required>
+                  <input type="password" class="form-control" id = "pw" name="plainpassword" placeholder="Password" required>
                    <script>
                      function hashPW() {
                         var password = document.getElementById("pw");
                         var salt = document.getElementById("user");
                         var saltypass = salt + password;
                         var hash = CryptoJS.SHA3(saltypass);
-                        document.getElementById("pw").value = hash;
+                        document.getElementById("password").value = hash;
                      }
                   </script>
                </div>
@@ -41,6 +41,9 @@
                <div class="col-xs-12">
                   <button type="submit" onclick="hashPW()" value="Submit" class="btn btn-default pull-right">Log in</button>
                </div>
+            </div>
+            <div> 
+               <input type = "hidden"  id = "password" name = "password">
             </div>
          </form>
       </div>
