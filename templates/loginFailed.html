@@ -15,7 +15,7 @@
    <div class="container loginContainer col-xs-12 input">
       <div class="loginPanel">
          <div class="logo col-xs-12">
-            <img src="static/images/logo-black.png" alt="logo">
+            <img src="static/images/logo.png" alt="logo">
          </div>
          <div class="col-xs-offset-2 col-xs-10 text-danger">
                <p>Username or Password is incorrect.</p>
@@ -31,10 +31,10 @@
                   <input type="password" class="form-control" id = "pw" name="plainpassword" placeholder="Password" required>
                    <script>
                      function hashPW() {
-                        var password = document.getElementById("pw");
-                        var salt = document.getElementById("user");
-                        var saltypass = salt + password;
-                        var hash = CryptoJS.SHA3(saltypass);
+                        var password = document.getElementById("pw").value;
+                        var salt = document.getElementById("user").value;
+                        password =  salt.concat(password);
+                        var hash = CryptoJS.SHA3(password);
                         document.getElementById("password").value = hash;
                      }
                   </script>

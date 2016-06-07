@@ -1,6 +1,7 @@
 from queries import *
 import random
 import bcrypt
+import shutil
 
 # html templates
 render = web.template.render('templates/')
@@ -9,12 +10,15 @@ render = web.template.render('templates/')
 urls = (
     '/', 'index',
     '/login', 'login',
-    '/loginFailed', 'login',
     '/questions', 'questions',
     '/main', 'main',
     '/search', 'search',
     '/test', 'test',
-    '/logout', 'logout'
+    '/logout', 'logout',
+    '/deepSearch', 'deepSearch',
+    '/profile', 'profile',
+    '/settings', 'settings',
+    '/upload', 'upload'
 )
 
 # Initializing database connector
@@ -22,22 +26,33 @@ DB = Database()
 
 class index:
     def GET(SELF):
-        return render.index()
+        token = web.cookies().get("token")
+        if token:
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
+        else:
+            return render.index()
     def POST(self):
         i = web.input()
         check = DB.addUserCheck(i.username, i.email)
         # Username/Email not taken
         if check == True:
-          DB.addUser(i.username, i.email, i.password)
+          salt = bcrypt.gensalt().replace("'","")
+          hashpw = bcrypt.hashpw(i.password.encode('UTF_8'), salt.encode('UTF_8')).replace("'","") # had to encode before hashing
+          DB.addUser(i.username, i.email, hashpw, salt)
           return render.userCreated();
         # Username/Email taken
         else:
           return render.signupTaken();
 
+# Most pages will get redirected here if cookie is not set/cookie is expired
 class login:
    def GET(self):
-      # Direct to default login page
-    	return render.login()
+      token = web.cookies().get("token")
+      if token:
+        return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
+      else:
+         # Direct to default login page
+         return render.login()
    def POST(self):
       # Querying database
       i = web.input()
@@ -46,7 +61,6 @@ class login:
          token = tokenSet(i.username)
          userId = DB.usernameToId(i.username)
          qCheck = DB.questionsDone(userId)
-         print qCheck
          if (qCheck == 1):
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
          else:
@@ -58,33 +72,88 @@ class login:
 # Main page accessed after login with results of our algorithm.
 class main:
    def GET(self):
-      return render.main()
+      token = web.cookies().get('token')
+      i = web.input(search=None, attribute=None)
+      #check to see if the cookie exists
+      if token:
+         userId = DB.tokenToId(token)
+         if userId == -1:
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+         if (i.search==None):
+            matches = DB.sortProfiles(userId)
+            return render.main(matches, False)
+         else:
+            matches = DB.singleSearch(i.search, i.attribute, userId)
+            return render.main(matches, True)
+      else:
+         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
    def POST(self):
-      token = web.cookies().token
-      DB.removeToken(token)
-      return render.logout()
+      return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
 
-# Page for getting questions from users  -- is broken for now due to different attribute #s
+
+#testing uploading here
+class upload:
+    def GET(self):
+        web.header("Content-Type","text/html; charset=utf-8")
+        return render.upload()
+    def POST(self):
+        token = web.cookies().get('token')
+        if token:
+            userId = DB.tokenToId(token)
+            if userId == -1: 
+                return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+            else:
+                x = web.input(myfile={}, verify=None)
+                filedir = 'static/images' # change this to the directory you want to store the file in.
+#file has been checked on clientside
+                if (x.verify == "good"):
+                    if 'myfile' in x: # to check if the file-object is created
+                        filepath=x.myfile.filename.replace('\\','/') # replaces the windows-style slashes with linux ones.
+                        filename=filepath.split('/')[-1] # splits the and chooses the last part (the filename with extension)
+                        extension = filename.split('.')[-1] #recieves the extension
+                        fout = open(filedir +'/'+ str(userId) + "." + extension,'wb') # creates the file where the uploaded file should be stored
+                        fout.write(x.myfile.file.read()) # writes the uploaded file to the newly created file.
+                        fout.close() # closes the file, upload complete.
+                        DB.uploadImage(userId, str(userId) + "."  + extension)
+                        print str(userId) + "." + extension
+                        return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
+                    else:
+                        print "file submission has failed clientside check please redirect to error page?"
+        else: 
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+        
+
+# Page for getting questions from users
 class questions:
    def GET(self):
-      i = web.input(firstName=None)
-      if(i.firstName==None):
-        return render.questions()
-      else:
-        token = web.cookies().token
-        userId = DB.tokenToId(token)
-        print userId
-        DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName, 
-                                      i.gender, i.state, i.city, i.birthday, 
-                                     i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
-                                     i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
-                                     i.favHobby2, i.favHobby3, i.wpm)
-        return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
+      token = web.cookies().get('token')
+      if token:
+         i = web.input(pic={},firstName=None)
+         if(i.firstName==None):
+           return render.questions()
+         else:
+           userId = DB.tokenToId(token)
+           if userId == -1:
+              return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
 
-# Searching other users page.
+           DB.setQuestions(userId, i.firstName, i.middleName, i.lastName, 
+                                        i.gender, i.state, i.city, i.birthday, 
+                                        i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
+                                        i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
+                                        i.favHobby2, i.favHobby3, i.wpm)
+           return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
+      else:
+         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+
+# Searching other users page. -- pending deletion
 class search:
   def GET(self):
-    return render.search()
+    i = web.input(search=None)
+    if(i.search == None):            
+        return render.search()
+    else:
+        DB.singleSearch(i.search, i.attribute)
+        return render.search()        
 
 # Testing Hashing here
 class test:
@@ -93,88 +162,68 @@ class test:
 
 class logout:
    def GET(self):
-      token = web.cookies().token
-      DB.removeToken(token)
-      return render.logout()
+      cookie = web.cookies().get('token')
+      if cookie:
+         DB.removeToken(cookie)
+         web.setcookie('token', '', expires="-1", domain="csdate.me")
+         return render.logout()
+      else:
+         web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+
+class deepSearch:
+    def GET(self):
+        token = web.cookies().get("token")
+        if token:
+            i = web.input(submit=None)
+            if(i.submit == None):
+                return render.deepSearch()
+            else:
+                matches = DB.indepthSearch(i.required, i.firstName, i.middleName, i.lastName, i.gender, i.state, i.city, i.favoriteOS, i.phoneOS, i.relationship, i.gaming, i.favLang1, i.favLang2, i.favLang3, i.wpm)
+            return render.main(matches, True)
+        else:
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
+
+class profile:
+   def GET(self):
+      token = web.cookies().get("token")
+      if token:
+         userId = DB.tokenToId(token)
+         if userId == -1:
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+         tuple = DB.userProfile(userId)
+         return render.profile(tuple)
+      else:
+         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+
+class settings:
+   def GET(self):
+      token = web.cookies().get("token")
+      if token:
+         userId = DB.tokenToId(token)
+         if userId == -1:
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+         i = web.input(firstName=None, middleName=None, lastName=None, gender=None, state=None,
+                       city=None, birthday=None, favoriteOS=None, phoneOS=None, relationship=None,
+                       gaming=None, favLang1=None, favLang2=None, favLang3=None, favHobby1=None,
+                       favHobby2=None, favHobby3=None, wpm=None)
+         DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName, 
+                                      i.gender, i.state, i.city, i.birthday, 
+                                      i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
+                                      i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
+                                      i.favHobby2, i.favHobby3, i.wpm)
+         return render.settings()
+      else:
+         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
 
 def tokenSet(username):
     r = random.randint(0, 2147483647)
     rString = str(r)
     token = bcrypt.hashpw(rString, bcrypt.gensalt())
+    token = token.replace("'","")
     validToken = DB.addToken(username, token)
-    validToken.replace("'","")
-    web.setcookie('token', validToken, domain="csdate.me", secure=False)
-
-# Compare attribute of two users. Works for every attribute except
-# wpm and birthday.
-def compareTwoUsers(self, attribute, user1, user2):
-   if (attribute != "wpm" AND attribute != "birthday"):
-      cmd = "SELECT %s FROM Questions Q1 JOIN Questions Q2 ON Q1.%s = Q2.%s WHERE Q1.userid = %d AND Q2.userid = %d" % (attribute, attribute, attribute, user1, user2)
-   elif (attribute == "wpm"):
-      cmd = "SELECT wpm FROM Questions Q1 JOIN Questions Q2 WHERE Q1.userid = user1 AND Q2.userid = user2 AND (Q1.wpm BETWEEN (Q2.wpm - 10) AND (Q2.wpm + 10))"
-   else:
-      cmd = "SELECT birthday FROM Questions Q1 JOIN Questions Q2 WHERE Q1.userid = user1 AND Q2.userid = user2 AND (YEAR(Q1.birthday) BETWEEN (YEAR(Q2.birthday) - 5) AND (YEAR(Q2.birthday) + 5)"
-   self.cur.execute(cmd)
-   res = self.cur.fetchall()
-   # If there is a result, the attribute matches.
-   if (res[0][0]):
-      return True
-   return False
-
-# Returns the total number of users currently in the database
-def numUsers(self):
-   self.cur.execute("SELECT COUNT(*) FROM Users")
-   res = self.cur.fetchall()
-   return res[0][0]
-
-# Create list of tuples for scores.
-def createScores(self):
-   currUser = 1
-   totalUsers = numUsers()
-   scores = []
-   while (currUser < totalUsers):
-      scores.append((currUser, 0))
-      currUser++
-   return scores
-
-# Compare attribute of one user against all other users and add to 
-# total scores. Returns scores array of tuples (userId, score).
-def compareAttribute(self, attribute, weight, userid, scores):
-   currUser = 1
-   totalUsers = numUsers()
-   while (currUser < totalUsers):
-      # Do not compare the user with itself.
-      if (currUser != userid):
-         # If the current user has the same value for this attribute, 
-         # add the weight of the attribute to the score.
-         if (compareTwoUsers(attribute, userid, currUser)):
-            scores = [(uid, score) if (uid != currUser) else (uid, score + weight) for (uid, score) in scores]
-      currUser++
-
-# Calculates the score for the user against all other users.
-# Returns the scores in an array of tuples (userId, score).
-def calculateScores(self, userid):
-   scores = createScores()
-   stateW = 
-   cityW = 
-   favoriteOSW = 4
-   phoneOSW = 
-   gamingW = 
-   favLangW = 
-   compareAttribute('favoriteOS', favoriteOSW, userid, scores)
-
-# Sorts in order from highest score to lowest score for particular user.
-def sortProfiles(self, userid):
-   scores = calculateScores(userid)
-   scores.sort(key=lambda tup:tup[1])
-   # Return an array of users with user data.
-   tuples = []
-   for (uid, score) in scores:
-      self.cur.execute("SELECT * FROM Questions WHERE uid = " + uid + ";")
-      res = self.cur.fetchall
-      tuples.append(res[0])
-   return tuples
+    web.setcookie('token', validToken, expires='7200', domain="csdate.me", secure=False)
 
 if __name__ == "__main__":
+  # web.config.debug = False
     app = web.application(urls, globals())
     app.run()

@@ -51,11 +51,11 @@
             Gender <br>
          </div>
                <div class = "col-xs-8 Gender">
-                     <input type="radio" name="gender" value="male" checked> Male <br>
-                     <input type="radio" name="gender" value="female"> Female <br>
-                     <input type="radio" name="gender" value="other"> Other <br>
-                     <input type="radio" name="gender" value="declined"> Declined to state <br>
-                     <input type="radio" name="gender" value="transgender"> Transgender <br><br>
+                     <input type="radio" name="gender" value="m" checked> Male <br>
+                     <input type="radio" name="gender" value="f"> Female <br>
+                     <input type="radio" name="gender" value="o"> Other <br>
+                     <input type="radio" name="gender" value="d"> Declined to state <br>
+                     <input type="radio" name="gender" value="t"> Transgender <br><br>
                </div>
 
          <div class = "col-xs-4 states">
@@ -260,7 +260,7 @@
          <div class = "col-xs-12 filler"></div>
 
          <div class = "col-xs-4 favoritehobby">
-           <br> #1 Favorite Hobby (use one word verb)
+           <br> #1 Favorite Hobby
          </div>
 
          <div class = "col-xs-8 favoritehobby">
@@ -272,7 +272,7 @@
          <div class = "col-xs-12 filler"></div>
 
          <div class = "col-xs-4 favoritehobby">
-           <br> #2 Favorite Hobby (use one word verb)
+           <br> #2 Favorite Hobby
          </div>
 
          <div class = "col-xs-8 favoritehobby">
@@ -284,7 +284,7 @@
          <div class = "col-xs-12 filler"></div>
 
          <div class = "col-xs-4 favoritehobby">
-           <br> #3 Favorite Hobby (use one word verb) 
+           <br> #3 Favorite Hobby
          </div>
 
          <div class = "col-xs-8 favoritehobby">
@@ -296,22 +296,37 @@
          <div class = "col-xs-12 filler"></div>
          
          <div class = "col-xs-4 wpm">
-            <a href= "http://www.typingtest.com/test.html?minutes=1&textfile=aesop.txt"> <br>WPM (click for link) </a>
+            <a href= "http://www.typingtest.com/test.html?minutes=1&textfile=aesop.txt" target="_blank"> <br>WPM (click for link) </a>
          </div>
 
          <div class = "col-xs-8 wpm">
             <div class = "col-xs-4 wpm">
-               <br><input type = "number" name = "wpm" placeholder = "Be honest :)">
+               <br><input type = "number" name = "wpm" min = "0" step = "1" placeholder = "Be honest :)">
             </div>
          </div> 
 
+         <div class = "col-xs-12 filler"></div>
 
+         <div class ="col-xs-4 upload">
+            <br> Profile Picture (optional)
+         </div>
+
+         <div class = "col-xs-8 upload">
+            <div class = "col-xs-4 upload">
+               <br><input type ="file" name = "pic" accept="image/*">
+            </div>
+         </div>
+
+         <div class = "col-xs-12 filler"></div>
 <!-- temp fix for submit location? -->      
          <div class = "col-xs-5" > </div>
 
          <div class = "col-xs-7 submit">
             <br> <input type="submit" name = "submit">
-         </div> 
+         </div>
+
+         <div class = "col-xs-12 filler"><br><br><br><br><br></div>
+ 
          </form>
       </div>
    </body>

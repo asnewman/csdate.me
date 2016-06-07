@@ -7,7 +7,8 @@ CREATE TABLE Users (
    password VARCHAR(256) NOT NULL,
    email VARCHAR(64) NOT NULL,
    token VARCHAR(256) DEFAULT NULL,
-   tokenTime TIMESTAMP NULL
+   tokenTime TIMESTAMP NULL,
+   salt VARCHAR(256)
 );
 
 
@@ -31,5 +32,6 @@ CREATE TABLE Questions (
    favHobby1 VARCHAR(32),
    favHobby2 VARCHAR(32) DEFAULT NULL,
    favHobby3 VARCHAR(32) DEFAULT NULL,
-   wpm INTEGER
+   wpm INTEGER,
+   pic VARCHAR(32)
 );

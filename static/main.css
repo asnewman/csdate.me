@@ -1,5 +1,6 @@
 html, body {
    height: 100%;
+   overflow-x: hidden;
 }
 .content {
    background-color: yellow;
@@ -27,14 +28,20 @@ html, body {
 .block img {
 	max-height: 100%;
 	max-width: 100%;
-	width: auto;
-	height: auto;
 	position:absolute;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
 	margin:auto;
+}
+
+.search {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	position:relative;
+	left:50%;
+	transform: translate(-12.5%, 0%);
 }
 
 .searchButton {
@@ -76,4 +83,30 @@ and (max-device-width : 800px) {
 
 .logo img {
    width: 100%;
+}
+
+.btn-space {
+	margin-top: 2px;
+	margin-left: 5px;
+	margin-bottom: 3px;
+}
+
+.profile .img-responsive {
+	margin: 0 auto;
+	width: auto;
+	max-height: 400px;
+}
+
+.profile {
+	padding-top: 10px;
+}
+
+.entries .img-responsive {
+	max-width: 600px;
+	max-height: 200px;
+	margin:0 auto;
+}
+
+.nameHeader {
+	color: #7CAED6;
 }

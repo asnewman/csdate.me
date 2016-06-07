@@ -1,11 +1,64 @@
+$def with (tuple)
+
 <!DOCTYPE html>
 <html>
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="static/main.css">
    <title>Personal Profile</title>
 </head>
 <body>
-   profile!
+   <div class="container-fluid row">
+      <div class="col-xs-12 block">
+         <div class="whitelogo">
+            <img src="/static/images/logo-white.png" alt="CSDate.me">
+         </div>
+         <form method="POST">
+            <div class="homeAndLogout">
+               <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
+               <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/main" role="button">Home</a>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="container-fluid row">
+      <div class="profile col-xs-12">
+            <div class="page-header">
+               <h1 class="text-center">$tuple[2] $tuple[3] $tuple[4]</h1>
+            </div>
+            <img src="static/images/$tuple[20]" alt="alt" class="img-responsive">
+            $if tuple[5] == 'm':
+               <h4 class="text-center">Gender: Male</h4>
+            $elif tuple[5] == 'f':
+               <h4 class="text-center">Gender: Female</h4>
+            $elif tuple[5] == 't':
+               <h4 class="text-center">Gender: Transgender</h4>
+            $elif tuple[5] == 'o':
+               <h4 class="text-center">Gender: Other</h4>
+            $elif tuple[5] == 'd':
+               <h4 class="text-center">Gender: Declined to state</h4>
+            <h4 class="text-center">$tuple[11]</h4>
+            <h4 class="text-center">$tuple[7], $tuple[6] </h4>
+            <h4 class="text-center">DOB: $tuple[8]</h4>
+            <h4 class="text-center">Favorite OS: $tuple[9]</h4>
+            <h4 class="text-center">Phone OS: $tuple[10]</h4>
+            <h4 class="text-center">Preferred Gaming: $tuple[12]</h4>
+            <h4 class="text-center">
+               <ul>Favorite Languages:
+                  <li>$tuple[13]</li>
+                  <li>$tuple[14]</li>
+                  <li>$tuple[15]</li>
+               </ul>
+               <ul>Favorite Hobby:
+                  <li>$tuple[16]</li>
+                  <li>$tuple[17]</li>
+                  <li>$tuple[18]</li>
+               </ul>
+            </h4>
+            <h4 class="text-center">WPM: $tuple[19]</h4>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
