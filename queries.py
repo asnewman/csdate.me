@@ -210,7 +210,7 @@ class Database:
 
 
    #extended search page -- query will only run (and return something?) if required - will ignore empty submits, lmk if u want it to do otherwise - sigal please do whatever you did with my single search
-   def indepthSearch(self, require, fName, mName, lName, gender, state, city, favoriteOS, phoneOS, relationship, gaming, favLang1, favLang2, favLang3, wpm):
+   def indepthSearch(self, require, fName, mName, lName, gender, state, city, favoriteOS, phoneOS, relationship, gaming, favLang1, favLang2, favLang3, wpm, userid):
       # checks if the attribute has a value or not and writes a query based off of that 
       self.fName = ""
       self.mName = ""
@@ -266,9 +266,20 @@ class Database:
          self.favLang3 = require + " (favLang2 = '" + favLang3 + "' OR favLang2 = '" + favLang3 + "' OR favLang3 = '" + favLang3 + "') "
          atLeastOne = 1
 
+      if ('-' in wpm and len(wpm) > 2):
+         nums = wpm.split('-')
+         if(nums[0].isdigit() and nums[1].isdigit()):
+            num1 = int(nums[0])
+            num2 = int(nums[1])
+            atLeastOne = 1
+         else:
+            num1 = -999
+            num2 = -999
+         self.wpm = require + " (wpm >= " + str(num1) + " AND wpm <= " + str(num2) + ") "
+
       #two seperate queries depending if AND or OR is necessary 
       if(atLeastOne == 1 and require == "AND"):
-         cmd = "SELECT * from Questions WHERE " + "1 = 1 "  + self.fName + self.mName + self.lName + self.gender + self.state + self.city + favOS + self.relationship + self.favLang1 + self.favLang2 + self.favLang3 + " ;"
+         cmd = "SELECT * from Questions WHERE " + "1 = 1 "  + self.fName + self.mName + self.lName + self.gender + self.state + self.city + favOS + self.relationship + self.favLang1 + self.favLang2 + self.favLang3 + self.wpm + " AND id != " + str(userid) + " ;"
          self.cur.execute(cmd)
          res = self.cur.fetchall()
          tuples = []
@@ -277,12 +288,13 @@ class Database:
          return tuples
 
       if(atLeastOne == 1 and require == "OR"):
-         cmd = "SELECT * from Questions WHERE " + "1 = 0 "  + self.fName + self.mName + self.lName + self.gender + self.state + self.city + favOS + self.relationship + self.favLang1 + self.favLang2 + self.favLang3 + ";"
+         
+         cmd = "SELECT * from Questions WHERE " + "1 = 0 "  + self.fName + self.mName + self.lName + self.gender + self.state + self.city + favOS + self.relationship + self.favLang1 + self.favLang2 + self.favLang3 + self.wpm +  " AND id != " + str(userid) + " ;"
          self.cur.execute(cmd)
          res = self.cur.fetchall()
          tuples = []
          for result in res:
-            tuples.append(result[0])
+            tuples.append(result)
          return tuples
       
 

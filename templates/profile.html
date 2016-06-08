@@ -21,13 +21,13 @@ $def with (tuple)
             </div>
          </form>
       </div>
-   </div>
-   <div class="container-fluid row">
-      <div class="profile col-xs-12">
-            <div class="page-header">
-               <h1 class="text-center">$tuple[2] $tuple[3] $tuple[4]</h1>
-            </div>
-            <img src="static/images/$tuple[20]" alt="alt" class="img-responsive">
+      <div class="profile col-xs-4"></div>
+      <div class="profile col-xs-4">
+         <div class="page-header">
+            <h1 class="text-center">$tuple[2] $tuple[3] $tuple[4]</h1>
+         </div>
+         <img src="static/images/$tuple[20]" alt="alt" class="img-responsive">
+         <div class="well">
             $if tuple[5] == 'm':
                <h4 class="text-center">Gender: Male</h4>
             $elif tuple[5] == 'f':
@@ -45,20 +45,25 @@ $def with (tuple)
             <h4 class="text-center">Phone OS: $tuple[10]</h4>
             <h4 class="text-center">Preferred Gaming: $tuple[12]</h4>
             <h4 class="text-center">
-               <ul>Favorite Languages:
-                  <li>$tuple[13]</li>
-                  <li>$tuple[14]</li>
-                  <li>$tuple[15]</li>
-               </ul>
-               <ul>Favorite Hobby:
-                  <li>$tuple[16]</li>
-                  <li>$tuple[17]</li>
-                  <li>$tuple[18]</li>
-               </ul>
+               Favorite Languages: <br>
+                  $tuple[13]<br>
+                  $if (tuple[14] != ""):
+                     $tuple[14]<br>
+                  $if (tuple[15] != ""):
+                     $tuple[15]<br>
+               
+               Favorite Hobby:<br>
+                  $tuple[16]<br>
+                  $if (tuple[17] != ""):
+                     $tuple[17]<br>
+                  $if (tuple[18] != ""):
+                     $tuple[18]<br>
+               
             </h4>
-            <h4 class="text-center">WPM: $tuple[19]</h4>
+            <h4 class="text-center">WPM: $tuple[19]</h4>    
          </div>
       </div>
+      <div class="profile col-xs-4"></div>
    </div>
 </body>
 </html>

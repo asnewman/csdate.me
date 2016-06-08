@@ -4,7 +4,7 @@ Things we still need to do:
    - Adding pictures to main page (Sigal)
    - profile page (Sigal)
    - html/css page for upload : maybe (Ash)
-   - put upload in the questions page (Jason)
+   - put upload in the questions page (Jason)  - done
    - update user settings page w/ upload page (Ash)
    - icon takes to home page (Ash)
    - remove picture (Jason)

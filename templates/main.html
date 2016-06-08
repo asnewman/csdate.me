@@ -1,4 +1,4 @@
-$def with (matches, search)
+$def with (userId, matches, search)
 
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,7 @@ $def with (matches, search)
             <div class="homeAndLogout">
                <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
                <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/settings" role="button">Update Profile</a>
-               <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/profile" role="button">Profile</a>
+               <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/profile$userId" role="button">Profile</a>
                <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/main" role="button">Home</a>
             </div>
          </form>
@@ -64,7 +64,9 @@ $def with (matches, search)
                            </div>
                         </th>
                         <th>
-                           <h1 class="text-center nameHeader img-responsive">$match[2] $match[3] $match[4]</h1>
+                           <h1 class="text-center nameHeader img-responsive">
+                              <a href="http://www.csdate.me/profile$match[0]">$match[2] $match[3] $match[4]</a>
+                           </h1>
                            $if match[5] == 'm':
                               <h3 class="text-center">Gender: Male</h3>
                            $elif match[5] == 'f':

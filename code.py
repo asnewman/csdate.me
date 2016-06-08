@@ -16,7 +16,7 @@ urls = (
     '/test', 'test',
     '/logout', 'logout',
     '/deepSearch', 'deepSearch',
-    '/profile', 'profile',
+    '/profile(\d+)', 'profile',
     '/settings', 'settings',
     '/upload', 'upload'
 )
@@ -81,10 +81,10 @@ class main:
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
          if (i.search==None):
             matches = DB.sortProfiles(userId)
-            return render.main(matches, False)
+            return render.main(userId, matches, False)
          else:
             matches = DB.singleSearch(i.search, i.attribute, userId)
-            return render.main(matches, True)
+            return render.main(userId, matches, True)
       else:
          return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
    def POST(self):
@@ -105,7 +105,8 @@ class upload:
             else:
                 x = web.input(myfile={}, verify=None)
                 filedir = 'static/images' # change this to the directory you want to store the file in.
-#file has been checked on clientside
+
+    #file has been checked on clientside
                 if (x.verify == "good"):
                     if 'myfile' in x: # to check if the file-object is created
                         filepath=x.myfile.filename.replace('\\','/') # replaces the windows-style slashes with linux ones.
@@ -115,7 +116,6 @@ class upload:
                         fout.write(x.myfile.file.read()) # writes the uploaded file to the newly created file.
                         fout.close() # closes the file, upload complete.
                         DB.uploadImage(userId, str(userId) + "."  + extension)
-                        print str(userId) + "." + extension
                         return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
                     else:
                         print "file submission has failed clientside check please redirect to error page?"
@@ -124,26 +124,63 @@ class upload:
         
 
 # Page for getting questions from users
+#class questions:
+#   def GET(self):
+#      token = web.cookies().get('token')
+#      if token:
+#         i = web.input(pic={},firstName=None)
+#         if(i.firstName==None):
+#           return render.questions()
+#         else:
+#           userId = DB.tokenToId(token)
+#           if userId == -1:
+#              return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+#
+#           DB.setQuestions(userId, i.firstName, i.middleName, i.lastName, 
+#                                        i.gender, i.state, i.city, i.birthday, 
+#                                        i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
+#                                        i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
+#                                        i.favHobby2, i.favHobby3, i.wpm)
+#           return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
+#      else:
+#         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+
 class questions:
    def GET(self):
       token = web.cookies().get('token')
       if token:
-         i = web.input(pic={},firstName=None)
-         if(i.firstName==None):
            return render.questions()
-         else:
-           userId = DB.tokenToId(token)
-           if userId == -1:
-              return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+      else:
+         userId = DB.tokenToId(token)
+         if userId == -1: 
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
 
+   def POST(self):
+           token = web.cookies().get('token')
+           userId = DB.tokenToId(token)
+           i = web.input(myfile={}, verify=None)
+           filedir = 'static/images' # change this to the directory you want to store the file in.
+
+    #file has been checked on clientside
+           if (i.verify == "good"):
+              if 'myfile' in i: # to check if the file-object is created
+                 filepath=i.myfile.filename.replace('\\','/') # replaces the windows-style slashes with linux ones.
+                 filename=filepath.split('/')[-1] # splits the and chooses the last part (the filename with extension)
+                 extension = filename.split('.')[-1] #recieves the extension
+                 fout = open(filedir +'/'+ str(userId) + "." + extension,'wb') # creates the file where the uploaded file should be stored
+                 fout.write(i.myfile.file.read()) # writes the uploaded file to the newly created file.
+                 fout.close() # closes the file, upload complete.
+                 DB.uploadImage(userId, str(userId) + "."  + extension)
+              else:
+# need an errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrorrrrrrrrrrrrrrr page here
+                 print "file submission has failed clientside check please redirect to error page?"
            DB.setQuestions(userId, i.firstName, i.middleName, i.lastName, 
                                         i.gender, i.state, i.city, i.birthday, 
                                         i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
                                         i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
                                         i.favHobby2, i.favHobby3, i.wpm)
            return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
-      else:
-         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+
 
 # Searching other users page. -- pending deletion
 class search:
@@ -175,22 +212,23 @@ class deepSearch:
         token = web.cookies().get("token")
         if token:
             i = web.input(submit=None)
+            userId = DB.tokenToId(token)
             if(i.submit == None):
                 return render.deepSearch()
             else:
-                matches = DB.indepthSearch(i.required, i.firstName, i.middleName, i.lastName, i.gender, i.state, i.city, i.favoriteOS, i.phoneOS, i.relationship, i.gaming, i.favLang1, i.favLang2, i.favLang3, i.wpm)
-            return render.main(matches, True)
+                matches = DB.indepthSearch(i.required, i.firstName, i.middleName, i.lastName, i.gender, i.state, i.city, i.favoriteOS, i.phoneOS, i.relationship, i.gaming, i.favLang1, i.favLang2, i.favLang3, i.wpm, userId)
+            return render.main(userId, matches, True)
         else:
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
 
 class profile:
-   def GET(self):
+   def GET(self, profileId):
       token = web.cookies().get("token")
       if token:
          userId = DB.tokenToId(token)
          if userId == -1:
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
-         tuple = DB.userProfile(userId)
+         tuple = DB.userProfile(profileId)
          return render.profile(tuple)
       else:
          return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
