@@ -77,14 +77,24 @@ class main:
       #check to see if the cookie exists
       if token:
          userId = DB.tokenToId(token)
+         params = web.input()
+         page = params.page if hasattr(params, 'page') else 1
          if userId == -1:
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+         # if (i.search==None):
+         #    matches = DB.sortProfiles(userId)
+         #    return render.main(userId, matches, False)
+         # else:
+         #    matches = DB.singleSearch(i.search, i.attribute, userId)
+         #    return render.main(userId, matches, True)
          if (i.search==None):
             matches = DB.sortProfiles(userId)
-            return render.main(userId, matches, False)
+            lower, upper = get_slices(page)
+            return render.main(userId, matches[lower:upper], False)
          else:
             matches = DB.singleSearch(i.search, i.attribute, userId)
-            return render.main(userId, matches, True)
+            lower, upper = get_slices(page)
+            return render.main(userId, matches[lower:upper], True)
       else:
          return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
    def POST(self):
@@ -119,6 +129,9 @@ class upload:
                         return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
                     else:
                         print "file submission has failed clientside check please redirect to error page?"
+                if(i.verify == "bad"):
+                    render.questionsIncorrect()
+
         else: 
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
         
@@ -172,13 +185,15 @@ class questions:
                  fout.close() # closes the file, upload complete.
                  DB.uploadImage(userId, str(userId) + "."  + extension)
               else:
-# need an errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrorrrrrrrrrrrrrrr page here
+                 render.questionsIncorrect()
                  print "file submission has failed clientside check please redirect to error page?"
+           if(i.verify == "bad"):
+                render.questionsIncorrect()
            DB.setQuestions(userId, i.firstName, i.middleName, i.lastName, 
                                         i.gender, i.state, i.city, i.birthday, 
                                         i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
                                         i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
-                                        i.favHobby2, i.favHobby3, i.wpm)
+                                        i.favHobby2, i.favHobby3, i.wpm, i.interest, i.bio)
            return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
 
 
@@ -216,7 +231,7 @@ class deepSearch:
             if(i.submit == None):
                 return render.deepSearch()
             else:
-                matches = DB.indepthSearch(i.required, i.firstName, i.middleName, i.lastName, i.gender, i.state, i.city, i.favoriteOS, i.phoneOS, i.relationship, i.gaming, i.favLang1, i.favLang2, i.favLang3, i.wpm, userId)
+                matches = DB.indepthSearch(i.required, i.firstName, i.middleName, i.lastName, i.gender, i.state, i.city, i.favoriteOS, i.phoneOS, i.relationship, i.gaming, i.favLang1, i.favLang2, i.favLang3, i.wpm, userId, i.interest)
             return render.main(userId, matches, True)
         else:
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'})
@@ -235,23 +250,43 @@ class profile:
 
 class settings:
    def GET(self):
-      token = web.cookies().get("token")
+      token = web.cookies().get('token')
       if token:
-         userId = DB.tokenToId(token)
-         if userId == -1:
-            return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
-         i = web.input(firstName=None, middleName=None, lastName=None, gender=None, state=None,
-                       city=None, birthday=None, favoriteOS=None, phoneOS=None, relationship=None,
-                       gaming=None, favLang1=None, favLang2=None, favLang3=None, favHobby1=None,
-                       favHobby2=None, favHobby3=None, wpm=None)
-         DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName, 
-                                      i.gender, i.state, i.city, i.birthday, 
-                                      i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
-                                      i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
-                                      i.favHobby2, i.favHobby3, i.wpm)
-         return render.settings()
+           return render.settings()
       else:
-         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
+         userId = DB.tokenToId(token)
+         if userId == -1: 
+            return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
+
+   def POST(self):
+           token = web.cookies().get('token')
+           userId = DB.tokenToId(token)
+           i = web.input(myfile={}, verify=None)
+           filedir = 'static/images' # change this to the directory you want to store the file in.
+           
+           if (i.reset == "pressed"):
+              DB.deleteImage(userId)
+    #file has been checked on clientside
+           if (i.verify == "good"):
+              if 'myfile' in i: # to check if the file-object is created
+                 filepath=i.myfile.filename.replace('\\','/') # replaces the windows-style slashes with linux ones.
+                 filename=filepath.split('/')[-1] # splits the and chooses the last part (the filename with extension)
+                 extension = filename.split('.')[-1] #recieves the extension
+                 fout = open(filedir +'/'+ str(userId) + "." + extension,'wb') # creates the file where the uploaded file should be stored
+                 fout.write(i.myfile.file.read()) # writes the uploaded file to the newly created file.
+                 fout.close() # closes the file, upload complete.
+                 DB.uploadImage(userId, str(userId) + "."  + extension)
+              else:
+                 render.questionsIncorrect()
+                 print "file submission has failed clientside check please redirect to error page?"
+           if(i.verify == "bad"):
+                render.questionsIncorrect()
+           DB.updateQuestions(userId, i.firstName, i.middleName, i.lastName, 
+                                        i.gender, i.interest, i.state, i.city, i.birthday, 
+                                        i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
+                                        i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
+                                        i.favHobby2, i.favHobby3, i.wpm, i.bio)
+           return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
 
 def tokenSet(username):
     r = random.randint(0, 2147483647)
@@ -261,7 +296,13 @@ def tokenSet(username):
     validToken = DB.addToken(username, token)
     web.setcookie('token', validToken, expires='7200', domain="csdate.me", secure=False)
 
+def get_slices(page, page_size=10):
+  return (page_size * (page - 1), (page_size * page))
+
+def internalerror():
+    return web.internalerror("Bad, bad server. No donut for you. Please contact the server admins of the error.")
+
 if __name__ == "__main__":
-  # web.config.debug = False
+    web.config.debug = False
     app = web.application(urls, globals())
     app.run()

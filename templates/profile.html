@@ -25,9 +25,11 @@ $def with (tuple)
       <div class="profile col-xs-4">
          <div class="page-header">
             <h1 class="text-center">$tuple[2] $tuple[3] $tuple[4]</h1>
+            <h3 class="text-center">Contact me: $tuple[26]</h3> 
          </div>
          <img src="static/images/$tuple[20]" alt="alt" class="img-responsive">
          <div class="well">
+            <h4 class="text-center">About me: $tuple[21]</h4>
             $if tuple[5] == 'm':
                <h4 class="text-center">Gender: Male</h4>
             $elif tuple[5] == 'f':
@@ -38,6 +40,17 @@ $def with (tuple)
                <h4 class="text-center">Gender: Other</h4>
             $elif tuple[5] == 'd':
                <h4 class="text-center">Gender: Declined to state</h4>
+            <h4 class="text-center">Interested in 
+               $if tuple[22] == 'm':
+                  Male
+               $if tuple[22] == 'f':
+                  Female
+               $if tuple[22] == 't':
+                  Transgender
+               $if tuple[22] == 'o':
+                  Other
+               $if tuple[22] == 'a':
+                  All
             <h4 class="text-center">$tuple[11]</h4>
             <h4 class="text-center">$tuple[7], $tuple[6] </h4>
             <h4 class="text-center">DOB: $tuple[8]</h4>
@@ -51,16 +64,15 @@ $def with (tuple)
                      $tuple[14]<br>
                   $if (tuple[15] != ""):
                      $tuple[15]<br>
-               
+               <br>
                Favorite Hobby:<br>
                   $tuple[16]<br>
                   $if (tuple[17] != ""):
                      $tuple[17]<br>
                   $if (tuple[18] != ""):
                      $tuple[18]<br>
-               
             </h4>
-            <h4 class="text-center">WPM: $tuple[19]</h4>    
+            <h4 class="text-center">WPM: $tuple[19]</h4>
          </div>
       </div>
       <div class="profile col-xs-4"></div>

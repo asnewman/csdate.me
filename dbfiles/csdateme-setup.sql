@@ -33,5 +33,7 @@ CREATE TABLE Questions (
    favHobby2 VARCHAR(32) DEFAULT NULL,
    favHobby3 VARCHAR(32) DEFAULT NULL,
    wpm INTEGER,
-   pic VARCHAR(32)
+   pic VARCHAR(32),
+   bio VARCHAR(256),
+   interestedIn VARCHAR(1)
 );

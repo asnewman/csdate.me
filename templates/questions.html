@@ -1,208 +1,195 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="static/question.css">
-      <title> Questions </title>
+      <title> Update your profile: </title>
    </head>
+   <body>
+      <div class="row">
+      <div class = "col-xs-12">
+           <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
+           <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/main" role="button">Home</a>
+      </div>
+      </div>
+      <div class = "col-xs-12 logo">
+         <a href="http://www.csdate.me/main"><img src = "static/images/logo.png" alt = "logo.png"></a>
+      </div>
       <div class="container">
-      <body>
-         <div class = "row">
-            <div>
-               <a class="btn btn-success pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
+         <H1>Create your profile:</H1><br>
+         <form method="POST" enctype="multipart/form-data" action="">
+            <div class="col-xs-12 field">
+               <div class="col-xs-3">
+                  <label for="firstName">First Name</label>
+               </div>
+               <div class="col-xs-4">
+                  <input type="text" name="firstName" required>
+               </div>
             </div>
-            <div class = "col-xs-12 logo">
-               <img src = "static/images/logo.png" alt = "logo.png">
+            <div class = "col-xs-12 field">
+               <div class="col-xs-3">
+                  <label for="middleName">Middle Name</label>
+               </div>
+               <div class="col-xs-4">
+                  <input type = "text" name = "middleName" placeholder = "Optional">
+               </div>
             </div>
-            <form method="POST"  enctype="multipart/form-data" action="">
-
-               <div class="col-xs-4 names"> 
-                  First Name
+            <div class="col-xs-12 field">
+               <div class="col-xs-3">
+                  <label for="lastName">Last Name</label>
                </div>
-
-               <div class = "col-xs-8 names">
-                  <div class = "col-xs-4 blah">
-                     <input type = "text" name = "firstName" required><br><br>
-                  </div>
+               <div class="col-xs-4">            
+                  <input type = "text" name = "lastName" required>
                </div>
-
-               <div class = "col-xs-4 names">
-                  Middle Name
-               </div>
-
-               <div class = "col-xs-8 names">
-                  <div class = "col-xs-4 blah"> 
-                     <input type = "text" name = "middleName" placeholder = "Optional"><br><br>
-                  </div>
-               </div>
-
-               <div class = "col-xs-4 names">
-                  Last Name
-               </div>
-               <div class = "col-xs-8 blah">
-                  <div class = "col-xs-4 blah">                
-                     <input type = "text" name = "lastName" required> <br><br>
-                  </div>
-               </div>
-         </div>
-         
-         <div class = "col-xs-4 Gender">
-            Gender <br>
-         </div>
-               <div class = "col-xs-8 Gender">
-                     <input type="radio" name="gender" value="m" checked> Male <br>
-                     <input type="radio" name="gender" value="f"> Female <br>
-                     <input type="radio" name="gender" value="o"> Other <br>
-                     <input type="radio" name="gender" value="d"> Declined to state <br>
-                     <input type="radio" name="gender" value="t"> Transgender <br><br>
-               </div>
-
-         <div class = "col-xs-4 states">
-               State
-         </div>
-            <div class = "col-xs-8 states">
-               <div class = "col-xs-4 states">
-               <td> <select name="state" required>
-                  <option value = "Alabama">AL</option>
-                  <option value = "Alaska">AK</option>
-                  <option value = "Arizona">AZ</option>
-                  <option value = "Arkansas">AR</option>
-                  <option value = "California">CA</option>
-                  <option value = "Colorado">CO</option>
-                  <option value = "Connecticut">CT</option>
-                  <option value = "DC">DC</option>
-                  <option value = "Delaware">DE</option>   
-                  <option value = "Florida">FL</option>
-                  <option value = "Georgia">GA</option>
-                  <option value = "Hawaii">HI</option>
-                  <option value = "Idaho">ID</option>
-                  <option value = "Illinois">IL</option>
-                  <option value = "Indiana">IN</option>
-                  <option value = "Iowa">IA</option>
-                  <option value = "Kansas">KS</option>
-                  <option value = "Kentucky">KY</option>
-                  <option value = "Louisiana">LA</option>
-                  <option value = "Maine">ME</option>
-                  <option value = "Maryland">MD</option>   
-                  <option value = "Massachusetts">MA</option>
-                  <option value = "Michigan">MI</option>
-                  <option value = "Minnesota">MN</option>
-                  <option value = "Mississippi">MS</option>
-                  <option value = "Missouri">MO</option>
-                  <option value = "Montana">MT</option>
-                  <option value = "Nebraska">NE</option>
-                  <option value = "Nevada">CA</option>
-                  <option value = "New Hampshire">NH</option>
-                  <option value = "New Jersey">NJ</option>
-                  <option value = "New Mexico">NM</option>
-                  <option value = "New York">NY</option>   
-                  <option value = "North Carolina">NC</option>
-                  <option value = "North Dakota">ND</option>
-                  <option value = "Ohio">OH</option>
-                  <option value = "Oklahoma">OK</option>
-                  <option value = "Oregon">OR</option>
-                  <option value = "Pennsylvania">PA</option>
-                  <option value = "Rhode Island">RI</option>
-                  <option value = "South Carolina">SC</option>
-                  <option value = "South Dakota">SD</option>
-                  <option value = "Tennessee">TN</option>
-                  <option value = "Texas">TX</option>
-                  <option value = "Utah">UT</option>   
-                  <option value = "Vermont">VT</option>
-                  <option value = "Virginia">VA</option>
-                  <option value = "Washington">WA</option>
-                  <option value = "West Virginia">WV</option>   
-                  <option value = "Wisconsin">WI</option>
-                  <option value = "Wyoming">WY</option>
-                  <option value = "N/A">N/A</option>   
-               </select>
             </div>
-         </div>
-   
-         <div class = "col-xs-12 filler"> </div>
-
-         <div class = "col-xs-4 city">
-           <br> City
-         </div>
-
-         <div class = "col-xs-8 city">
-            <div class = "col-xs-4 city">
-               <br><input type = "text" name = "city" required> <br>
-            </div>
-         </div>
-         
-         <div class = "col-xs-12 filler"></div>
-
-         <div class = "col-xs-4 birthday">
-            <br> Birthday
-         </div>
-
-         <div class = "col-xs-8 birthday">
-               <div class = "col-xs-4 birthday">
-                  <br> <input type = "date" name = "birthday" required> <br>
+            <div class="col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="gender">Gender</label>
                </div>
-         </div>
+               <div class = "col-xs-4">
+                  <input type="radio" name="gender" value="m" checked> Male <br>
+                  <input type="radio" name="gender" value="f"> Female <br>
+                  <input type="radio" name="gender" value="o"> Other <br>
+                  <input type="radio" name="gender" value="d"> Declined to state <br>
+                  <input type="radio" name="gender" value="t"> Transgender <br>
+               </div>
+            </div>
 
-         <div class = "col-xs-12 filler"> </div>
+            <div class = "col-xs-12 field">
+               <div class ="col-xs-3">
+                  <label for="interested">Interested in </label>
+               </div>
+               <div class ="col-xs-4">
+                  <input type = "radio" name = "interest" value ="m"> Males <br>
+                  <input type = "radio" name = "interest" value ="f"> Females <br>
+                  <input type = "radio" name = "interest" value ="t"> Transgenders <br>
+                  <input type = "radio" name = "interest" value ="o"> Other <br>
+                  <input type = "radio" name = "interest" value ="a" checked> Doesn't Matter / Any <br>    
+               </div>
+            </div>
 
-         <div class = "col-xs-4 favoriteOs">
-            <br> Favorite OS
-         </div>
-
-         <div class = "col-xs-8 favoriteOs">
-            <div class = "col-xs-4 favoriteOs">            
-               <br> <select name ="favoriteOS" required>
+            <div class="col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="state">State</label>
+               </div>
+               <div class="col-xs-4">
+                  <select name="state" required>
+                     <option value = "Alabama">AL</option>
+                     <option value = "Alaska">AK</option>
+                     <option value = "Arizona">AZ</option>
+                     <option value = "Arkansas">AR</option>
+                     <option value = "California">CA</option>
+                     <option value = "Colorado">CO</option>
+                     <option value = "Connecticut">CT</option>
+                     <option value = "DC">DC</option>
+                     <option value = "Delaware">DE</option>
+                     <option value = "Florida">FL</option>
+                     <option value = "Georgia">GA</option>
+                     <option value = "Hawaii">HI</option>
+                     <option value = "Idaho">ID</option>
+                     <option value = "Illinois">IL</option>
+                     <option value = "Indiana">IN</option>
+                     <option value = "Iowa">IA</option>
+                     <option value = "Kansas">KS</option>
+                     <option value = "Kentucky">KY</option>
+                     <option value = "Louisiana">LA</option>
+                     <option value = "Maine">ME</option>
+                     <option value = "Maryland">MD</option>
+                     <option value = "Massachusetts">MA</option>
+                     <option value = "Michigan">MI</option>
+                     <option value = "Minnesota">MN</option>
+                     <option value = "Mississippi">MS</option>
+                     <option value = "Missouri">MO</option>
+                     <option value = "Montana">MT</option>
+                     <option value = "Nebraska">NE</option>
+                     <option value = "Nevada">CA</option>
+                     <option value = "New Hampshire">NH</option>
+                     <option value = "New Jersey">NJ</option>
+                     <option value = "New Mexico">NM</option>
+                     <option value = "New York">NY</option>
+                     <option value = "North Carolina">NC</option>
+                     <option value = "North Dakota">ND</option>
+                     <option value = "Ohio">OH</option>
+                     <option value = "Oklahoma">OK</option>
+                     <option value = "Oregon">OR</option>
+                     <option value = "Pennsylvania">PA</option>
+                     <option value = "Rhode Island">RI</option>
+                     <option value = "South Carolina">SC</option>
+                     <option value = "South Dakota">SD</option>
+                     <option value = "Tennessee">TN</option>
+                     <option value = "Texas">TX</option>
+                     <option value = "Utah">UT</option>
+                     <option value = "Vermont">VT</option>
+                     <option value = "Virginia">VA</option>
+                     <option value = "Washington">WA</option>
+                     <option value = "West Virginia">WV</option>
+                     <option value = "Wisconsin">WI</option>
+                     <option value = "Wyoming">WY</option>
+                     <option value = "N/A">N/A</option>
+                  </select>
+               </div>
+            </div>
+            <div class="col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="city">City</label>
+               </div>
+               <div class="col-xs-4">
+                  <input type="text" name="city" required>
+               </div>
+            </div>
+            <div class="col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="birthday">Birthday (mm/dd/yyyy)</label>
+               </div>
+               <div class = "col-xs-4">
+                  <input type = "date" name = "birthday" required>
+               </div>
+            </div>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label type="favoriteOS">Favorite OS</label>
+               </div>
+               <div class = "col-xs-4">            
+                  <select name ="favoriteOS" required>
                   <option value ="windows"> Windows </option>
                   <option value ="linux"> Linux </option>
                   <option value ="OS X"> OS X </option>
-               </select> <br>
+                  </select>
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"> </div>
-
-         <div class = "col-xs-4 smartphoneOs">
-            <br> Smartphone OS <br>
-         </div> 
-
-         <div class = "col-xs-8 smartphoneOs">
-            <div class = "col-xs-4 smartphoneOs">
-               <br><select name = "phoneOS" required>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="phoneOS">Smartphone OS</label>
+               </div> 
+               <div class = "col-xs-4">
+                  <select name = "phoneOS" required>
                   <option value = "android"> Android </option>
                   <option value = "ios"> iOS </option>
                   <option value = "windows"> Windows </option>
                   <option value = "n/a"> No smartphone </option>
-               </select>
+                  </select>
+               </div>
             </div>
-         </div> 
-
-         <div class = "col-xs-12 filler"> </div>
-
-         <div class = "col-xs-4 relationshipStatus">
-            <br> Relationship status <br>
-         </div>
-
-         <div class = "col-xs-8 relationshipStatus">
-            <div class = "col-xs-4 relationshipStatus">
-               <br> <select name = "relationship" required>
-                  <option value = "single"> Single </option>
-                  <option value = "taken"> In a relationship / Married </option>
-                  <option value = "single"> What's a Relationship? </option>
-                  <option value = "declined"> Declined to state </option>
-               </select>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="relationship">Relationship status</label>
+               </div>
+               <div class = "col-xs-4">
+                  <select name = "relationship" required>
+                  <option value = "Single"> Single </option>
+                  <option value = "Taken"> In a relationship / Married </option>
+                  <option value = "What is a relationship?"> What's a Relationship? </option>
+                  <option value = "Declined to state relationship status"> Declined to state </option>
+                  </select>
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"> </div>
-
-         <div class = "col-xs-4 favoriteGamingSystem">
-            <br> Gaming preference <br>
-         </div>
-
-         <div class = "col-xs-8 favoriteGamingSystem">
-            <div class = "col-xs-4 relationshipStatus">
-             <br>  <select name = "gaming" required>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="gaming">Gaming preference</label>
+               </div>
+               <div class = "col-xs-4">
+                  <select name = "gaming" required>
                   <option value = "pc"> PC </option>
                   <option value = "xbox"> Xbox </option>
                   <option value = "xbox 360"> Xbox 360 </option>
@@ -217,138 +204,115 @@
                   <option value = "wii u"> Wii U </option>
                   <option value = "oldschool"> Old school </option> 
                   <option value = "none"> I don't game </option>
-               </select>
+                  </select>
+               </div>
             </div>
-         </div>         
-
-         <div class = "col-xs-12 filler"> </div>
-
-         <div class = "col-xs-4 favoritelanguage">
-           <br>  #1 Favorite Language 
-         </div>
-
-         <div class = "col-xs-8 favoritelanguage">
-            <div class = "col-xs-4 favoritelanguage">
-               <br> <input type = "text" name = "favLang1" required><br>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label type="favLang1">#1 Favorite Programming Language</label> 
+               </div>
+               <div class = "col-xs-4">
+                  <input type = "text" name = "favLang1" required>
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"></div>
-
-         <div class = "col-xs-4 favoritelanguage">
-           <br>  #2 Favorite Language 
-         </div>
-
-         <div class = "col-xs-8 favoritelanguage">
-            <div class = " col-xs-4 favoritelanguage">
-               <br> <input type = "text" name = "favLang2" placeholder = "Optional"><br>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label type="favLang2">#2 Favorite Programming Language</label>
+               </div>
+               <div class="col-xs-4">
+                  <input type = "text" name = "favLang2" placeholder = "Optional">
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"></div>
-
-         <div class = "col-xs-4 favoritelanguage">
-           <br>  #3 Favorite Language 
-         </div>
-
-         <div class = "col-xs-8 favoritelanguage">
-            <div class = " col-xs-4 favoritelanguage">
-               <br> <input type = "text" name = "favLang3" placeholder = "Optional"><br>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="favLang3">#3 Favorite Programming Language</label> 
+               </div>
+               <div class = " col-xs-4">
+                  <input type = "text" name = "favLang3" placeholder = "Optional">
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"></div>
-
-         <div class = "col-xs-4 favoritehobby">
-           <br> #1 Favorite Hobby
-         </div>
-
-         <div class = "col-xs-8 favoritehobby">
-            <div class = " col-xs-4 favoritehobby">
-               <br> <input type = "text" name = "favHobby1" required><br>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="fabHobby1">#1 Favorite Hobby</label>
+               </div>
+               <div class = " col-xs-4">
+                  <input type = "text" name = "favHobby1" required>
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"></div>
-
-         <div class = "col-xs-4 favoritehobby">
-           <br> #2 Favorite Hobby
-         </div>
-
-         <div class = "col-xs-8 favoritehobby">
-            <div class = " col-xs-4 favoritehobby">
-               <br> <input type = "text" name = "favHobby2" placeholder = "Optional"><br>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="favHobby2">#2 Favorite Hobby</label>
+               </div>
+               <div class = " col-xs-4">
+                  <input type = "text" name = "favHobby2" placeholder = "Optional">
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"></div>
-
-         <div class = "col-xs-4 favoritehobby">
-           <br> #3 Favorite Hobby
-         </div>
-
-         <div class = "col-xs-8 favoritehobby">
-            <div class = "col-xs-4 favoritehobby">
-               <br> <input type = "text" name = "favHobby3" placeholder = "Optional"><br>
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3">
+                  <label for="favHobby3">#3 Favorite Hobby</label>
+               </div>
+               <div class = "col-xs-4">
+                  <input type = "text" name = "favHobby3" placeholder = "Optional">
+               </div>
             </div>
-         </div>
-
-         <div class = "col-xs-12 filler"></div>
-         
-         <div class = "col-xs-4 wpm">
-            <a href= "http://www.typingtest.com/test.html?minutes=1&textfile=aesop.txt" target="_blank"> <br>WPM (click for link) </a>
-         </div>
-
-         <div class = "col-xs-8 wpm">
-            <div class = "col-xs-4 wpm">
-               <br><input type = "number" name = "wpm" min = "0" step = "1" placeholder = "Be honest :)">
+            <div class = "col-xs-12 field">
+               <div class = "col-xs-3 wpm">
+                  <label for="wpm">WPM</label> <a href= "http://www.typingtest.com/test.html?minutes=1&textfile=aesop.txt" target="_blank"> (click for link) </a>
+               </div>
+               <div class = "col-xs-4 wpm">
+                  <input type = "number" name = "wpm" min = "0" step = "1" placeholder = "Be honest :)" required>
+               </div>
             </div>
-         </div> 
+            <div class="col-xs-12">
+               <div class="col-xs-12">
+                  <label for="myfile">Please upload a .jpg, .jpeg, .png and under 5mb</label>
+                  <input type="file" id = "image" name="myfile" /><br>
+                  <script>
+                     var control = document.getElementById("image");
+                     control.addEventListener("change", function(event) {
+                        var filesize = parseFloat(control.files[0].size/1024).toFixed(2);
+                        var filename = document.getElementById("image").value;
+                        filename = filename.split('.');
+                        var length = filename.length - 1;        
+                     
+                        if(filename[length].toUpperCase() === "JPG" || filename[length].toUpperCase()  === "JPEG" || filename[length].toUpperCase() === "PNG") {
+                           if ((filesize / 1000) < 6) {
+                              console.log("here");
+                              document.getElementById("verify").value = "good"
+                           }
+                           else {
+                              alert("File size too large, please upload a picture under 5 mb. Current file will not go through");
+                              document.getElementById("verify").value = "bad"
+                           }
+                         
+                        }
+                        else {
+                           alert("Please insert a image of correct type, .jpg, .jpeg, .png. Current file will not go through");
+                           document.getElementById("verify").value = "bad"
+                        }
+                     }, false);
+                  </script>
+               </div>
+            </div>
 
-         <div class = "col-xs-12 filler"></div>
+            <div class = "col-xs-12 bio" >
+               <div class="colxs-12">
+                  <textarea cols="50" rows="5" name="bio" maxlength = "256" placeholder = "256 characters max - Optional"></textarea>
+               </div>
+            </div>
 
-         Please upload a .jpg, .jpeg, .png <input type="file" id = "image" name="myfile" /><br>
-         <div> 
-            <input type = "hidden"  id = "verify" name = "verify" value = "secret">  <br> </div>
-         </div>
-         <script>
-            var control = document.getElementById("image");
-            control.addEventListener("change", function(event) {
-               var filesize = parseFloat(control.files[0].size/1024).toFixed(2);
-               var filename = document.getElementById("image").value;
-               filename = filename.split('.');
-               var length = filename.length - 1;        
-            
-               if(filename[length].toUpperCase() === "JPG" || filename[length].toUpperCase()  === "JPEG" || filename[length].toUpperCase() === "PNG") {
-                  if ((filesize / 1000) < 6) {
-                     console.log("here");
-                     document.getElementById("verify").value = "good"
-                  }
-                  else {
-                     alert("File size too large, please upload a picture under 5 mb");
-                     document.getElementById("verify").value = "bad"
-                  }
-                
-               }
-               else {
-                  alert("Please insert a image of correct type, .jpg, .jpeg, .png");
-                  document.getElementById("verify").value = "bad"
-               }
-            }, false);
-         </script>
-
-
-         <div class = "col-xs-12 filler"><br><br></div>
-<!-- temp fix for submit location? -->      
-         <div class = "col-xs-5" > </div>
-
-         <div class = "col-xs-7 submit">
-            <br> <input type="submit" name = "submit">
-         </div>
-
-         <div class = "col-xs-12 filler"><br><br><br><br><br></div>
- 
+            <div class="col-xs-12 submit">
+               <div class="col-xs-12">
+                  <div class="col-xs-7">
+                     <br> <input class="pull-right" type="submit" name = "submit">
+                  </div>
+               </div>
+            </div>
+            <div> 
+               <input type = "hidden"  id = "verify" name = "verify" value = "secret"></div>
+            </div>
          </form>
       </div>
+      <script src="static/common.js"></script>
    </body>
 </html>

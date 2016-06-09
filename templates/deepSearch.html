@@ -4,12 +4,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="static/question.css">
-      <title> Deep Search </title>
+      <title> Advanced Search </title>
    </head>
       <body>
          <div class="container">
             <div>
-               <a class="btn btn-success pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
+               <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/logout" role="button">Log Out</a>
+               <a class="btn btn-success btn-space pull-right" href="http://www.csdate.me/main" role="button">Home</a>
             </div>
 
             <div class = "col-xs-12 logo">
@@ -66,7 +67,7 @@
                <div class = "col-xs-8 Gender">
                   <div class ="col-xs-4 Gender">
                      <select name = "gender">
-                        <option value "none">  <br>
+                        <option value "">  <br>
                         <option value="m"> Male <br>
                         <option value ="f"> Female <br>
                         <option value="o"> Other <br>
@@ -76,6 +77,23 @@
                   </div>
                </div>
 
+               <div class ="col-xs-4">
+                  <br>Interested in
+               </div>
+               <div class ="col-xs-8 interested">
+                  <div class ="col-xs-4 insterested">
+                  <br><select name = "interest">   
+                     <option value = ""> <br>
+                     <option value ="m"> Males <br>
+                     <option value ="f"> Females <br>
+                     <option value ="t"> Transgenders <br>
+                     <option value ="o"> Other <br>
+                     <option value ="a"> Doesn't Matter / Any <br>
+                  </select>    
+               </div>
+            </div>
+
+
          <div class = "col-xs-12 filler"><br> </div>
 
          <div class = "col-xs-4 states">
@@ -84,7 +102,7 @@
             <div class = "col-xs-8 states">
                <div class = "col-xs-4 states">
                <td> <select name="state" >
-                  <option value = "none"></option>
+                  <option value = ""></option>
                   <option value = "Alabama">AL</option>
                   <option value = "Alaska">AK</option>
                   <option value = "Arizona">AZ</option>
@@ -162,7 +180,7 @@
          <div class = "col-xs-8 favoriteOs">
             <div class = "col-xs-4 favoriteOs">    
                <br> <select name ="favoriteOS">
-                  <option value ="none"> </option>
+                  <option value =""> </option>
                   <option value ="windows"> Windows </option>
                   <option value ="linux"> Linux </option>
                   <option value ="OS X"> OS X </option>
@@ -179,7 +197,7 @@
          <div class = "col-xs-8 smartphoneOs">
             <div class = "col-xs-4 smartphoneOs">
                <br> <select name = "phoneOS">
-                  <option value = "none">   </option>
+                  <option value = "">   </option>
                   <option value = "android"> Android </option>
                   <option value = "ios"> iOS </option>
                   <option value = "windows"> Windows </option>
@@ -197,7 +215,7 @@
          <div class = "col-xs-8 relationshipStatus">
             <div class = "col-xs-4 relationshipStatus">
                <br> <select name = "relationship" >
-                  <option value = "none">  </option>
+                  <option value = "">  </option>
                   <option value = "single"> Single </option>
                   <option value = "taken"> In a relationship / Married </option>
                   <option value = "single"> What's a Relationship? </option>
@@ -215,7 +233,7 @@
          <div class = "col-xs-8 favoriteGamingSystem">
             <div class = "col-xs-4 relationshipStatus">
              <br>  <select name = "gaming" >
-                  <option value = "none">  </option>
+                  <option value = "">  </option>
                   <option value = "pc"> PC </option>
                   <option value = "xbox"> Xbox </option>
                   <option value = "xbox 360"> Xbox 360 </option>
@@ -229,7 +247,7 @@
                   <option value = "wii"> Wii </option>
                   <option value = "wii u"> Wii U </option>
                   <option value = "oldschool"> Old school </option> 
-                  <option value = "none"> I don't game </option>
+                  <option value = ""> I don't game </option>
                </select>
             </div>
          </div>         
