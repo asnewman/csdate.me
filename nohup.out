@@ -14787,3 +14787,287 @@ TypeError: cannot concatenate 'str' and 'NoneType' objects
 207.62.170.216:43999 - - [09/Jun/2016 15:39:44] "HTTP/1.1 GET /profile14" - 200 OK
 207.62.170.216:46232 - - [09/Jun/2016 15:39:54] "HTTP/1.1 GET /main" - 200 OK
 207.62.170.216:46232 - - [09/Jun/2016 15:40:01] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.216:49260 - - [09/Jun/2016 16:50:55] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:49260 - - [09/Jun/2016 16:50:55] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+207.62.170.216:34744 - - [09/Jun/2016 16:50:58] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:34744 - - [09/Jun/2016 16:51:01] "HTTP/1.1 POST /login" - 301
+207.62.170.216:34744 - - [09/Jun/2016 16:51:03] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:34744 - - [09/Jun/2016 16:51:03] "HTTP/1.1 GET /static/images/1.jpg" - 304 Not Modified
+207.62.170.216:34744 - - [09/Jun/2016 16:51:03] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.216:63279 - - [09/Jun/2016 16:51:03] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.216:54930 - - [09/Jun/2016 16:51:03] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.216:34590 - - [09/Jun/2016 16:51:03] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.216:52390 - - [09/Jun/2016 16:51:14] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:52390 - - [09/Jun/2016 16:51:14] "HTTP/1.1 GET /static/images/3.JPG" - 304 Not Modified
+207.62.170.216:52390 - - [09/Jun/2016 16:51:14] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.216:42612 - - [09/Jun/2016 16:51:14] "HTTP/1.1 GET /static/images/14.JPG" - 304 Not Modified
+207.62.170.216:52390 - - [09/Jun/2016 16:51:24] "HTTP/1.1 GET /profile4" - 200 OK
+207.62.170.216:52390 - - [09/Jun/2016 16:51:24] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.216:52390 - - [09/Jun/2016 16:51:31] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:52390 - - [09/Jun/2016 16:51:33] "HTTP/1.1 GET /logout" - 200 OK
+66.249.65.22:55548 - - [09/Jun/2016 17:23:34] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:53852 - - [09/Jun/2016 17:31:40] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:53852 - - [09/Jun/2016 17:31:40] "HTTP/1.1 GET /static/common.js" - 200 
+207.62.170.221:53852 - - [09/Jun/2016 17:31:41] "HTTP/1.1 GET /static/sha3.js" - 304 Not Modified
+207.62.170.221:53852 - - [09/Jun/2016 17:31:41] "HTTP/1.1 GET /static/main.css" - 200 
+207.62.170.221:53852 - - [09/Jun/2016 17:31:41] "HTTP/1.1 GET /static/images/logo.png" - 200 
+207.62.170.221:53852 - - [09/Jun/2016 17:31:41] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:53852 - - [09/Jun/2016 17:31:41] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+207.62.170.221:53852 - - [09/Jun/2016 17:31:43] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:56351 - - [09/Jun/2016 17:31:44] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:44352 - - [09/Jun/2016 17:31:46] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:53852 - - [09/Jun/2016 17:31:48] "HTTP/1.1 POST /login" - 301
+207.62.170.221:53852 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:53852 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /static/images/logo-white.png" - 200 
+207.62.170.221:32893 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /static/images/4.jpg" - 200 
+207.62.170.221:46652 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /static/images/12.jpg" - 200 
+207.62.170.221:42683 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /static/images/10.jpg" - 200 
+207.62.170.221:34457 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /static/images/25.jpg" - 200 
+207.62.170.221:59484 - - [09/Jun/2016 17:31:48] "HTTP/1.1 GET /static/images/26.JPG" - 200 
+207.62.170.216:44352 - - [09/Jun/2016 17:31:50] "HTTP/1.1 POST /login" - 301
+207.62.170.216:44352 - - [09/Jun/2016 17:31:50] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:44352 - - [09/Jun/2016 17:31:50] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.216:44352 - - [09/Jun/2016 17:31:50] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.216:44553 - - [09/Jun/2016 17:31:50] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.221:51567 - - [09/Jun/2016 17:32:14] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:51567 - - [09/Jun/2016 17:32:17] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:51567 - - [09/Jun/2016 17:32:17] "HTTP/1.1 GET /static/images/27.jpg" - 200 
+207.62.170.221:51567 - - [09/Jun/2016 17:32:18] "HTTP/1.1 GET /profile27" - 200 OK
+207.62.170.221:36033 - - [09/Jun/2016 17:32:35] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:36033 - - [09/Jun/2016 17:32:43] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:36033 - - [09/Jun/2016 17:32:43] "HTTP/1.1 GET /static/images/8.jpg" - 200 
+207.62.170.221:36033 - - [09/Jun/2016 17:32:48] "HTTP/1.1 GET /profile10" - 200 OK
+207.62.170.216:44672 - - [09/Jun/2016 17:32:50] "HTTP/1.1 GET /profile10" - 200 OK
+207.62.170.221:36033 - - [09/Jun/2016 17:32:57] "HTTP/1.1 GET /profile8" - 200 OK
+207.62.170.216:63103 - - [09/Jun/2016 17:33:05] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:63103 - - [09/Jun/2016 17:33:06] "HTTP/1.1 GET /static/images/8.jpg" - 200 
+207.62.170.216:63103 - - [09/Jun/2016 17:33:08] "HTTP/1.1 GET /profile8" - 200 OK
+207.62.170.216:63103 - - [09/Jun/2016 17:33:11] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:42921 - - [09/Jun/2016 17:33:53] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:42921 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:58962 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/default.png" - 200 
+207.62.170.221:42921 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/22.jpg" - 200 
+207.62.170.221:61129 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/24.jpg" - 200 
+207.62.170.221:41586 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:41586 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:33989 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/8.jpg" - 304 Not Modified
+207.62.170.221:53082 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:41586 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.221:33989 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:53082 - - [09/Jun/2016 17:33:54] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:58962 - - [09/Jun/2016 17:34:00] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:40529 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:40529 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:34783 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/1.jpg" - 304 Not Modified
+207.62.170.216:51008 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.216:49555 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:40529 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.216:34783 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.216:51008 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.216:49555 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/24.jpg" - 200 
+207.62.170.216:40529 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.216:34783 - - [09/Jun/2016 17:34:02] "HTTP/1.1 GET /static/images/22.jpg" - 200 
+207.62.170.216:40319 - - [09/Jun/2016 17:34:04] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.216:40319 - - [09/Jun/2016 17:34:10] "HTTP/1.1 GET /profile24" - 200 OK
+207.62.170.221:44785 - - [09/Jun/2016 17:34:11] "HTTP/1.1 GET /profile24" - 200 OK
+207.62.170.216:41139 - - [09/Jun/2016 17:34:27] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:41472 - - [09/Jun/2016 17:34:33] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:61285 - - [09/Jun/2016 17:34:42] "HTTP/1.1 GET /profile20" - 200 OK
+207.62.170.221:53421 - - [09/Jun/2016 17:34:47] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:53421 - - [09/Jun/2016 17:34:55] "HTTP/1.1 GET /profile25" - 200 OK
+207.62.170.216:56414 - - [09/Jun/2016 17:34:55] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:56414 - - [09/Jun/2016 17:34:55] "HTTP/1.1 GET /static/images/23.png" - 304 Not Modified
+207.62.170.216:56414 - - [09/Jun/2016 17:35:02] "HTTP/1.1 GET /profile19" - 200 OK
+207.62.170.221:47470 - - [09/Jun/2016 17:35:05] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:32826 - - [09/Jun/2016 17:35:38] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:32826 - - [09/Jun/2016 17:35:39] "HTTP/1.1 GET /profile19" - 200 OK
+207.62.170.221:32697 - - [09/Jun/2016 17:35:52] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:50315 - - [09/Jun/2016 17:35:52] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:40601 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:40601 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:62185 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:55419 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/1.jpg" - 304 Not Modified
+207.62.170.216:33278 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.216:59089 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.216:40601 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.216:62185 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.216:59089 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.216:55419 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.216:33278 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.216:40601 - - [09/Jun/2016 17:36:44] "HTTP/1.1 GET /static/images/22.jpg" - 304 Not Modified
+http://0.0.0.0:80/
+207.62.170.216:39349 - - [09/Jun/2016 17:36:58] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:38386 - - [09/Jun/2016 17:37:02] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:47553 - - [09/Jun/2016 17:37:17] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.216:47553 - - [09/Jun/2016 17:37:19] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:47553 - - [09/Jun/2016 17:37:22] "HTTP/1.1 GET /" - 200 OK
+207.62.170.221:55473 - - [09/Jun/2016 17:37:23] "HTTP/1.1 GET /profile4" - 200 OK
+207.62.170.221:55473 - - [09/Jun/2016 17:37:29] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:55473 - - [09/Jun/2016 17:37:32] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:55473 - - [09/Jun/2016 17:37:32] "HTTP/1.1 GET /profile1" - 200 OK
+207.62.170.221:55473 - - [09/Jun/2016 17:37:32] "HTTP/1.1 GET /static/images/1.jpg" - 200 
+207.62.170.221:55473 - - [09/Jun/2016 17:37:36] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:55473 - - [09/Jun/2016 17:37:46] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:35483 - - [09/Jun/2016 17:37:59] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:44193 - - [09/Jun/2016 17:38:01] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:44193 - - [09/Jun/2016 17:38:04] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:44193 - - [09/Jun/2016 17:38:08] "HTTP/1.1 POST /login" - 301
+207.62.170.216:44193 - - [09/Jun/2016 17:38:08] "HTTP/1.1 GET /questions" - 200 OK
+207.62.170.216:44193 - - [09/Jun/2016 17:38:08] "HTTP/1.1 GET /static/question.css" - 304 Not Modified
+207.62.170.221:57965 - - [09/Jun/2016 17:39:52] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:57965 - - [09/Jun/2016 17:39:56] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:57965 - - [09/Jun/2016 17:39:58] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:34833 - - [09/Jun/2016 17:40:17] "HTTP/1.1 GET /profile5" - 200 OK
+207.62.170.216:46131 - - [09/Jun/2016 17:41:43] "HTTP/1.1 POST /questions" - 301
+207.62.170.216:46131 - - [09/Jun/2016 17:41:43] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:46131 - - [09/Jun/2016 17:41:44] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.216:46131 - - [09/Jun/2016 17:41:46] "HTTP/1.1 GET /profile28" - 200 OK
+207.62.170.216:46131 - - [09/Jun/2016 17:41:46] "HTTP/1.1 GET /static/images/28.jpg" - 200 
+207.62.170.216:46131 - - [09/Jun/2016 17:41:51] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:42194 - - [09/Jun/2016 17:42:06] "HTTP/1.1 GET /logout" - 200 OK
+207.62.170.216:42194 - - [09/Jun/2016 17:42:08] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.221:55637 - - [09/Jun/2016 17:42:19] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:55637 - - [09/Jun/2016 17:42:28] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:55637 - - [09/Jun/2016 17:42:35] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:55637 - - [09/Jun/2016 17:42:35] "HTTP/1.1 GET /static/images/28.jpg" - 200 
+207.62.170.221:55637 - - [09/Jun/2016 17:42:39] "HTTP/1.1 GET /profile28" - 200 OK
+207.62.170.221:40199 - - [09/Jun/2016 17:43:00] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:45398 - - [09/Jun/2016 17:43:05] "HTTP/1.1 GET /" - 200 OK
+207.62.170.216:56284 - - [09/Jun/2016 17:43:33] "HTTP/1.1 POST /" - 200 OK
+207.62.170.216:56284 - - [09/Jun/2016 17:43:34] "HTTP/1.1 GET /login" - 200 OK
+207.62.170.216:56284 - - [09/Jun/2016 17:43:37] "HTTP/1.1 POST /login" - 301
+207.62.170.216:56284 - - [09/Jun/2016 17:43:37] "HTTP/1.1 GET /questions" - 200 OK
+/home/shared/csdate.me/queries.py:70: Warning: Data truncated for column 'relationship' at row 1
+  self.cur.execute(cmd, (fName, mName, lName, gender, state, city, birthday, favoriteOS, phoneOS, relationship, gaming, favLang1, favLang2, favLang3, favHobby1, favHobby2, favHobby3, wpm, interest, bio))
+207.62.170.216:57898 - - [09/Jun/2016 17:45:02] "HTTP/1.1 POST /questions" - 301
+207.62.170.216:57898 - - [09/Jun/2016 17:45:02] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:57898 - - [09/Jun/2016 17:45:02] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.221:38489 - - [09/Jun/2016 17:45:03] "HTTP/1.1 GET /profile25" - 200 OK
+207.62.170.221:53083 - - [09/Jun/2016 17:45:19] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:53083 - - [09/Jun/2016 17:45:23] "HTTP/1.1 GET /profile25" - 200 OK
+207.62.170.221:49231 - - [09/Jun/2016 17:45:38] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:47016 - - [09/Jun/2016 17:45:43] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:47016 - - [09/Jun/2016 17:45:43] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.221:52785 - - [09/Jun/2016 17:45:54] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:52785 - - [09/Jun/2016 17:45:54] "HTTP/1.1 GET /static/images/3.JPG" - 200 
+207.62.170.221:52785 - - [09/Jun/2016 17:45:57] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:33393 - - [09/Jun/2016 17:46:00] "HTTP/1.1 GET /deepSearch" - 200 OK
+207.62.170.221:62960 - - [09/Jun/2016 17:46:12] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:62960 - - [09/Jun/2016 17:46:12] "HTTP/1.1 GET /static/images/14.JPG" - 200 
+207.62.170.221:61047 - - [09/Jun/2016 17:46:12] "HTTP/1.1 GET /static/images/23.png" - 200 
+207.62.170.221:52349 - - [09/Jun/2016 17:46:12] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.221:34931 - - [09/Jun/2016 17:46:12] "HTTP/1.1 GET /static/images/29.jpg" - 200 
+207.62.170.216:38058 - - [09/Jun/2016 17:46:13] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:38058 - - [09/Jun/2016 17:46:13] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.216:51328 - - [09/Jun/2016 17:46:25] "HTTP/1.1 GET /deepSearch" - 200 OK
+207.62.170.216:51328 - - [09/Jun/2016 17:46:34] "HTTP/1.1 GET /deepSearch" - 200 OK
+207.62.170.216:51328 - - [09/Jun/2016 17:46:34] "HTTP/1.1 GET /static/images/3.JPG" - 304 Not Modified
+207.62.170.216:49219 - - [09/Jun/2016 17:46:34] "HTTP/1.1 GET /static/images/14.JPG" - 304 Not Modified
+207.62.170.216:49219 - - [09/Jun/2016 17:46:41] "HTTP/1.1 GET /deepSearch" - 200 OK
+207.62.170.216:49219 - - [09/Jun/2016 17:46:48] "HTTP/1.1 GET /deepSearch" - 200 OK
+207.62.170.216:35604 - - [09/Jun/2016 17:47:00] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:35604 - - [09/Jun/2016 17:47:00] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.221:42302 - - [09/Jun/2016 17:47:02] "HTTP/1.1 GET /profile23" - 200 OK
+207.62.170.221:42459 - - [09/Jun/2016 17:47:36] "HTTP/1.1 GET /profile14" - 200 OK
+207.62.170.221:43920 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:43920 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/8.jpg" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/22.jpg" - 304 Not Modified
+207.62.170.221:57849 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/3.JPG" - 304 Not Modified
+207.62.170.221:56776 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:60230 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:41641 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/14.JPG" - 304 Not Modified
+207.62.170.221:51595 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:57849 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/23.png" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.221:56776 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:60230 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:51595 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.221:41641 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.221:57849 - - [09/Jun/2016 17:48:36] "HTTP/1.1 GET /static/images/29.jpg" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:43] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:43920 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:43920 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:60952 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:53228 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:39403 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:40792 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.221:41807 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:43920 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.221:60952 - - [09/Jun/2016 17:48:49] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+http://0.0.0.0:80/
+unhashed password: 82bfc99b480ddfc9aa88bc66f8ae0df19e644c34446e2af8f32e60feeec891a4c57f885e20d4a0c0a6379be5356cd7f230ff923d197788b246f973c0e10aaa21
+hashed password: $2b$12$ZazcLNdL0mEkYZybUKZCyei.o9HqNyD24Ef.GsTMLeiRR8cWif8U.
+unhashed password: 0a8409e09e5fbe873b91fbda2a2934271dbb0b2ca90ba6ab5c3503811978f72d0fb409653790edc0a7d5de113a6952f652114f3124bee4758d8c55a07df026fb
+hashed password: $2b$12$CJvDrDaixVcERQJo5T6mFOxtBSlA8fEiv1zVdvXfg8ixg2rm68pcK
+207.62.170.221:39869 - - [09/Jun/2016 17:49:01] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:39869 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:39869 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:39869 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:52912 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.221:52531 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:37401 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:38745 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:62062 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.221:39869 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:52912 - - [09/Jun/2016 17:49:02] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.221:39869 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:39869 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:39869 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:52531 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:37401 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.221:38745 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:62062 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:52912 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:39869 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.221:52531 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:37401 - - [09/Jun/2016 17:49:08] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.216:41973 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.216:41973 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.216:41973 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.216:45580 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.216:46316 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.216:41161 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.216:54424 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/1.jpg" - 304 Not Modified
+207.62.170.216:44509 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/28.jpg" - 304 Not Modified
+207.62.170.216:41161 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.216:41973 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.216:45580 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/22.jpg" - 304 Not Modified
+207.62.170.216:46316 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:47178 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:53842 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.221:50822 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:54231 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:53842 - - [09/Jun/2016 17:50:31] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:47178 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:50822 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:54231 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.221:53842 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:47178 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:50822 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:54231 - - [09/Jun/2016 17:50:33] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.221:57853 - - [09/Jun/2016 17:50:41] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:44280 - - [09/Jun/2016 17:50:41] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+http://0.0.0.0:80/
+207.62.170.221:57919 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /main" - 200 OK
+207.62.170.221:57919 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/main.css" - 304 Not Modified
+207.62.170.221:57919 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/logo-white.png" - 304 Not Modified
+207.62.170.221:57919 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/4.jpg" - 304 Not Modified
+207.62.170.221:38208 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/12.jpg" - 304 Not Modified
+207.62.170.221:50654 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/10.jpg" - 304 Not Modified
+207.62.170.221:38978 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/25.jpg" - 304 Not Modified
+207.62.170.221:54579 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/26.JPG" - 304 Not Modified
+207.62.170.221:57540 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/27.jpg" - 304 Not Modified
+207.62.170.221:57919 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/default.png" - 304 Not Modified
+207.62.170.221:38208 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/24.jpg" - 304 Not Modified
+207.62.170.221:50654 - - [09/Jun/2016 17:50:52] "HTTP/1.1 GET /static/images/22.jpg" - 304 Not Modified
+207.62.170.216:62454 - - [09/Jun/2016 17:50:56] "HTTP/1.1 GET /main" - 200 OK

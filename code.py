@@ -81,12 +81,6 @@ class main:
          page = params.page if hasattr(params, 'page') else 1
          if userId == -1:
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
-         # if (i.search==None):
-         #    matches = DB.sortProfiles(userId)
-         #    return render.main(userId, matches, False)
-         # else:
-         #    matches = DB.singleSearch(i.search, i.attribute, userId)
-         #    return render.main(userId, matches, True)
          if (i.search==None):
             matches = DB.sortProfiles(userId)
             lower, upper = get_slices(page)
@@ -94,7 +88,7 @@ class main:
          else:
             matches = DB.singleSearch(i.search, i.attribute, userId)
             lower, upper = get_slices(page)
-            return render.main(userId, matches[lower:upper], True)
+            return render.main(userId, matches, True)
       else:
          return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
    def POST(self):
@@ -134,29 +128,6 @@ class upload:
 
         else: 
             return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
-        
-
-# Page for getting questions from users
-#class questions:
-#   def GET(self):
-#      token = web.cookies().get('token')
-#      if token:
-#         i = web.input(pic={},firstName=None)
-#         if(i.firstName==None):
-#           return render.questions()
-#         else:
-#           userId = DB.tokenToId(token)
-#           if userId == -1:
-#              return web.HTTPError('301', {'Location': 'http://www.csdate.me/logout'})
-#
-#           DB.setQuestions(userId, i.firstName, i.middleName, i.lastName, 
-#                                        i.gender, i.state, i.city, i.birthday, 
-#                                        i.favoriteOS, i.phoneOS, i.relationship, i.gaming, 
-#                                        i.favLang1, i.favLang2, i.favLang3, i.favHobby1,
-#                                        i.favHobby2, i.favHobby3, i.wpm)
-#           return web.HTTPError('301', {'Location': 'http://www.csdate.me/main'}) 
-#      else:
-#         return web.HTTPError('301', {'Location': 'http://www.csdate.me/login'})
 
 class questions:
    def GET(self):
@@ -297,7 +268,7 @@ def tokenSet(username):
     web.setcookie('token', validToken, expires='7200', domain="csdate.me", secure=False)
 
 def get_slices(page, page_size=10):
-  return (page_size * (page - 1), (page_size * page))
+  return (page_size * (page - 1), (page_size * page + 1))
 
 def internalerror():
     return web.internalerror("Bad, bad server. No donut for you. Please contact the server admins of the error.")
